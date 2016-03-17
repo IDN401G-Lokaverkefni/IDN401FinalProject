@@ -9,8 +9,6 @@ Exam schedule optimization via AMPL.
 - No student takes more than 2 exams per day.
 
 ### Soft Constraints
-- The amount of students taking an exam from day to day shall
- remain fairly even.
+- The amount of students taking an exam from day to day shall remain fairly even.
  - Difficult exams shall be scheduled as early as possible.
  - Exams shall be scheduled so they are finished at earliest convenience.
- 
