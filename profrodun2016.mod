@@ -38,69 +38,69 @@ end;
 /*
 Here is the solution of the University:
 Number	Course	Amount	Date
-EFN205G	Efnafr��i II (EFN214G)	22	M�n. 25 apr. 2016 kl. 09:00 - 12:00
-EFN214G	L�fr�n efnafr��i L (EFN205G)	54	M�n. 25 apr. 2016 kl. 09:00 - 12:00
-HBV401G	�r�un hugb�na�ar	122	M�n. 25 apr. 2016 kl. 09:00 - 12:00
-LEF406G	L�fefnafr��i 2	43	M�n. 25 apr. 2016 kl. 09:00 - 12:00
-STA202G	Mengi og fir�r�m	21	M�n. 25 apr. 2016 kl. 09:00 - 12:00
-VEL601G	Varmaflutningsfr��i	53	M�n. 25 apr. 2016 kl. 09:00 - 12:00
-BYG603G	Framkv�mdafr��i 1	18	M�n. 25 apr. 2016 kl. 13:30 - 16:30
-FER603M	N�sk�pun � fer�a�j�nustu	62	M�n. 25 apr. 2016 kl. 13:30 - 16:30
-JAR418G	J�klafr��i	22	M�n. 25 apr. 2016 kl. 13:30 - 16:30
-RAF403G	Rafeindat�kni 1	14	M�n. 25 apr. 2016 kl. 13:30 - 16:30
-IDN209F	Slembin ferli og �kvar�anafr��i	15	�ri. 26 apr. 2016 kl. 09:00 - 12:00
-JAR253F	Jar�efnafr��i hinnar f�stu jar�ar	10	�ri. 26 apr. 2016 kl. 09:00 - 12:00
-LEF617M	Efnafr��i ens�ma	6	�ri. 26 apr. 2016 kl. 09:00 - 12:00
-LIF412M	Sameindaerf�afr��i	15	�ri. 26 apr. 2016 kl. 09:00 - 12:00
-TOL203F	Reiknirit, r�kfr��i og reiknanleiki	10	�ri. 26 apr. 2016 kl. 09:00 - 12:00
-UMV213F	Vatnsaflsvirkjanir	10	�ri. 26 apr. 2016 kl. 09:00 - 12:00
-LAN203G	T�lfr��i (ST�209G)	106	�ri. 26 apr. 2016 kl. 13:30 - 16:30
-STA209G	T�lfr��i og gagnavinnsla (LAN203G)	130	�ri. 26 apr. 2016 kl. 13:30 - 16:30
-STA405G	T�luleg greining	169	�ri. 26 apr. 2016 kl. 13:30 - 16:30
-TOL203G	T�lvunarfr��i 2	279	Mi�. 27 apr. 2016 kl. 09:00 - 12:00
-UAU214M	Verndunarl�ffr��i	22	Mi�. 27 apr. 2016 kl. 09:00 - 12:00
-BYG201G	Greining bur�arvirkja 1	19	Mi�. 27 apr. 2016 kl. 13:30 - 16:30
-EDL403G	Frumeinda- og lj�sfr��i	13	Mi�. 27 apr. 2016 kl. 13:30 - 16:30
-LAN604M	Borgalandfr��i	25	Mi�. 27 apr. 2016 kl. 13:30 - 16:30
-LIF401G	�roskunarfr��i	44	Mi�. 27 apr. 2016 kl. 13:30 - 16:30
-VEL202G	Bur�ar�olsfr��i	88	Mi�. 27 apr. 2016 kl. 13:30 - 16:30
-EFN410G	E�lisefnafr��i B	23	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-JAR211G	Steindafr��i	20	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-JAR417G	Eldfjallafr��i	57	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-RAF401G	Greining og uppbygging r�sa	15	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-RAF616M	�r��laus fjarskipti	8	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+EFN205G	Efnafraei II (EFN214G)	22	Man. 25 apr. 2016 kl. 09:00 - 12:00
+EFN214G	Lifraen efnafraedi L (EFN205G)	54	Man. 25 apr. 2016 kl. 09:00 - 12:00
+HBV401G	Throun hugbunadar	122	Man. 25 apr. 2016 kl. 09:00 - 12:00
+LEF406G	Lifefnafraedi 2	43	Man. 25 apr. 2016 kl. 09:00 - 12:00
+STA202G	Mengi og firdrum	21	Man. 25 apr. 2016 kl. 09:00 - 12:00
+VEL601G	Varmaflutningsfraedi	53	Man. 25 apr. 2016 kl. 09:00 - 12:00
+BYG603G	Framkvaemdafraedi 1	18	Man. 25 apr. 2016 kl. 13:30 - 16:30
+FER603M	Nyskopun i ferdathjonustu	62	Man. 25 apr. 2016 kl. 13:30 - 16:30
+JAR418G	Joklafraedi	22	Man. 25 apr. 2016 kl. 13:30 - 16:30
+RAF403G	Rafeindataekni 1	14	Man. 25 apr. 2016 kl. 13:30 - 16:30
+IDN209F	Slembin ferli og akvardanafraedi	15	Tri. 26 apr. 2016 kl. 09:00 - 12:00
+JAR253F	Jardefnafraedi hinnar fostu jardar	10	Tri. 26 apr. 2016 kl. 09:00 - 12:00
+LEF617M	Efnafraedi ensima	6	Tri. 26 apr. 2016 kl. 09:00 - 12:00
+LIF412M	Sameindaerfdafraedi	15	Tri. 26 apr. 2016 kl. 09:00 - 12:00
+TOL203F	Reiknirit, rokfraedi og reiknanleiki	10	Tri. 26 apr. 2016 kl. 09:00 - 12:00
+UMV213F	Vatnsaflsvirkjanir	10	Tri. 26 apr. 2016 kl. 09:00 - 12:00
+LAN203G	Tolfraedi (STA209G)	106	Tri. 26 apr. 2016 kl. 13:30 - 16:30
+STA209G	Tolfraedi og gagnavinnsla (LAN203G)	130	Tri. 26 apr. 2016 kl. 13:30 - 16:30
+STA405G	Toluleg greining	169	Tri. 26 apr. 2016 kl. 13:30 - 16:30
+TOL203G	Tolvunarfraedi 2	279	Mid. 27 apr. 2016 kl. 09:00 - 12:00
+UAU214M	Verndunarliffraedi	22	Mid. 27 apr. 2016 kl. 09:00 - 12:00
+BYG201G	Greining burdarvirkja 1	19	Mid. 27 apr. 2016 kl. 13:30 - 16:30
+EDL403G	Frumeinda- og ljosfraedi	13	Mid. 27 apr. 2016 kl. 13:30 - 16:30
+LAN604M	Borgalandfraedi	25	Mid. 27 apr. 2016 kl. 13:30 - 16:30
+LIF401G	Throskunarfraedi	44	Mid. 27 apr. 2016 kl. 13:30 - 16:30
+VEL202G	Burdartholsfraedi	88	Mid. 27 apr. 2016 kl. 13:30 - 16:30
+EFN410G	Edlisefnafraedi B	23	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+JAR211G	Steindafraedi	20	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+JAR417G	Eldfjallafraedi	57	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+RAF401G	Greining og uppbygging rasa	15	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+RAF616M	Thradlaus fjarskipti	8	Fim. 28 apr. 2016 kl. 09:00 - 12:00
 STA403M	Algebra III	14	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-TOL401G	St�rikerfi	117	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-IDN403G	Varma- og varmaflutningsfr��i	28	Fim. 28 apr. 2016 kl. 13:30 - 16:30
-LIF201G	�rverufr��i	90	Fim. 28 apr. 2016 kl. 13:30 - 16:30
-REI202M	�l�nuleg bestun	36	Fim. 28 apr. 2016 kl. 13:30 - 16:30
-REI201G	St�r�fr��i og reiknifr��i	97	F�s. 29 apr. 2016 kl. 09:00 - 12:00
-STA207G	St�r�fr��igreining IIA	20	F�s. 29 apr. 2016 kl. 09:00 - 12:00
-STA401G	St�r�fr��igreining IV	100	F�s. 29 apr. 2016 kl. 09:00 - 12:00
-FER210F	Kenningar � fer�am�lafr��i (FER409G)	4	F�s. 29 apr. 2016 kl. 13:30 - 16:30
-FER409G	Kenningar � fer�am�lafr��i (FER210F)	61	F�s. 29 apr. 2016 kl. 13:30 - 16:30
-HBV601G	Hugb�na�arverkefni 2	91	F�s. 29 apr. 2016 kl. 13:30 - 16:30
-LIF227F	Skord�r (L�F633G)	1	F�s. 29 apr. 2016 kl. 13:30 - 16:30
-LIF633G	Skord�r (L�F227F)	17	F�s. 29 apr. 2016 kl. 13:30 - 16:30
-STA205G	St�r�fr��igreining II	262	F�s. 29 apr. 2016 kl. 13:30 - 16:30
-BYG401G	Reiknileg aflfr��i 1	17	M�n. 02 mai. 2016 kl. 09:00 - 12:00
-EDL402G	Varmafr��i 1	38	M�n. 02 mai. 2016 kl. 09:00 - 12:00
-EFN406G	L�fr�n efnafr��i 2	76	M�n. 02 mai. 2016 kl. 09:00 - 12:00
-IDN603G	I�na�art�lfr��i	43	M�n. 02 mai. 2016 kl. 09:00 - 12:00
-JED201G	Almenn jar�e�lisfr��i	37	M�n. 02 mai. 2016 kl. 09:00 - 12:00
-LIF635G	Atferlisfr��i	10	M�n. 02 mai. 2016 kl. 09:00 - 12:00
-MAS201F	L�kindareikningur og t�lfr��i (HAG206G,ST�203G)	15	M�n. 02 mai. 2016 kl. 13:30 - 16:30
-STA203G	L�kindareikningur og t�lfr��i (HAG206G,MAS201F)	307	M�n. 02 mai. 2016 kl. 13:30 - 16:30
-TOV602M	Verkfr��i �greyptra kerfa	7	M�n. 02 mai. 2016 kl. 13:30 - 16:30
-BYG601G	H�sager�	22	�ri. 03 mai. 2016 kl. 09:00 - 12:00
-EDL204G	E�lisfr��i allt umkring	4	�ri. 03 mai. 2016 kl. 09:00 - 12:00
-EFN404G	�l�fr�n efnafr��i 2	10	�ri. 03 mai. 2016 kl. 09:00 - 12:00
-JAR617G	J�klajar�fr��i	41	�ri. 03 mai. 2016 kl. 09:00 - 12:00
-LAN205G	Listin a� fer�ast	101	�ri. 03 mai. 2016 kl. 09:00 - 12:00
-LIF243F	D�ral�fe�lisfr��i fyrir framhaldsnema (L�F410G)	2	�ri. 03 mai. 2016 kl. 09:00 - 12:00
-LIF410G	D�ral�fe�lisfr��i (L�F243F)	26	�ri. 03 mai. 2016 kl. 09:00 - 12:00
-RAF601G	Rafmagnsv�lar 1	7	�ri. 03 mai. 2016 kl. 09:00 - 12:00
-UAU206M	Umhverfishagfr��i	22	�ri. 03 mai. 2016 kl. 09:00 - 12:00
+TOL401G	Styrikerfi	117	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+IDN403G	Varma- og Varmaflutningsfraedi	28	Fim. 28 apr. 2016 kl. 13:30 - 16:30
+LIF201G	Orverufraedi	90	Fim. 28 apr. 2016 kl. 13:30 - 16:30
+REI202M	Olinuleg bestun	36	Fim. 28 apr. 2016 kl. 13:30 - 16:30
+REI201G	Staerdfraedi og reiknifraedi	97	Fos. 29 apr. 2016 kl. 09:00 - 12:00
+STA207G	Staerdfraedigreining IIA	20	Fos. 29 apr. 2016 kl. 09:00 - 12:00
+STA401G	Staerdfraedigreining IV	100	Fos. 29 apr. 2016 kl. 09:00 - 12:00
+FER210F	Kenningar i ferdamalafraedi (FER409G)	4	Fos. 29 apr. 2016 kl. 13:30 - 16:30
+FER409G	Kenningar i ferdamalafraedi (FER210F)	61	Fos. 29 apr. 2016 kl. 13:30 - 16:30
+HBV601G	Hugbunadarverkefni 2	91	Fos. 29 apr. 2016 kl. 13:30 - 16:30
+LIF227F	Skordur (LIF633G)	1	Fos. 29 apr. 2016 kl. 13:30 - 16:30
+LIF633G	Skordur (LIF227F)	17	Fos. 29 apr. 2016 kl. 13:30 - 16:30
+STA205G	Stzerdfraedigreining II	262	Fos. 29 apr. 2016 kl. 13:30 - 16:30
+BYG401G	Reiknileg aflfraedi 1	17	Man. 02 mai. 2016 kl. 09:00 - 12:00
+EDL402G	Varmafraedi 1	38	Man. 02 mai. 2016 kl. 09:00 - 12:00
+EFN406G	Lifraen efnafraedi 2	76	Man. 02 mai. 2016 kl. 09:00 - 12:00
+IDN603G	Idnadartolfraedi	43	Man. 02 mai. 2016 kl. 09:00 - 12:00
+JED201G	Almenn Joklafraediedlisfraedi	37	Man. 02 mai. 2016 kl. 09:00 - 12:00
+LIF635G	Atferlisfraedi	10	Man. 02 mai. 2016 kl. 09:00 - 12:00
+MAS201F	Likindareikningur og tolfraedi (HAG206G,STA203G)	15	Man. 02 mai. 2016 kl. 13:30 - 16:30
+STA203G	Likindareikningur og tolfraedi (HAG206G,MAS201F)	307	Man. 02 mai. 2016 kl. 13:30 - 16:30
+TOV602M	Verkfraedi igreyptra kerfa	7	Man. 02 mai. 2016 kl. 13:30 - 16:30
+BYG601G	Husagerd	22	Tri. 03 mai. 2016 kl. 09:00 - 12:00
+EDL204G	Edlisfraedi allt umkring	4	Tri. 03 mai. 2016 kl. 09:00 - 12:00
+EFN404G	Olifraen efnafraedi 2	10	Tri. 03 mai. 2016 kl. 09:00 - 12:00
+JAR617G	Joklajardfraedi	41	Tri. 03 mai. 2016 kl. 09:00 - 12:00
+LAN205G	Listin ad ferdast	101	Tri. 03 mai. 2016 kl. 09:00 - 12:00
+LIF243F	Dyralifedlisfraedi fyrir framhaldsnema (LIF410G)	2	Tri. 03 mai. 2016 kl. 09:00 - 12:00
+LIF410G	Dyralifedlisfraedi (LIF243F)	26	Tri. 03 mai. 2016 kl. 09:00 - 12:00
+RAF601G	Rafmagnsvelar 1	7	Tri. 03 mai. 2016 kl. 09:00 - 12:00
+UAU206M	Umhverfishagfraedi	22	Tri. 03 mai. 2016 kl. 09:00 - 12:00
 VEL218F	Bein n�ting jar�hita	23	�ri. 03 mai. 2016 kl. 09:00 - 12:00
 EDL612M	St�r�fr��ileg e�lisfr��i	3	�ri. 03 mai. 2016 kl. 13:30 - 16:30
 IDN401G	A�ger�agreining	113	�ri. 03 mai. 2016 kl. 13:30 - 16:30
