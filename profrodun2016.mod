@@ -10,15 +10,21 @@ param n := 11; # Number of exam days
 set examSlots := 1..(2*n); # Exam-slots (profstokkar)
 
 param cidExamslot2016{cidExam}; # Solution of the University of Iceland, for comparison
-
 param cidCount{cidExam} default 0; # Amount of students in each course
 param cidCommon{cidExam, cidExam} default 0; # Amount of students that take co-taught courses
 
 var slot{cidExam, examSlots} binary; # Variable
 
+# Multiply slot by number of column (examSlots) and minimize the sum. This
+# "pushes" all the exams forward towards the beginning of the slot table.
+minimize totalSlots:sum{c in cidExam, e in examSlots}slot[c,e]*e;
+
 # This constraint is used to coerce the solution to be the same as the one of the University
-subject to lookAtSolution{e in examSlots, c in cidExam:
-                          cidExamslot2016[c] == e}:  slot[c,e] = 1;
+# subject to lookAtSolution{e in examSlots, c in cidExam:
+#                           cidExamslot2016[c] == e}:  slot[c,e] = 1;
+
+# No two exams with students in both courses can be at the same time
+subject to examClashes{e in examSlots}:sum{c1 in cidExam, c2 in cidExam: c1 < c2}cidCommon[c1,c2] <= 0;
 
 # Does the exam table for 2016 fulfil the demands for programs:
 check {i in 1..61, c1 in group[i], c2 in group[i]: cidCommon[c1,c2] > 0}
