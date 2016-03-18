@@ -1,5 +1,6 @@
 # Usage:
-#  glpsol --check -m profrodun2016.mod -d profrodun2016.dat --wlp proftafla.lp
+#  glpsol --check -m proftafla2016.mod -d profrodun2016.dat
+#  glpsol -m profrodun2016.mod -d profrodun2016.dat --wlp proftafla.lp
 #  gurobi_cl TimeLimit=3600 ResultFile=proftafla.sol proftafla.lp
 
 set cidExam; # Set of courses
@@ -33,6 +34,8 @@ for {e in examSlots} {
   printf : "Amount of students in exam-slot %d are %d\n", e, sum{c in cidExam}
                                                 slot[c,e] * cidCount[c];
 }
+
+
 
 end;
 
