@@ -2,36 +2,36 @@
 #  glpsol --check -m profrodun2016.mod -d profrodun2016.dat --wlp proftafla.lp
 #  gurobi_cl TimeLimit=3600 ResultFile=proftafla.sol proftafla.lp
 
-set CidExam; # Set of courses
-set Group{1..61} within CidExam; # Defined programs (namsbrautir/leidir)
+set cidExam; # Set of courses
+set group{1..61} within cidExam; # Defined programs (namsbrautir/leidir)
 
 param n := 11; # Number of exam days
-set ExamSlots := 1..(2*n); # Exam-slots (profstokkar)
+set examSlots := 1..(2*n); # Exam-slots (profstokkar)
 
-param cidExamslot2016{CidExam}; # Solution of the University of Iceland, for comparison
+param cidExamslot2016{cidExam}; # Solution of the University of Iceland, for comparison
 
 param cidCount{CidExam} default 0; # Amount of students in each course
-param cidCommon{CidExam, CidExam} default 0; # Amount of students that take co-taught courses
+param cidCommon{CidExam, cidExam} default 0; # Amount of students that take co-taught courses
 
-var Slot{CidExam, ExamSlots} binary; # Variable
+var slot{cidExam, examSlots} binary; # Variable
 
 # This constraint is used to coerce the solution to be the same as the one of the University
-subject to LookAtSolution{e in ExamSlots, c in CidExam:
-                          cidExamslot2016[c] == e}:  Slot[c,e] = 1;
+subject to lookAtSolution{e in examSlots, c in cidExam:
+                          cidExamslot2016[c] == e}:  slot[c,e] = 1;
 
 # Does the exam table for 2016 fulfil the demands for programs:
-check {i in 1..61, c1 in Group[i], c2 in Group[i]: cidCommon[c1,c2] > 0}
+check {i in 1..61, c1 in group[i], c2 in group[i]: cidCommon[c1,c2] > 0}
                              cidExamslot2016[c1] <> cidExamslot2016[c2];
 # Does the exam table for 2016 fulfil the demands for joined students:
-check {c1 in CidExam, c2 in CidExam: cidCommon[c1,c2] > 0}
+check {c1 in cidExam, c2 in cidExam: cidCommon[c1,c2] > 0}
                              cidExamslot2016[c1] <> cidExamslot2016[c2];
 
 solve;
 
 # Check how many students are in each exam-slot...
-for {e in ExamSlots} {
-  printf : "Amount of students in exam-slot %d are %d\n", e, sum{c in CidExam}
-                                                Slot[c,e] * cidCount[c];
+for {e in examSlots} {
+  printf : "Amount of students in exam-slot %d are %d\n", e, sum{c in cidExam}
+                                                slot[c,e] * cidCount[c];
 }
 
 end;
