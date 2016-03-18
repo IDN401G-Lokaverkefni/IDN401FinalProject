@@ -38,8 +38,6 @@ for {e in examSlots} {
 
 
 end;
-
-data profrodum2016.dat;
 /*
 Here is the solution of the University:
 Number	Course	Amount	Date
