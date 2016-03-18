@@ -10,8 +10,8 @@ set examSlots := 1..(2*n); # Exam-slots (profstokkar)
 
 param cidExamslot2016{cidExam}; # Solution of the University of Iceland, for comparison
 
-param cidCount{CidExam} default 0; # Amount of students in each course
-param cidCommon{CidExam, cidExam} default 0; # Amount of students that take co-taught courses
+param cidCount{cidExam} default 0; # Amount of students in each course
+param cidCommon{cidExam, cidExam} default 0; # Amount of students that take co-taught courses
 
 var slot{cidExam, examSlots} binary; # Variable
 
@@ -35,6 +35,8 @@ for {e in examSlots} {
 }
 
 end;
+
+data profrodum2016.dat;
 /*
 Here is the solution of the University:
 Number	Course	Amount	Date
