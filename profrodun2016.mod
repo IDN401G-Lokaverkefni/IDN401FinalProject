@@ -17,8 +17,12 @@ param cidCommon{cidExam, cidExam} default 0; # Amount of students that take co-t
 var slot{cidExam, examSlots} binary; # Variable
 
 # This constraint is used to coerce the solution to be the same as the one of the University
-subject to lookAtSolution{e in examSlots, c in cidExam:
-                          cidExamslot2016[c] == e}:  slot[c,e] = 1;
+#subject to lookAtSolution{e in examSlots, c in cidExam:
+                          #cidExamslot2016[c] == e}:  slot[c,e] = 1;
+
+#minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*e;
+
+subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
 
 # Does the exam table for 2016 fulfil the demands for programs:
 check {i in 1..61, c1 in group[i], c2 in group[i]: cidCommon[c1,c2] > 0}
@@ -34,8 +38,6 @@ for {e in examSlots} {
   printf : "Amount of students in exam-slot %d are %d\n", e, sum{c in cidExam}
                                                 slot[c,e] * cidCount[c];
 }
-
-
 
 end;
 /*
