@@ -13,6 +13,7 @@ param cidExamslot2016{cidExam}; # Solution of the University of Iceland, for com
 
 param cidCount{cidExam} default 0; # Amount of students in each course
 param cidCommon{cidExam, cidExam} default 0; # Amount of students that take co-taught courses
+param conjoinedCourses{cidExam} default 'a'; # Vector containing courses that are taught jointly
 
 var slot{cidExam, examSlots} binary; # Variable
 
@@ -20,9 +21,19 @@ var slot{cidExam, examSlots} binary; # Variable
 #subject to lookAtSolution{e in examSlots, c in cidExam:
                           #cidExamslot2016[c] == e}:  slot[c,e] = 1;
 
-#minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*e;
+minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*e;
 
+# Ensure that no students in have exams in two different courses at the same time
 subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
+
+# Ensure that each course has exactly one exam in the table
+subject to hasExam{c in cidExam}:sum{e in examSlots}slot[c,e] = 1;
+
+# Ensure that all students assigned to slot have a seat to take an exam
+subject to maxInSlot{e in examSlots}:sum{c in cidExam}slot[c,e]*cidCount[c] <= 450;
+
+# Conjoined courses have exams in same slot
+# subject to jointlyTaught{e in examSlots}:sum{c in cidExam: conjoinedCourses[c] <> 'a'}slot[c,e] >= 0;
 
 # Does the exam table for 2016 fulfil the demands for programs:
 check {i in 1..61, c1 in group[i], c2 in group[i]: cidCommon[c1,c2] > 0}
