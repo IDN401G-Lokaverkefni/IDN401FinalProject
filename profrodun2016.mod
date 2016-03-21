@@ -10,7 +10,8 @@ param n := 11; # Number of exam days
 set examSlots := 1..(2*n); # Exam-slots (profstokkar)
 
 param cidExamslot2016{cidExam}; # Solution of the University of Iceland, for comparison
-param ourBasicSolution{cidexam}; # Calculated solution with 3 basic parameters
+param ourBasicSolution{cidExam}; # Calculated solution with 3 basic constraint
+param solutionWithoutSeats{cidExam}; # Calculated solution without seat constraint
 
 param cidCount{cidExam} default 0; # Amount of students in each course
 param cidCommon{cidExam, cidExam} default 0; # Amount of students that take co-taught courses
@@ -51,6 +52,8 @@ for {e in examSlots} {
   printf : "Amount of students in exam-slot %d are %d\n", e, sum{c in cidExam}
                                                 slot[c,e] * cidCount[c];
 }
+
+
 
 end;
 /*

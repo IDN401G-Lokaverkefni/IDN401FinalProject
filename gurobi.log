@@ -1158,3 +1158,221 @@ Best objective 3.000665443000e+09, best bound 3.000365426961e+09, gap 0.0100%
 
 Wrote result file 'proftafla.sol'
 
+
+Gurobi 6.5.0 (win64) logging started 03/21/16 16:25:50
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftaflaansaeta.lp
+Reading time = 0.07 seconds
+(null): 26915 rows, 2618 columns, 56210 nonzeros
+Optimize a model with 26915 rows, 2618 columns and 56210 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 5e+10]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 8.75767e+11
+Presolve removed 24230 rows and 396 columns
+Presolve time: 0.14s
+Presolved: 2685 rows, 2222 columns, 16486 nonzeros
+Found heuristic solution: objective 1.161811e+10
+Variable types: 0 continuous, 2222 integer (2222 binary)
+
+Root relaxation: objective 1.801147e+09, 917 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1.8011e+09    0  139 1.1618e+10 1.8011e+09  84.5%     -    0s
+H    0     0                    3.359702e+09 1.8011e+09  46.4%     -    0s
+H    0     0                    3.359298e+09 1.8011e+09  46.4%     -    0s
+H    0     0                    3.124207e+09 1.8011e+09  42.3%     -    0s
+     0     0 1.8015e+09    0   96 3.1242e+09 1.8015e+09  42.3%     -    0s
+H    0     0                    2.109715e+09 1.8015e+09  14.6%     -    0s
+     0     0 1.8015e+09    0  149 2.1097e+09 1.8015e+09  14.6%     -    0s
+H    0     0                    1.915147e+09 1.8015e+09  5.93%     -    0s
+H    0     0                    1.907761e+09 1.8015e+09  5.57%     -    0s
+     0     0 1.8015e+09    0  101 1.9078e+09 1.8015e+09  5.57%     -    0s
+     0     0 1.8015e+09    0  149 1.9078e+09 1.8015e+09  5.57%     -    0s
+H    0     0                    1.873531e+09 1.8015e+09  3.84%     -    0s
+     0     0 1.8015e+09    0  106 1.8735e+09 1.8015e+09  3.84%     -    0s
+H    0     0                    1.806969e+09 1.8015e+09  0.30%     -    0s
+H    0     0                    1.804828e+09 1.8015e+09  0.18%     -    0s
+H    0     0                    1.803240e+09 1.8015e+09  0.09%     -    0s
+H    0     0                    1.801606e+09 1.8015e+09  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Clique: 7
+  Zero half: 9
+
+Explored 0 nodes (5185 simplex iterations) in 0.73 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.801606025000e+09, best bound 1.801534185000e+09, gap 0.0040%
+
+Wrote result file 'proftaflaansaeta.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/21/16 16:33:36
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.08 seconds
+(null): 26937 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 26937 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 5e+10]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 8.37651e+11
+Presolve removed 24183 rows and 220 columns
+Presolve time: 0.17s
+Presolved: 2754 rows, 2398 columns, 19363 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 2.720344e+09, 1382 iterations, 0.07 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2.7203e+09    0  240 8.3765e+11 2.7203e+09   100%     -    0s
+H    0     0                    1.178153e+10 2.7203e+09  76.9%     -    0s
+H    0     0                    9.120552e+09 2.7203e+09  70.2%     -    0s
+H    0     0                    9.022297e+09 2.7203e+09  69.8%     -    0s
+     0     0 2.7435e+09    0  198 9.0223e+09 2.7435e+09  69.6%     -    0s
+     0     0 2.7435e+09    0  240 9.0223e+09 2.7435e+09  69.6%     -    0s
+     0     0 2.8140e+09    0  234 9.0223e+09 2.8140e+09  68.8%     -    0s
+H    0     0                    4.572188e+09 2.8140e+09  38.5%     -    0s
+     0     0 2.8160e+09    0  222 4.5722e+09 2.8160e+09  38.4%     -    0s
+     0     0 2.8261e+09    0  237 4.5722e+09 2.8261e+09  38.2%     -    1s
+     0     0 2.8376e+09    0  234 4.5722e+09 2.8376e+09  37.9%     -    1s
+     0     0 2.8411e+09    0  252 4.5722e+09 2.8411e+09  37.9%     -    1s
+H    0     0                    3.589488e+09 2.8411e+09  20.9%     -    1s
+     0     0 2.8411e+09    0  266 3.5895e+09 2.8411e+09  20.9%     -    1s
+     0     0 2.8467e+09    0  264 3.5895e+09 2.8467e+09  20.7%     -    1s
+     0     0 2.8467e+09    0  240 3.5895e+09 2.8467e+09  20.7%     -    1s
+     0     0 2.8467e+09    0  251 3.5895e+09 2.8467e+09  20.7%     -    2s
+     0     0 2.8467e+09    0  244 3.5895e+09 2.8467e+09  20.7%     -    2s
+     0     0 2.8467e+09    0  255 3.5895e+09 2.8467e+09  20.7%     -    2s
+H    0     0                    3.589482e+09 2.8467e+09  20.7%     -    2s
+     0     0 2.8467e+09    0  244 3.5895e+09 2.8467e+09  20.7%     -    2s
+     0     0 2.8467e+09    0  233 3.5895e+09 2.8467e+09  20.7%     -    2s
+     0     0 2.8485e+09    0  243 3.5895e+09 2.8485e+09  20.6%     -    2s
+     0     0 2.8511e+09    0  244 3.5895e+09 2.8511e+09  20.6%     -    2s
+     0     0 2.8541e+09    0  258 3.5895e+09 2.8541e+09  20.5%     -    2s
+     0     0 2.8548e+09    0  271 3.5895e+09 2.8548e+09  20.5%     -    2s
+     0     0 2.8562e+09    0  274 3.5895e+09 2.8562e+09  20.4%     -    2s
+     0     0 2.8575e+09    0  272 3.5895e+09 2.8575e+09  20.4%     -    2s
+     0     0 2.8596e+09    0  274 3.5895e+09 2.8596e+09  20.3%     -    3s
+     0     0 2.8604e+09    0  267 3.5895e+09 2.8604e+09  20.3%     -    3s
+     0     0 2.8620e+09    0  277 3.5895e+09 2.8620e+09  20.3%     -    3s
+     0     0 2.8629e+09    0  248 3.5895e+09 2.8629e+09  20.2%     -    3s
+     0     0 2.8646e+09    0  249 3.5895e+09 2.8646e+09  20.2%     -    3s
+     0     0 2.8680e+09    0  240 3.5895e+09 2.8680e+09  20.1%     -    3s
+     0     0 2.8691e+09    0  260 3.5895e+09 2.8691e+09  20.1%     -    3s
+     0     0 2.8707e+09    0  264 3.5895e+09 2.8707e+09  20.0%     -    3s
+     0     0 2.8710e+09    0  265 3.5895e+09 2.8710e+09  20.0%     -    3s
+     0     0 2.8729e+09    0  271 3.5895e+09 2.8729e+09  20.0%     -    3s
+     0     0 2.8743e+09    0  266 3.5895e+09 2.8743e+09  19.9%     -    4s
+     0     0 2.8746e+09    0  280 3.5895e+09 2.8746e+09  19.9%     -    4s
+     0     0 2.8755e+09    0  267 3.5895e+09 2.8755e+09  19.9%     -    4s
+     0     0 2.8760e+09    0  264 3.5895e+09 2.8760e+09  19.9%     -    4s
+     0     0 2.8762e+09    0  268 3.5895e+09 2.8762e+09  19.9%     -    4s
+     0     0 2.8764e+09    0  251 3.5895e+09 2.8764e+09  19.9%     -    4s
+     0     0          -    0      3.5895e+09 2.8764e+09  19.9%     -    4s
+
+Cutting planes:
+  Gomory: 1
+  Clique: 30
+  MIR: 29
+  GUB cover: 1
+  Zero half: 27
+
+Explored 0 nodes (12414 simplex iterations) in 4.38 seconds
+Thread count was 8 (of 8 available processors)
+
+Solve interrupted
+Best objective 3.589481654000e+09, best bound 2.876445022353e+09, gap 19.8646%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/21/16 16:34:02
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftaflaansaeta.lp
+Reading time = 0.11 seconds
+(null): 26915 rows, 2618 columns, 56210 nonzeros
+Optimize a model with 26915 rows, 2618 columns and 56210 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 5e+10]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 8.75767e+11
+Presolve removed 24230 rows and 396 columns
+Presolve time: 0.19s
+Presolved: 2685 rows, 2222 columns, 16486 nonzeros
+Found heuristic solution: objective 1.161811e+10
+Variable types: 0 continuous, 2222 integer (2222 binary)
+
+Root relaxation: objective 1.801147e+09, 917 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1.8011e+09    0  139 1.1618e+10 1.8011e+09  84.5%     -    0s
+H    0     0                    3.359702e+09 1.8011e+09  46.4%     -    0s
+H    0     0                    3.359298e+09 1.8011e+09  46.4%     -    0s
+H    0     0                    3.124207e+09 1.8011e+09  42.3%     -    0s
+     0     0 1.8015e+09    0   96 3.1242e+09 1.8015e+09  42.3%     -    0s
+H    0     0                    2.109715e+09 1.8015e+09  14.6%     -    0s
+     0     0 1.8015e+09    0  149 2.1097e+09 1.8015e+09  14.6%     -    0s
+H    0     0                    1.915147e+09 1.8015e+09  5.93%     -    0s
+H    0     0                    1.907761e+09 1.8015e+09  5.57%     -    0s
+     0     0 1.8015e+09    0  101 1.9078e+09 1.8015e+09  5.57%     -    0s
+     0     0 1.8015e+09    0  149 1.9078e+09 1.8015e+09  5.57%     -    0s
+H    0     0                    1.873531e+09 1.8015e+09  3.84%     -    0s
+     0     0 1.8015e+09    0  106 1.8735e+09 1.8015e+09  3.84%     -    0s
+H    0     0                    1.806969e+09 1.8015e+09  0.30%     -    0s
+H    0     0                    1.804828e+09 1.8015e+09  0.18%     -    0s
+H    0     0                    1.803240e+09 1.8015e+09  0.09%     -    0s
+H    0     0                    1.801606e+09 1.8015e+09  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Clique: 7
+  Zero half: 9
+
+Explored 0 nodes (5185 simplex iterations) in 0.96 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.801606025000e+09, best bound 1.801534185000e+09, gap 0.0040%
+
+Wrote result file 'proftaflaansaeta.sol'
+
