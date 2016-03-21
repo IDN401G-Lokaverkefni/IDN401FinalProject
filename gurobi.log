@@ -448,3 +448,291 @@ Best objective 4.280000000000e+02, best bound 4.280000000000e+02, gap 0.0%
 
 Wrote result file 'proftafla.sol'
 
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:00:16
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 1.06 seconds
+(null): 338259 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 338259 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 335436 rows and 0 columns
+Presolve time: 0.41s
+Presolved: 2823 rows, 2618 columns, 19682 nonzeros
+Variable types: 0 continuous, 2618 integer (2618 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.45 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:02:02
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 1.01 seconds
+(null): 338259 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 338259 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 335436 rows and 0 columns
+Presolve time: 0.24s
+Presolved: 2823 rows, 2618 columns, 19682 nonzeros
+Variable types: 0 continuous, 2618 integer (2618 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.27 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:03:52
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 1.04 seconds
+(null): 338259 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 338259 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 335436 rows and 0 columns
+Presolve time: 0.24s
+Presolved: 2823 rows, 2618 columns, 19682 nonzeros
+Variable types: 0 continuous, 2618 integer (2618 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.27 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:04:08
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 1.09 seconds
+(null): 338259 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 338259 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 335436 rows and 0 columns
+Presolve time: 0.24s
+Presolved: 2823 rows, 2618 columns, 19682 nonzeros
+Variable types: 0 continuous, 2618 integer (2618 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.28 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:06:08
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.99 seconds
+(null): 338259 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 338259 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 335436 rows and 0 columns
+Presolve time: 0.24s
+Presolved: 2823 rows, 2618 columns, 19682 nonzeros
+Variable types: 0 continuous, 2618 integer (2618 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.28 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:08:38
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 1.00 seconds
+(null): 338259 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 338259 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 335436 rows and 0 columns
+Presolve time: 0.26s
+Presolved: 2823 rows, 2618 columns, 19682 nonzeros
+Variable types: 0 continuous, 2618 integer (2618 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.29 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:09:42
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.99 seconds
+(null): 338259 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 338259 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 335344 rows and 0 columns
+Presolve time: 0.08s
+
+Explored 0 nodes (0 simplex iterations) in 0.11 seconds
+Thread count was 1 (of 4 available processors)
+
+Solve interrupted
+Best objective 0.000000000000e+00, best bound -, gap -
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:10:28
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.99 seconds
+(null): 338259 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 338259 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 335198 rows and 0 columns
+Presolve time: 0.25s
+Presolved: 3061 rows, 2618 columns, 20272 nonzeros
+Variable types: 0 continuous, 2618 integer (2618 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.28 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:15:11
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+
+ERROR 10003: Unable to open file 'proftafla.lp' for input
+
+
+Gurobi 6.5.1 (win64) logging started 03/21/16 14:17:35
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.09 seconds
+(null): 26937 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 26937 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 24166 rows and 220 columns
+Presolve time: 0.19s
+Presolved: 2771 rows, 2398 columns, 19236 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
