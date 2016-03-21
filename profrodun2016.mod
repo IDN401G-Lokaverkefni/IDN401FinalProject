@@ -5,9 +5,11 @@
 
 set cidExam; # Set of courses
 set group{1..61} within cidExam; # Defined programs (namsbrautir/leidir)
+#set noExamDays;
 
-param n := 11; # Number of exam days
+param n := 16; # Number of days in the exam period
 set examSlots := 1..(2*n); # Exam-slots (profstokkar)
+set offSlots; #Set of slots that belong to off Days
 
 param cidExamslot2016{cidExam}; # Solution of the University of Iceland, for comparison
 param ourBasicSolution{cidExam}; # Calculated solution with 3 basic constraint
@@ -17,6 +19,8 @@ param cidCount{cidExam} default 0; # Amount of students in each course
 param cidCommon{cidExam, cidExam} default 0; # Amount of students that take co-taught courses
 param conjoinedCourses{cidExam, cidExam} default 0; # Vector containing courses that are taught jointly
 ######## VECTOR WITH MULTIPLICITY OF CONJOINED TESTS ########
+
+
 
 var slot{cidExam, examSlots} binary; # Variable
 
@@ -28,7 +32,7 @@ var slot{cidExam, examSlots} binary; # Variable
 # subject to coerceSolution{e in examSlots, c in cidExam:
 #  solutionWithoutSeats[c] == e}: slot[c,e] = 1;
 
- minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
+minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
 
 # Ensure that no students have exams in two different courses at the same time
  subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
@@ -41,6 +45,9 @@ var slot{cidExam, examSlots} binary; # Variable
 
 # Conjoined courses have exams in same slot
  subject to jointlyTaught{c1 in cidExam, c2 in cidExam, e in examSlots: conjoinedCourses[c1,c2] <>0}:slot[c1,e]=slot[c2,e];
+
+#Ensure that there are no exams on weekends and holidays
+subject to noExams{c in cidExam, e in examSlots: e in offSlots}: slot[c,e] = 0;
 
 # Does the exam table for 2016 fulfil the demands for programs:
 check {i in 1..61, c1 in group[i], c2 in group[i]: cidCommon[c1,c2] > 0}

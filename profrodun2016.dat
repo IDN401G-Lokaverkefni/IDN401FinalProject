@@ -1,3 +1,16 @@
+set offSlots :=
+11
+12
+13
+14
+21
+22
+25
+26
+27
+28;
+
+
 param cidCount :=
 EFN205G 22
 EFN214G 54
