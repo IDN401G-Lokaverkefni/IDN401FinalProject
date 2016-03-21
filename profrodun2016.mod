@@ -24,19 +24,23 @@ var slot{cidExam, examSlots} binary; # Variable
 #subject to lookAtSolution{e in examSlots, c in cidExam:
                           #cidExamslot2016[c] == e}:  slot[c,e] = 1;
 
-minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
+# This constraint its used to coerce the solution to be one of our own solutions
+# subject to coerceSolution{e in examSlots, c in cidExam:
+#  solutionWithoutSeats[c] == e}: slot[c,e] = 1;
+
+ minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
 
 # Ensure that no students have exams in two different courses at the same time
-subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
+ subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
 
 # Ensure that each course has exactly one exam in the table
-subject to hasExam{c in cidExam}:sum{e in examSlots}slot[c,e] = 1;
+ subject to hasExam{c in cidExam}:sum{e in examSlots}slot[c,e] = 1;
 
 # Ensure that all students assigned to slot have a seat to take an exam
-# subject to maxInSlot{e in examSlots}:sum{c in cidExam}slot[c,e]*cidCount[c] <= 450;
+ subject to maxInSlot{e in examSlots}:sum{c in cidExam}slot[c,e]*cidCount[c] <= 450;
 
 # Conjoined courses have exams in same slot
-subject to jointlyTaught{c1 in cidExam, c2 in cidExam, e in examSlots: conjoinedCourses[c1,c2] <>0}:slot[c1,e]=slot[c2,e];
+ subject to jointlyTaught{c1 in cidExam, c2 in cidExam, e in examSlots: conjoinedCourses[c1,c2] <>0}:slot[c1,e]=slot[c2,e];
 
 # Does the exam table for 2016 fulfil the demands for programs:
 check {i in 1..61, c1 in group[i], c2 in group[i]: cidCommon[c1,c2] > 0}
@@ -52,8 +56,6 @@ for {e in examSlots} {
   printf : "Amount of students in exam-slot %d are %d\n", e, sum{c in cidExam}
                                                 slot[c,e] * cidCount[c];
 }
-
-
 
 end;
 /*
