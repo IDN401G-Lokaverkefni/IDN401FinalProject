@@ -10,6 +10,7 @@ param n := 11; # Number of exam days
 set examSlots := 1..(2*n); # Exam-slots (profstokkar)
 
 param cidExamslot2016{cidExam}; # Solution of the University of Iceland, for comparison
+param ourBasicSolution{cidexam}; # Calculated solution with 3 basic parameters
 
 param cidCount{cidExam} default 0; # Amount of students in each course
 param cidCommon{cidExam, cidExam} default 0; # Amount of students that take co-taught courses
@@ -22,7 +23,7 @@ var slot{cidExam, examSlots} binary; # Variable
 #subject to lookAtSolution{e in examSlots, c in cidExam:
                           #cidExamslot2016[c] == e}:  slot[c,e] = 1;
 
-minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*e;
+minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
 
 # Ensure that no students have exams in two different courses at the same time
 subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
@@ -31,7 +32,7 @@ subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c
 subject to hasExam{c in cidExam}:sum{e in examSlots}slot[c,e] = 1;
 
 # Ensure that all students assigned to slot have a seat to take an exam
-subject to maxInSlot{e in examSlots}:sum{c in cidExam}slot[c,e]*cidCount[c] <= 450;
+# subject to maxInSlot{e in examSlots}:sum{c in cidExam}slot[c,e]*cidCount[c] <= 450;
 
 # Conjoined courses have exams in same slot
 subject to jointlyTaught{c1 in cidExam, c2 in cidExam, e in examSlots: conjoinedCourses[c1,c2] <>0}:slot[c1,e]=slot[c2,e];
