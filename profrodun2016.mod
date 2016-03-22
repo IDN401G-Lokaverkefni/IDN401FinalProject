@@ -18,8 +18,8 @@ param solutionWithoutSeats{cidExam}; # Calculated solution without seat constrai
 param cidCount{cidExam} default 0; # Amount of students in each course
 param cidCommon{cidExam, cidExam} default 0; # Amount of students that take co-taught courses
 param conjoinedCourses{cidExam, cidExam} default 0; # Vector containing courses that are taught jointly
-######## VECTOR WITH MULTIPLICITY OF CONJOINED TESTS ########
 
+param studentsTolerance := 2;
 
 
 var slot{cidExam, examSlots} binary; # Variable
@@ -35,7 +35,7 @@ var slot{cidExam, examSlots} binary; # Variable
 #minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
 
 # Courses with the most students have exams in the beginning of exam period
-minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(cidCount[c]*(e^2))^2;
+minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(cidCount[c]*(e^2))^4;
 
 # Ensure that no students have exams in two different courses at the same time
  subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
@@ -53,7 +53,7 @@ minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(cidCount[c]*(e
 subject to noExams{c in cidExam, e in examSlots: e in offSlots}: slot[c,e] = 0;
 
 #Ensure that a student is not in exam slots side by side
-#subject to examSpace{e in examSlots, c1 in cidExam, c2 in cidExam: cidCommon[c1, c2] <> 0 && e+1 in examSlots}: slot[c1,e]+slot[c2, e+1] <= 1;
+subject to examSpace{e in examSlots, c1 in cidExam, c2 in cidExam: cidCommon[c1, c2] >= studentsTolerance && e+1 in examSlots}: slot[c1,e]+slot[c2, e+1] <= 1;
 
 # Does the exam table for 2016 fulfil the demands for programs:
 check {i in 1..61, c1 in group[i], c2 in group[i]: cidCommon[c1,c2] > 0}

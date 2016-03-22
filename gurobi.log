@@ -1376,3 +1376,229 @@ Best objective 1.801606025000e+09, best bound 1.801534185000e+09, gap 0.0040%
 
 Wrote result file 'proftaflaansaeta.sol'
 
+
+Gurobi 6.5.0 (win64) logging started 03/22/16 14:19:36
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.23 seconds
+(null): 60901 rows, 3808 columns, 127926 nonzeros
+Optimize a model with 60901 rows, 3808 columns and 127926 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+22]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56546 rows and 1410 columns
+Presolve time: 0.75s
+Presolved: 4355 rows, 2398 columns, 38093 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+Found heuristic solution: objective 8.454609e+21
+Warning: switch to quad precision
+
+Root relaxation: objective 9.532135e+18, 6441 iterations, 0.75 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9.5321e+18    0  411 8.4546e+21 9.5321e+18   100%     -    1s
+H    0     0                    3.068070e+21 9.5321e+18   100%     -    1s
+     0     0 1.3052e+19    0  446 3.0681e+21 1.3052e+19   100%     -    2s
+     0     0 1.3729e+19    0  406 3.0681e+21 1.3729e+19   100%     -    2s
+     0     0 1.5067e+19    0  399 3.0681e+21 1.5067e+19   100%     -    3s
+H    0     0                    4.259834e+20 1.5067e+19  96.5%     -    3s
+     0     0 1.5375e+19    0  404 4.2598e+20 1.5375e+19  96.4%     -    3s
+     0     0 1.5857e+19    0  408 4.2598e+20 1.5857e+19  96.3%     -    3s
+     0     0 1.5966e+19    0  424 4.2598e+20 1.5966e+19  96.3%     -    3s
+     0     0 1.5995e+19    0  424 4.2598e+20 1.5995e+19  96.2%     -    4s
+     0     0 1.6007e+19    0  419 4.2598e+20 1.6007e+19  96.2%     -    4s
+     0     0 1.6060e+19    0  424 4.2598e+20 1.6060e+19  96.2%     -    5s
+     0     0 1.6070e+19    0  413 4.2598e+20 1.6070e+19  96.2%     -    5s
+     0     0 1.6077e+19    0  424 4.2598e+20 1.6077e+19  96.2%     -    5s
+H    0     0                    4.230762e+20 1.6077e+19  96.2%     -    5s
+     0     0 1.6079e+19    0  429 4.2308e+20 1.6079e+19  96.2%     -    5s
+     0     0 1.6085e+19    0  428 4.2308e+20 1.6085e+19  96.2%     -    5s
+     0     0 1.6087e+19    0  436 4.2308e+20 1.6087e+19  96.2%     -    5s
+     0     0 1.6088e+19    0  442 4.2308e+20 1.6088e+19  96.2%     -    6s
+     0     0 1.6088e+19    0  441 4.2308e+20 1.6088e+19  96.2%     -    6s
+     0     2 1.6088e+19    0  441 4.2308e+20 1.6088e+19  96.2%     -    9s
+     7     9 1.6088e+19    5  440 4.2308e+20 1.6088e+19  96.2%   292   10s
+    26    27 1.7645e+19   10  391 4.2308e+20 1.6088e+19  96.2%  1262   16s
+H   37    39                    1.083338e+20 1.6088e+19  85.1%  1350   19s
+    38    37 1.7287e+19   14  405 1.0833e+20 1.6088e+19  85.1%  1346   20s
+
+Cutting planes:
+  Clique: 201
+  MIR: 2
+  Zero half: 9
+
+Explored 41 nodes (69940 simplex iterations) in 20.54 seconds
+Thread count was 4 (of 4 available processors)
+
+Solve interrupted
+Best objective 1.083338051135e+20, best bound 1.608775343908e+19, gap 85.1498%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/22/16 14:20:21
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.25 seconds
+(null): 77765 rows, 3808 columns, 161654 nonzeros
+Optimize a model with 77765 rows, 3808 columns and 161654 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+22]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 74253 rows and 1410 columns
+Presolve time: 0.79s
+Presolved: 3512 rows, 2398 columns, 39108 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 2371 iterations, 0.18 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    1s
+
+Explored 0 nodes (2371 simplex iterations) in 1.08 seconds
+Thread count was 4 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.0 (win64) logging started 03/22/16 14:20:48
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.22 seconds
+(null): 65861 rows, 3808 columns, 137846 nonzeros
+Optimize a model with 65861 rows, 3808 columns and 137846 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+22]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 61458 rows and 1410 columns
+Presolve time: 0.86s
+Presolved: 4403 rows, 2398 columns, 41608 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 7.747932e+19, 5610 iterations, 0.63 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 7.7479e+19    0  398          - 7.7479e+19      -     -    1s
+     0     0 1.4391e+20    0  428          - 1.4391e+20      -     -    2s
+     0     0 1.4412e+20    0  441          - 1.4412e+20      -     -    2s
+     0     0 1.5284e+20    0  454          - 1.5284e+20      -     -    3s
+     0     0 1.6413e+20    0  400          - 1.6413e+20      -     -    3s
+     0     0 1.6608e+20    0  448          - 1.6608e+20      -     -    4s
+H    0     0                    2.062647e+20 1.6608e+20  19.5%     -    4s
+     0     0 1.7439e+20    0  340 2.0626e+20 1.7439e+20  15.5%     -    4s
+     0     0 1.7441e+20    0  365 2.0626e+20 1.7441e+20  15.4%     -    5s
+     0     0 1.7442e+20    0  362 2.0626e+20 1.7442e+20  15.4%     -    5s
+     0     0 1.7443e+20    0  362 2.0626e+20 1.7443e+20  15.4%     -    5s
+     0     0 1.7443e+20    0  364 2.0626e+20 1.7443e+20  15.4%     -    5s
+     0     0 1.7443e+20    0  371 2.0626e+20 1.7443e+20  15.4%     -    6s
+     0     0 1.7444e+20    0  376 2.0626e+20 1.7444e+20  15.4%     -    6s
+     0     0 1.7444e+20    0  398 2.0626e+20 1.7444e+20  15.4%     -    6s
+     0     0 1.7444e+20    0  394 2.0626e+20 1.7444e+20  15.4%     -    6s
+     0     0 1.7444e+20    0  391 2.0626e+20 1.7444e+20  15.4%     -    6s
+     0     0 1.7444e+20    0  391 2.0626e+20 1.7444e+20  15.4%     -    8s
+H    0     0                    2.062642e+20 1.7444e+20  15.4%     -   12s
+     0     2 1.7444e+20    0  391 2.0626e+20 1.7444e+20  15.4%     -   13s
+     4     6 1.7446e+20    2  404 2.0626e+20 1.7446e+20  15.4%  1723   15s
+    18    19 1.7472e+20    6  338 2.0626e+20 1.7447e+20  15.4%  1504   20s
+H   41    28                    1.758232e+20 1.7447e+20  0.77%  1133   23s
+   162   138 1.7474e+20    3  329 1.7582e+20 1.7449e+20  0.76%   362   25s
+H  166   127                    1.758097e+20 1.7449e+20  0.75%   353   25s
+   237   157     cutoff   18      1.7581e+20 1.7456e+20  0.71%   399   30s
+   308   164 1.7503e+20    7  357 1.7581e+20 1.7462e+20  0.68%   456   35s
+H  630   121                    1.757614e+20 1.7466e+20  0.62%   292   39s
+   659   114     cutoff   59      1.7576e+20 1.7466e+20  0.62%   280   40s
+H  837   242                    1.757610e+20 1.7478e+20  0.56%   253   45s
+   844   246 1.7503e+20    8  388 1.7576e+20 1.7478e+20  0.56%   251   50s
+   850   250 1.7495e+20    7  406 1.7576e+20 1.7478e+20  0.56%   250   55s
+H  850   237                    1.756906e+20 1.7478e+20  0.52%   250   55s
+H  852   227                    1.756887e+20 1.7478e+20  0.52%   249   57s
+H  856   217                    1.756887e+20 1.7478e+20  0.52%   248   60s
+   863   222 1.7554e+20   21  418 1.7569e+20 1.7478e+20  0.52%   246   65s
+   871   227 1.7520e+20   14  429 1.7569e+20 1.7478e+20  0.52%   244   70s
+   877   231 1.7554e+20   38  405 1.7569e+20 1.7478e+20  0.52%   242   75s
+   885   237 1.7554e+20   46  383 1.7569e+20 1.7478e+20  0.52%   240   80s
+   891   241 1.7520e+20   14  408 1.7569e+20 1.7478e+20  0.52%   238   85s
+   897   245 1.7554e+20   38  393 1.7569e+20 1.7478e+20  0.52%   236   90s
+   904   249 1.7503e+20    8  365 1.7569e+20 1.7483e+20  0.49%   235   95s
+   910   253 1.7495e+20    7  423 1.7569e+20 1.7484e+20  0.48%   233  100s
+   916   257 1.7554e+20   39  402 1.7569e+20 1.7485e+20  0.48%   232  105s
+H  920   246                    1.756887e+20 1.7486e+20  0.47%   231  110s
+   927   251 1.7554e+20   38  405 1.7569e+20 1.7486e+20  0.47%   229  115s
+   933   255 1.7554e+20   38  397 1.7569e+20 1.7487e+20  0.47%   227  120s
+   941   260 1.7525e+20    8  421 1.7569e+20 1.7487e+20  0.47%   225  125s
+   947   264 1.7554e+20   38  431 1.7569e+20 1.7487e+20  0.46%   224  130s
+   955   269 1.7569e+20   58  409 1.7569e+20 1.7488e+20  0.46%   222  136s
+   962   274 1.7554e+20   18  417 1.7569e+20 1.7489e+20  0.46%   220  140s
+   966   277 1.7508e+20   13  414 1.7569e+20 1.7489e+20  0.46%   220  145s
+   973   281 1.7554e+20   38  427 1.7569e+20 1.7489e+20  0.45%   218  150s
+   981   287 1.7525e+20    8  439 1.7569e+20 1.7489e+20  0.45%   216  155s
+   983   290 1.7490e+20   14  393 1.7569e+20 1.7489e+20  0.45%   282  160s
+   986   291 1.7510e+20   16  348 1.7569e+20 1.7489e+20  0.45%   289  167s
+H  991   276                    1.756229e+20 1.7490e+20  0.41%   296  169s
+   992   275 1.7531e+20   18  295 1.7562e+20 1.7490e+20  0.41%   299  171s
+H  993   259                    1.756226e+20 1.7490e+20  0.41%   299  171s
+H  999   247                    1.755461e+20 1.7490e+20  0.37%   301  171s
+H 1049   223                    1.755461e+20 1.7520e+20  0.20%   312  174s
+  1070   218 1.7554e+20   18  217 1.7555e+20 1.7527e+20  0.16%   312  176s
+H 1164   174                    1.755459e+20 1.7527e+20  0.16%   291  176s
+H 1336   108                    1.755397e+20 1.7527e+20  0.15%   255  176s
+H 1455   193                    1.755388e+20 1.7534e+20  0.12%   236  178s
+H 1623   151                    1.755383e+20 1.7534e+20  0.12%   213  178s
+H 1797   355                    1.755381e+20 1.7534e+20  0.12%   193  178s
+H 1932   333                    1.755381e+20 1.7554e+20  0.00%   181  178s
+H 2028   243                    1.755380e+20 1.7554e+20  0.00%   173  178s
+
+Cutting planes:
+  Cover: 2
+  Clique: 107
+  MIR: 3
+  Flow cover: 20
+  Zero half: 128
+
+Explored 2030 nodes (373407 simplex iterations) in 178.39 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.755380057604e+20, best bound 1.755378054559e+20, gap 0.0001%
+
+Wrote result file 'proftafla.sol'
+
