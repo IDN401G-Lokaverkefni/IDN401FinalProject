@@ -4,13 +4,8 @@ var dataFile = require("./dataFile.js");
 
 // Import data
 dataMatrixWithConstraints = dataFile.dataMatrixWithConstraints;
+dataMatrixWithoutSeats = dataFile.dataMatrixWithoutSeats;
 groupArray = dataFile.groupArray;
-
-// Tests to see if data is correct
-console.log(dataMatrixWithConstraints[1][3]);
-console.log(dataMatrixWithConstraints[2][3]);
-console.log("Length of first line in dataMatrixWithConstraints: " + dataMatrixWithConstraints[1].length);
-console.log("Length of second line in dataMatrixWithConstraints: " + dataMatrixWithConstraints[2].length);
 
 // Function to calculate how many rest days a group receives on average. Takes
 // the group, which exam setup is to be used (dataMatrix) and a boolean value
@@ -40,8 +35,6 @@ var processGroup = function(group, dataMatrix, addPrecedingDays){
   restDataArray.sort(function(x,y){return x-y});
   // Convert data to days in stead of slots
   restDataArrayInDays = restDataArray.map(function(x){return Math.ceil(x/2)});
-  console.log(restDataArray);
-  console.log(restDataArrayInDays);
   // Calculate average amount of rest that each group receives
   for(var r = 0; r < restDataArray.length - 1; r++){
     restSumInSlots += restDataArray[r+1] - restDataArray[r] - 1;
@@ -54,8 +47,6 @@ var processGroup = function(group, dataMatrix, addPrecedingDays){
     restSumInSlots = restSumInSlots/(restDataArray.length - 1);
     restSumInDays = restSumInDays/(restDataArrayInDays.length - 1);
   }
-  console.log("Slots: " + restSumInSlots);
-  console.log("Days: " + restSumInDays);
   return [restSumInSlots, restSumInDays];
 };
 
@@ -78,15 +69,10 @@ var processDataMatrix = function(groups, dataMatrix, addPrecedingDays){
   console.log("Average amount of rest in days for groups: " + avgDays);
 };
 
-processGroup(groupArray[7],dataMatrixWithConstraints,false);
-processGroup(groupArray[17],dataMatrixWithConstraints,false);
-processGroup(groupArray[27],dataMatrixWithConstraints,false);
-processGroup(groupArray[37],dataMatrixWithConstraints,false);
-
-processGroup(groupArray[7],dataMatrixWithConstraints,true);
-processGroup(groupArray[17],dataMatrixWithConstraints,true);
-processGroup(groupArray[27],dataMatrixWithConstraints,true);
-processGroup(groupArray[37],dataMatrixWithConstraints,true);
-
+console.log("Data with 3 basic constraints: ");
 processDataMatrix(groupArray, dataMatrixWithConstraints, false);
 processDataMatrix(groupArray, dataMatrixWithConstraints, true);
+
+console.log("Data without seat constraint: ");
+processDataMatrix(groupArray, dataMatrixWithoutSeats, false);
+processDataMatrix(groupArray, dataMatrixWithoutSeats, true);
