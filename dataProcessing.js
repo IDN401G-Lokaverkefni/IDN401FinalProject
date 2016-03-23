@@ -65,6 +65,12 @@ var processDataMatrix = function(groups, dataMatrix, addPrecedingDays){
   }
   avgSlots = totalSumInSlots/groups.length;
   avgDays = totalSumInDays/groups.length;
+  if(addPrecedingDays){
+    console.log("Preceding days added: ");
+  }
+  else{
+    console.log("Preceding days not added: ");
+  }
   console.log("Average amount of rest in slots for groups: " + avgSlots);
   console.log("Average amount of rest in days for groups: " + avgDays);
 };
@@ -72,6 +78,8 @@ var processDataMatrix = function(groups, dataMatrix, addPrecedingDays){
 console.log("Data with 3 basic constraints: ");
 processDataMatrix(groupArray, dataMatrixWithConstraints, false);
 processDataMatrix(groupArray, dataMatrixWithConstraints, true);
+
+console.log("--------------------------------------------------------------");
 
 console.log("Data without seat constraint: ");
 processDataMatrix(groupArray, dataMatrixWithoutSeats, false);
