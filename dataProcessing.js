@@ -1,0 +1,92 @@
+
+// Fetch data to be processed
+var dataFile = require("./dataFile.js");
+
+// Import data
+dataMatrixWithConstraints = dataFile.dataMatrixWithConstraints;
+groupArray = dataFile.groupArray;
+
+// Tests to see if data is correct
+console.log(dataMatrixWithConstraints[1][3]);
+console.log(dataMatrixWithConstraints[2][3]);
+console.log("Length of first line in dataMatrixWithConstraints: " + dataMatrixWithConstraints[1].length);
+console.log("Length of second line in dataMatrixWithConstraints: " + dataMatrixWithConstraints[2].length);
+
+// Function to calculate how many rest days a group receives on average. Takes
+// the group, which exam setup is to be used (dataMatrix) and a boolean value
+// (addPrecedingDays) to tell whether days/slots before the first exam are to
+// be calculated as rest days or not.
+// Returns array[2] with average amount of rest in slots (first value) and
+// average amount of rest in days (second value) for the group.
+var processGroup = function(group, dataMatrix, addPrecedingDays){
+  // Function variables for calculations
+  var restDataArray = [];
+  var restDataArrayInDays = [];
+  var restSumInSlots = 0;
+  var restSumInDays = 0;
+  // Add slots, where group has to take exams, to restDataArray
+  for(g in group){
+    for(d in dataMatrix[1]){
+      if(dataMatrix[1][d].localeCompare(group[g]) === 0){
+        restDataArray.push(dataMatrix[2][d]);
+      }
+    };
+  };
+  // Add first days/slots into calculations if necessary
+  if(addPrecedingDays){
+    restDataArray.push(0);
+  }
+  // Sort restDataArray in ascending order
+  restDataArray.sort(function(x,y){return x-y});
+  // Convert data to days in stead of slots
+  restDataArrayInDays = restDataArray.map(function(x){return Math.ceil(x/2)});
+  console.log(restDataArray);
+  console.log(restDataArrayInDays);
+  // Calculate average amount of rest that each group receives
+  for(var r = 0; r < restDataArray.length - 1; r++){
+    restSumInSlots += restDataArray[r+1] - restDataArray[r] - 1;
+    if(restDataArrayInDays[r+1] - restDataArrayInDays[r] > 0){
+      restSumInDays += restDataArrayInDays[r+1] - restDataArrayInDays[r] - 1;
+    }
+  }
+  // Divide by amount of periods that are between exams
+  if(restDataArray.length !== 1){
+    restSumInSlots = restSumInSlots/(restDataArray.length - 1);
+    restSumInDays = restSumInDays/(restDataArrayInDays.length - 1);
+  }
+  console.log("Slots: " + restSumInSlots);
+  console.log("Days: " + restSumInDays);
+  return [restSumInSlots, restSumInDays];
+};
+
+// Function for processing each exam table setup. Takes an array with the
+// courses each group takes (groups), the exam table (dataMatrix), and
+// a boolean value (addPrecedingDays) to determine whether the days/slots
+// preceding the first exam should be calculated as rest periods.
+// Prints outcomes to console.
+var processDataMatrix = function(groups, dataMatrix, addPrecedingDays){
+  totalSumInSlots = 0;
+  totalSumInDays = 0;
+  for(g in groups){
+    groupResult = processGroup(groups[g], dataMatrix, addPrecedingDays);
+    totalSumInSlots += groupResult[0];
+    totalSumInDays += groupResult[1];
+  }
+  avgSlots = totalSumInSlots/groups.length;
+  avgDays = totalSumInDays/groups.length;
+  console.log("Average amount of rest in slots for groups: " + avgSlots);
+  console.log("Average amount of rest in days for groups: " + avgDays);
+};
+
+processGroup(groupArray[7],dataMatrixWithConstraints,false);
+processGroup(groupArray[17],dataMatrixWithConstraints,false);
+processGroup(groupArray[27],dataMatrixWithConstraints,false);
+processGroup(groupArray[37],dataMatrixWithConstraints,false);
+
+processGroup(groupArray[7],dataMatrixWithConstraints,true);
+processGroup(groupArray[17],dataMatrixWithConstraints,true);
+processGroup(groupArray[27],dataMatrixWithConstraints,true);
+processGroup(groupArray[37],dataMatrixWithConstraints,true);
+
+processDataMatrix(groupArray, dataMatrixWithConstraints, false);
+processDataMatrix(groupArray, dataMatrixWithConstraints, true);
