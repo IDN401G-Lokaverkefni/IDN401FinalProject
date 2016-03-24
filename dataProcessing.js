@@ -6,6 +6,10 @@ var dataFile = require("./dataFile.js");
 dataMatrixWithConstraints = dataFile.dataMatrixWithConstraints;
 dataMatrixWithoutSeats = dataFile.dataMatrixWithoutSeats;
 dataMatrixUniversity = dataFile.dataMatrixUniversity;
+dataMatrixRestEPlusTwo = dataFile.dataMatrixRestEPlusTwo;
+dataMatrixRestEPlusThree = dataFile.dataMatrixRestEPlusThree;
+dataMatrixRestEPlusFour = dataFile.dataMatrixRestEPlusFour;
+dataMatrixStudents = dataFile.dataMatrixStudents;
 groupArray = dataFile.groupArray;
 
 // Function to calculate how many rest days a group receives on average. Takes
@@ -79,15 +83,27 @@ var processDataMatrix = function(groups, dataMatrix, addPrecedingDays){
 console.log("Data with 3 basic constraints: ");
 processDataMatrix(groupArray, dataMatrixWithConstraints, false);
 processDataMatrix(groupArray, dataMatrixWithConstraints, true);
-
 console.log("--------------------------------------------------------------");
-
 console.log("Data without seat constraint: ");
 processDataMatrix(groupArray, dataMatrixWithoutSeats, false);
 processDataMatrix(groupArray, dataMatrixWithoutSeats, true);
-
 console.log("--------------------------------------------------------------");
-
 console.log("Data from University");
 processDataMatrix(groupArray, dataMatrixUniversity, false);
 processDataMatrix(groupArray, dataMatrixUniversity, true);
+console.log("--------------------------------------------------------------");
+console.log("Data with rest e+2");
+processDataMatrix(groupArray, dataMatrixRestEPlusTwo, false);
+processDataMatrix(groupArray, dataMatrixRestEPlusTwo, true);
+console.log("--------------------------------------------------------------");
+console.log("Data with rest e+3");
+processDataMatrix(groupArray, dataMatrixRestEPlusThree, false);
+processDataMatrix(groupArray, dataMatrixRestEPlusThree, true);
+console.log("--------------------------------------------------------------");
+console.log("Data with rest e+4");
+processDataMatrix(groupArray, dataMatrixRestEPlusFour, false);
+processDataMatrix(groupArray, dataMatrixRestEPlusFour, true);
+console.log("--------------------------------------------------------------");
+console.log("Data with greater number of students earlier");
+processDataMatrix(groupArray, dataMatrixStudents, false);
+processDataMatrix(groupArray, dataMatrixStudents, true);
