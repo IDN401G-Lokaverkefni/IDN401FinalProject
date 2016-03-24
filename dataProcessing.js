@@ -5,6 +5,7 @@ var dataFile = require("./dataFile.js");
 // Import data
 dataMatrixWithConstraints = dataFile.dataMatrixWithConstraints;
 dataMatrixWithoutSeats = dataFile.dataMatrixWithoutSeats;
+dataMatrixUniversity = dataFile.dataMatrixUniversity;
 groupArray = dataFile.groupArray;
 
 // Function to calculate how many rest days a group receives on average. Takes
@@ -84,3 +85,9 @@ console.log("--------------------------------------------------------------");
 console.log("Data without seat constraint: ");
 processDataMatrix(groupArray, dataMatrixWithoutSeats, false);
 processDataMatrix(groupArray, dataMatrixWithoutSeats, true);
+
+console.log("--------------------------------------------------------------");
+
+console.log("Data from University");
+processDataMatrix(groupArray, dataMatrixUniversity, false);
+processDataMatrix(groupArray, dataMatrixUniversity, true);

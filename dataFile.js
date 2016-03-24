@@ -8,6 +8,9 @@ var dataMatrixWithConstraints = new Array(2);
 // Array containing data concerning exam-table setup (without seat constraint)
 var dataMatrixWithoutSeats = new Array(2);
 
+// Array containing data conecerning exam-table setup (solution of University)
+var dataMatrixUniversity = new Array(2);
+
 // First lines in arrays. Contain courses in exam-table
 dataMatrixWithConstraints[1] = ["VEL601G","HBV401G","STA202G",
 "EFN205G","LEF406G","EFN214G","JAR418G","FER603M",
@@ -43,6 +46,23 @@ dataMatrixWithoutSeats[1] = ["VEL601G","HBV401G","STA202G","EFN205G","LEF406G",
 "EDL205G","EFN408G","UMV201G","BYG201M","VEL201G","TOL203M","VEL215F","EFN612M",
 "VEL405G","EDL203G"];
 
+dataMatrixUniversity[1] = ["EFN205G","EFN214G","HBV401G","LEF406G","STA202G",
+"VEL601G","BYG603G","FER603M","JAR418G","RAF403G","IDN209F","JAR253F","LEF617M",
+"LIF412M","TOL203F","UMV213F","LAN203G","STA209G","STA405G","TOL203G","UAU214M",
+"BYG201G","EDL403G","LAN604M","LIF401G","VEL202G","EFN410G","JAR211G","JAR417G",
+"RAF401G","RAF616M","STA403M","TOL401G","IDN403G","LIF201G","REI202M","REI201G",
+"STA207G","STA401G","FER210F","FER409G","HBV601G","LIF227F","LIF633G","STA205G",
+"BYG401G","EDL402G","EFN406G","IDN603G","JED201G","LIF635G","MAS201F","STA203G",
+"TOV602M","BYG601G","EDL204G","EFN404G","JAR617G","LAN205G","LIF243F","LIF410G",
+"RAF601G","UAU206M","VEL218F","EDL612M","IDN401G","LIF214G","HBV201G","JAR202G",
+"LEF616M","LIF615M","RAF201G","UMV203G","VEL402G","EDL401G","EFN202G","LAN209F",
+"LAN219G","LAN410G","RAF402G","TOL202M","FER208G","JAR212G","JAR415G","LIF403G",
+"TOL403G","UMV203M","BYG202M","BYG203M","EDL201G","EDL206G","EDL402M","EFN207G",
+"HBV203F","STA418M","EFN208G","IDN402G","JAR619G","LIF215G","TOV201G","VEL401G",
+"BYG201M","EDL205G","EFN408G","FER211F","FER609G","HBV402G","JAR611G","LAN401G",
+"LIF614M","RAF404G","STA411G","UMV201G","EFN612M","TOL203M","VEL201G","VEL215F",
+"EDL203G","VEL405G"];
+
 // Exam slots for each course
 dataMatrixWithConstraints[2] = [4,6,3,5,2,5,2,6,7,3,4,4,8,7,5,2,9,9,9,13,1,8,5,
 5,3,3,4,1,6,2,5,5,4,5,2,11,1,2,5,11,2,3,2,3,11,12,4,1,3,1,6,5,10,10,2,5,2,2,10,
@@ -53,6 +73,12 @@ dataMatrixWithoutSeats[2] = [3,3,1,1,2,1,1,3,1,3,2,1,1,3,1,1,2,11,2,13,1,6,4,4,
 4,3,9,3,4,4,1,4,3,3,5,3,2,3,10,10,2,2,2,2,7,1,5,6,4,6,2,1,8,8,2,3,1,2,2,1,1,1,4,
 5,12,2,1,2,6,4,3,3,2,1,7,1,1,1,3,3,1,4,1,1,5,1,1,1,1,5,5,1,5,1,1,1,4,1,1,1,4,9,
 2,1,2,1,1,2,2,2,1,3,2,2,2,1,1,1,2];
+
+dataMatrixUniversity[2] = [1,1,1,1,1,1,2,2,2,2,3,3,3,3,3,3,4,4,4,5,5,6,6,6,6,6,
+7,7,7,7,7,7,7,8,8,8,9,9,9,10,10,10,10,10,10,15,15,15,15,15,15,16,16,16,17,17,17,
+17,17,17,17,17,17,17,18,18,18,19,19,19,19,19,19,19,20,20,20,20,20,20,20,23,23,
+23,23,23,23,24,24,24,24,24,24,24,24,29,29,29,29,29,29,30,30,30,30,30,30,30,30,
+30,30,30,30,31,31,31,31,32,32,];
 
 // Array containing names of courses for groups
 var groupArray = new Array(61);
@@ -120,4 +146,5 @@ groupArray[60] = ["FER409G","FER208G","LAN410G"];
 
 exports.dataMatrixWithConstraints = dataMatrixWithConstraints;
 exports.dataMatrixWithoutSeats = dataMatrixWithoutSeats;
+exports.dataMatrixUniversity = dataMatrixUniversity;
 exports.groupArray = groupArray;
