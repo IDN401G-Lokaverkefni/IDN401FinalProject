@@ -1,0 +1,80 @@
+Data with 3 basic constraints (part A):
+Preceding days not added:
+Average amount of rest in slots for groups: 2.2718579234972673
+Average amount of rest in days for groups: 0.8155737704918034
+Preceding days added:
+Average amount of rest in slots for groups: 2.153551912568306
+Average amount of rest in days for groups: 0.7860655737704918
+--------------------------------------------------------------
+Data without seat constraint (part A):
+Preceding days not added:
+Average amount of rest in slots for groups: 1.8838797814207648
+Average amount of rest in days for groups: 0.6215846994535519
+Preceding days added:
+Average amount of rest in slots for groups: 1.5795081967213118
+Average amount of rest in days for groups: 0.5598360655737703
+--------------------------------------------------------------
+Data from University exam table(part B):
+Preceding days not added:
+Average amount of rest in slots for groups: 8.48087431693989
+Average amount of rest in days for groups: 3.7226775956284146
+Preceding days added:
+Average amount of rest in slots for groups: 6.6265027322404375
+Average amount of rest in days for groups: 2.8959016393442623
+--------------------------------------------------------------
+Data with rest e+2 (part B):
+Preceding days not added:
+Average amount of rest in slots for groups: 8.422131147540984
+Average amount of rest in days for groups: 3.7418032786885242
+Preceding days added:
+Average amount of rest in slots for groups: 7.060928961748634
+Average amount of rest in days for groups: 3.1363387978142074
+--------------------------------------------------------------
+Data with rest e+3 (part B):
+Preceding days not added:
+Average amount of rest in slots for groups: 8.905737704918034
+Average amount of rest in days for groups: 3.9767759562841527
+Preceding days added:
+Average amount of rest in slots for groups: 7.551639344262294
+Average amount of rest in days for groups: 3.3901639344262295
+--------------------------------------------------------------
+Data with rest e+4 (part B):
+Preceding days not added:
+Average amount of rest in slots for groups: 9.454918032786885
+Average amount of rest in days for groups: 4.258196721311475
+Preceding days added:
+Average amount of rest in slots for groups: 8.101092896174864
+Average amount of rest in days for groups: 3.6538251366120216
+--------------------------------------------------------------
+Data with rest solution(1,8,20 tolerance) (part B):
+Preceding days not added:
+Average amount of rest in slots for groups: 7.685792349726777
+Average amount of rest in days for groups: 3.341530054644809
+Preceding days added:
+Average amount of rest in slots for groups: 7.669398907103827
+Average amount of rest in days for groups: 3.4346994535519126
+--------------------------------------------------------------
+Data with optimum rest solution(2,9,15 tolerance) (part B):
+Preceding days not added:
+Average amount of rest in slots for groups: 9.24726775956284
+Average amount of rest in days for groups: 4.081967213114754
+Preceding days added:
+Average amount of rest in slots for groups: 7.8234972677595644
+Average amount of rest in days for groups: 3.4830601092896174
+(^ Besta lausn hingað til)
+--------------------------------------------------------------
+Data with exams as early as possible (part C):
+Preceding days not added:
+Average amount of rest in slots for groups: 2.4699453551912565
+Average amount of rest in days for groups: 0.9398907103825137
+Preceding days added:
+Average amount of rest in slots for groups: 2.2478142076502734
+Average amount of rest in days for groups: 0.8710382513661202
+--------------------------------------------------------------
+Data with greater number of students earlier (part D):
+Preceding days not added:
+Average amount of rest in slots for groups: 3.3538251366120218
+Average amount of rest in days for groups: 1.4180327868852458
+Preceding days added:
+Average amount of rest in slots for groups: 3.271857923497268
+Average amount of rest in days for groups: 1.405191256830601
