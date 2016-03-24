@@ -6,14 +6,20 @@
 var dataMatrixWithConstraints = new Array(2);
 // Array containing data concerning exam-table setup (without seat constraint)
 var dataMatrixWithoutSeats = new Array(2);
-// Array containing data conecerning exam-table setup (solution of University)
+// Array containing data concerning exam-table setup (solution of University)
 var dataMatrixUniversity = new Array(2);
-// Array containing data conecerning exam-table setup (solution with rest)
+// Array containing data concerning exam-table setup (solution with rest)
 var dataMatrixRestEPlusTwo = new Array(2);
-// Array containing data conecerning exam-table setup (solution with rest)
+// Array containing data concerning exam-table setup (solution with rest)
 var dataMatrixRestEPlusThree = new Array(2);
-// Array containing data conecerning exam-table setup (solution with rest)
+// Array containing data concerning exam-table setup (solution with rest)
 var dataMatrixRestEPlusFour = new Array(2);
+// Array containing data concerning exam-table setup (solution with rest)
+var dataMatrixOptimumRest = new Array(2);
+// Array containing data concerning exam-table setup (solution with rest)
+var dataMatrixOptimumRestTwo = new Array(2);
+// Array containing data concerning exam-table setup (solution for part C)
+var dataMatrixPartC = new Array(2);
 // Array containing data concerning exam-table setup (solution for greater
 // number of students earlier in the exam table)
 var dataMatrixStudents = new Array(2);
@@ -121,6 +127,57 @@ dataMatrixRestEPlusFour[1] = ["VEL601G","STA405G","TOL203G","VEL202G","REI202M",
 "LIF227F","MAS201F","LIF410G","LIF243F","LAN410G","LAN209F","EDL206G","JAR619G",
 "FER609G","VEL405G"];
 
+dataMatrixOptimumRest[1] = ["STA405G","VEL601G","TOL203G","VEL202G",
+"REI202M","STA401G","HBV601G","STA205G","IDN603G","EDL402G","STA203G","IDN401G",
+"VEL402G","HBV201G","TOL403G","EDL201G","VEL401G","HBV402G","EFN408G","VEL201G",
+"EDL203G","HBV401G","TOL401G","STA403M","REI201G","TOV602M","TOL202M","IDN402G",
+"TOV201G","RAF404G","TOL203M","STA202G","STA207G","STA411G","EDL205G","LEF406G",
+"LIF412M","LIF401G","EFN410G","LIF201G","LIF635G","EFN406G","EFN404G","LIF615M",
+"EFN202G","LIF403G","EFN208G","LIF614M","EFN612M","LAN604M","FER603M","FER210F",
+"FER208G","FER211F","RAF403G","RAF401G","RAF402G","EDL401G","BYG603G","BYG401G",
+"BYG601G","UMV203M","BYG202M","BYG203M","BYG201M","TOL203F","HBV203F","IDN209F",
+"JAR253F","JAR417G","LIF633G","LEF616M","LEF617M","EDL403G","IDN403G","VEL218F",
+"RAF601G","UMV203G","STA418M","EDL402M","UMV201G","JAR211G","STA209G","JED201G",
+"JAR617G","JAR202G","JAR415G","JAR212G","EFN207G","RAF201G","UAU214M","UAU206M",
+"JAR611G","LIF214G","LIF215G","EDL204G","LAN219G","LAN401G","EDL612M","BYG201G",
+"VEL215F","LAN205G","EFN205G","EFN214G","JAR418G","UMV213F","LAN203G","RAF616M",
+"FER409G","LIF227F","MAS201F","LIF410G","LIF243F","LAN410G","LAN209F","EDL206G",
+"JAR619G","FER609G","VEL405G"];
+
+dataMatrixOptimumRestTwo[1] = ["VEL601G","STA405G","TOL203G","VEL202G",
+"REI202M","STA401G","HBV601G","STA205G","IDN603G","EDL402G","STA203G","IDN401G",
+"VEL402G","HBV201G","TOL403G","EDL201G","VEL401G","HBV402G","EFN408G","VEL201G",
+"EDL203G","HBV401G","TOL401G","STA403M","REI201G","TOV602M","TOL202M","IDN402G",
+"TOV201G","RAF404G","TOL203M","STA202G","STA207G","STA411G","EDL205G","LIF412M",
+"LEF406G","LIF401G","EFN410G","LIF201G","LIF635G","EFN406G","EFN404G","LIF615M",
+"EFN202G","LIF403G","EFN208G","LIF614M","EFN612M","LAN604M","FER603M","FER210F",
+"FER208G","FER211F","RAF403G","RAF401G","RAF402G","EDL401G","BYG603G","BYG401G",
+"BYG601G","UMV203M","BYG202M","BYG203M","BYG201M","TOL203F","HBV203F","IDN209F",
+"JAR253F","JAR417G","LIF633G","LEF616M","LEF617M","EDL403G","IDN403G","VEL218F",
+"RAF601G","UMV203G","STA418M","EDL402M","UMV201G","STA209G","JAR211G","JED201G",
+"JAR617G","JAR202G","JAR415G","JAR212G","EFN207G","RAF201G","UAU214M","UAU206M",
+"JAR611G","LIF214G","LIF215G","EDL204G","LAN219G","LAN401G","EDL612M","BYG201G",
+"VEL215F","LAN205G","EFN205G","EFN214G","JAR418G","UMV213F","LAN203G","RAF616M",
+"FER409G","LIF227F","MAS201F","LIF410G","LIF243F","LAN410G","LAN209F","EDL206G",
+"JAR619G","FER609G","VEL405G"];
+
+dataMatrixPartC[1] = ["VEL601G","HBV401G","STA202G","EFN205G","LEF406G",
+"EFN214G","JAR418G","FER603M","RAF403G","BYG603G","TOL203F","IDN209F","JAR253F",
+"LIF412M","LEF617M","UMV213F","LAN203G","STA405G","STA209G","TOL203G","UAU214M",
+"VEL202G","LIF401G","LAN604M","EDL403G","BYG201G","TOL401G","JAR211G","JAR417G",
+"RAF401G","RAF616M","STA403M","EFN410G","IDN403G","REI202M","LIF201G","REI201G",
+"STA207G","STA401G","HBV601G","LIF633G","FER409G","LIF227F","FER210F","STA205G",
+"IDN603G","JED201G","LIF635G","EDL402G","EFN406G","BYG401G","TOV602M","STA203G",
+"MAS201F","VEL218F","JAR617G","LIF410G","UAU206M","LAN205G","LIF243F","RAF601G",
+"EDL204G","EFN404G","BYG601G","IDN401G","LIF214G","EDL612M","VEL402G","HBV201G",
+"JAR202G","LIF615M","RAF201G","LEF616M","UMV203G","TOL202M","LAN219G","LAN410G",
+"LAN209F","RAF402G","EDL401G","EFN202G","TOL403G","JAR415G","JAR212G","LIF403G",
+"FER208G","UMV203M","HBV203F","STA418M","EDL201G","EFN207G","EDL402M","EDL206G",
+"BYG202M","BYG203M","VEL401G","IDN402G","JAR619G","LIF215G","TOV201G","EFN208G",
+"HBV402G","JAR611G","LIF614M","LAN401G","FER609G","FER211F","RAF404G","STA411G",
+"EDL205G","EFN408G","UMV201G","BYG201M","VEL201G","TOL203M","VEL215F","EFN612M",
+"VEL405G","EDL203G"];
+
 dataMatrixStudents[1] = ["VEL601G","HBV401G","STA202G","EFN205G","LEF406G",
 "EFN214G","JAR418G","FER603M","RAF403G","BYG603G","TOL203F","IDN209F","JAR253F",
 "LIF412M","LEF617M","UMV213F","LAN203G","STA405G","STA209G","TOL203G","UAU214M",
@@ -137,8 +194,6 @@ dataMatrixStudents[1] = ["VEL601G","HBV401G","STA202G","EFN205G","LEF406G",
 "HBV402G","JAR611G","LIF614M","LAN401G","FER609G","FER211F","RAF404G","STA411G",
 "EDL205G","EFN408G","UMV201G","BYG201M","VEL201G","TOL203M","VEL215F","EFN612M",
 "VEL405G","EDL203G",];
-
-
 
 // Exam slots for each course
 dataMatrixWithConstraints[2] = [4,6,3,5,2,5,2,6,7,3,4,4,8,7,5,2,9,9,9,13,1,8,5,
@@ -174,6 +229,23 @@ dataMatrixRestEPlusFour[2] = [17,32,1,2,31,23,3,10,4,16,24,16,8,30,9,31,3,9,24,
 15,18,10,1,8,9,4,18,18,24,15,29,30,7,2,4,7,30,6,31,32,4,30,1,19,23,5,3,30,8,8,9,
 17,32,23,18,29,9,10,20,23,29,8,5,24,29,20,9,19,23,16,17,31,5,5,30,17,32,23,10,4,
 24,7,7,1,1,31,29,8,6,];
+
+dataMatrixOptimumRest[2] = [3,23,32,1,18,7,10,10,30,19,24,15,15,5,29,5,30,20,9,
+32,15,8,20,23,1,30,6,18,17,24,1,19,29,10,1,3,15,16,6,24,9,23,32,6,29,7,15,24,23,
+1,32,18,8,10,5,15,31,31,29,23,20,5,32,23,15,4,23,2,3,9,30,1,8,17,8,15,23,15,7,4,
+16,1,18,4,1,30,23,23,20,1,8,23,20,18,4,15,23,6,4,30,23,2,31,31,3,7,18,2,18,30,
+24,18,18,31,31,5,4,10,1];
+
+dataMatrixOptimumRestTwo[2] = [7,29,3,8,31,17,20,20,1,1,32,10,5,15,24,15,10,23,24,
+3,15,18,5,24,29,3,16,7,8,3,1,16,7,4,15,9,32,16,17,10,23,5,9,8,24,29,4,1,2,6,8,
+10,2,16,32,8,24,24,24,23,19,1,3,29,10,29,32,1,1,10,6,7,10,6,5,23,23,4,20,23,6,
+6,20,32,16,7,3,3,1,29,32,23,20,31,18,1,20,24,9,24,1,19,1,1,30,1,6,1,10,6,32,1,
+1,2,2,15,6,16,1];
+
+dataMatrixPartC[2] = [2,4,2,5,8,5,1,7,3,4,3,2,1,2,1,1,8,8,8,17,2,6,5,5,3,3,3,1,
+5,4,1,3,2,2,1,15,5,1,7,15,1,2,1,2,15,9,3,3,5,9,2,1,9,9,1,4,1,4,7,1,1,1,3,3,5,3,
+1,4,10,4,2,1,3,4,2,1,3,3,2,2,16,6,2,2,10,6,2,4,2,10,1,1,10,2,2,1,1,1,6,16,7,3,1,
+6,3,1,1,1,4,4,6,1,1,4,7,2,1,1,4,];
 
 dataMatrixStudents[2] = [4,8,15,10,9,10,15,1,17,16,18,16,16,16,16,16,7,6,7,2,16,
 8,6,10,15,16,9,16,9,15,16,18,15,10,17,3,6,16,10,3,17,9,17,9,3,1,10,18,7,2,17,16,
@@ -251,5 +323,8 @@ exports.dataMatrixUniversity = dataMatrixUniversity;
 exports.dataMatrixRestEPlusTwo = dataMatrixRestEPlusTwo;
 exports.dataMatrixRestEPlusThree = dataMatrixRestEPlusThree;
 exports.dataMatrixRestEPlusFour = dataMatrixRestEPlusFour;
+exports.dataMatrixOptimumRest = dataMatrixOptimumRest;
+exports.dataMatrixOptimumRestTwo = dataMatrixOptimumRestTwo;
+exports.dataMatrixPartC = dataMatrixPartC;
 exports.dataMatrixStudents = dataMatrixStudents;
 exports.groupArray = groupArray;

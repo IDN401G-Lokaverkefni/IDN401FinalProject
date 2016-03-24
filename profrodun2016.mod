@@ -32,10 +32,10 @@ var slot{cidExam, examSlots} binary; # Variable
 # subject to coerceSolution{e in examSlots, c in cidExam:
 #  solutionWithoutSeats[c] == e}: slot[c,e] = 1;
 
-#minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
+minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
 
 # Courses with the most students have exams in the beginning of exam period
-minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(cidCount[c]*(e^2))^4;
+#minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(cidCount[c]*(e^2))^4;
 
 # Ensure that no students have exams in two different courses at the same time
  subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
