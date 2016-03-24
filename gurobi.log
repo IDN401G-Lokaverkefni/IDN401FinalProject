@@ -1602,3 +1602,803 @@ Best objective 1.755380057604e+20, best bound 1.755378054559e+20, gap 0.0001%
 
 Wrote result file 'proftafla.sol'
 
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:43:13
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.17 seconds
+(null): 56697 rows, 3808 columns, 119518 nonzeros
+Optimize a model with 56697 rows, 3808 columns and 119518 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 52778 rows and 1410 columns
+Presolve time: 0.65s
+Presolved: 3919 rows, 2398 columns, 31885 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.72 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:47:18
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.32 seconds
+(null): 73623 rows, 3808 columns, 153370 nonzeros
+Optimize a model with 73623 rows, 3808 columns and 153370 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 69055 rows and 1410 columns
+Presolve time: 1.31s
+Presolved: 4568 rows, 2398 columns, 45318 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 689 iterations, 0.10 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   70          -    0.00000      -     -    2s
+     0     0    0.00000    0  169          -    0.00000      -     -    3s
+     0     0    0.00000    0  185          -    0.00000      -     -    3s
+     0     0    0.00000    0  204          -    0.00000      -     -    3s
+     0     0    0.00000    0  187          -    0.00000      -     -    3s
+     0     0    0.00000    0  111          -    0.00000      -     -    5s
+     0     0    0.00000    0  152          -    0.00000      -     -    5s
+     0     0    0.00000    0   96          -    0.00000      -     -    7s
+     0     0    0.00000    0  180          -    0.00000      -     -    7s
+     0     0    0.00000    0   36          -    0.00000      -     -    8s
+     0     0    0.00000    0  249          -    0.00000      -     -    9s
+     0     0    0.00000    0  101          -    0.00000      -     -   10s
+     0     0    0.00000    0  123          -    0.00000      -     -   10s
+     0     0    0.00000    0    2          -    0.00000      -     -   11s
+H    0     0                       0.0000000    0.00000  0.00%     -   11s
+
+Cutting planes:
+  Cover: 2
+  Clique: 60
+  Zero half: 1
+
+Explored 0 nodes (35412 simplex iterations) in 11.53 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:48:27
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.40 seconds
+(null): 90003 rows, 3808 columns, 186130 nonzeros
+Optimize a model with 90003 rows, 3808 columns and 186130 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 85448 rows and 1410 columns
+Presolve time: 1.49s
+Presolved: 4555 rows, 2398 columns, 46030 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 946 iterations, 0.13 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  153          -    0.00000      -     -    3s
+     0     0    0.00000    0  237          -    0.00000      -     -    3s
+     0     0    0.00000    0  245          -    0.00000      -     -    3s
+     0     0    0.00000    0  227          -    0.00000      -     -    4s
+     0     0    0.00000    0  216          -    0.00000      -     -    4s
+     0     0    0.00000    0  220          -    0.00000      -     -    4s
+     0     0    0.00000    0  218          -    0.00000      -     -    4s
+     0     0    0.00000    0  197          -    0.00000      -     -    4s
+     0     0    0.00000    0  214          -    0.00000      -     -    5s
+     0     0    0.00000    0  217          -    0.00000      -     -    5s
+     0     0    0.00000    0  244          -    0.00000      -     -    5s
+*    0     0               0       0.0000000    0.00000  0.00%     -    7s
+
+Cutting planes:
+  Cover: 1
+  Clique: 75
+  MIR: 3
+  Zero half: 5
+
+Explored 0 nodes (14085 simplex iterations) in 7.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:49:09
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.36 seconds
+(null): 89457 rows, 3808 columns, 185038 nonzeros
+Optimize a model with 89457 rows, 3808 columns and 185038 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 84607 rows and 1410 columns
+Presolve time: 1.63s
+Presolved: 4850 rows, 2398 columns, 53991 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 953 iterations, 0.21 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  156          -    0.00000      -     -    4s
+     0     0 infeasible    0               - infeasible      -     -    5s
+
+Cutting planes:
+  Cover: 3
+  Clique: 45
+  MIR: 3
+  Zero half: 3
+
+Explored 0 nodes (11338 simplex iterations) in 5.76 seconds
+Thread count was 4 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:50:00
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.33 seconds
+(null): 84957 rows, 3808 columns, 176038 nonzeros
+Optimize a model with 84957 rows, 3808 columns and 176038 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 80239 rows and 1410 columns
+Presolve time: 1.54s
+Presolved: 4718 rows, 2398 columns, 50444 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 1054 iterations, 0.25 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  123          -    0.00000      -     -    3s
+     0     0    0.00000    0  280          -    0.00000      -     -    4s
+     0     0    0.00000    0  285          -    0.00000      -     -    4s
+     0     0 infeasible    0               - infeasible      -     -    5s
+
+Cutting planes:
+  Clique: 84
+  Zero half: 2
+
+Explored 0 nodes (10158 simplex iterations) in 5.41 seconds
+Thread count was 4 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:50:39
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.32 seconds
+(null): 80637 rows, 3808 columns, 167398 nonzeros
+Optimize a model with 80637 rows, 3808 columns and 167398 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 76192 rows and 1410 columns
+Presolve time: 1.37s
+Presolved: 4445 rows, 2398 columns, 46003 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 1653 iterations, 0.35 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  184          -    0.00000      -     -    2s
+     0     0 infeasible    0               - infeasible      -     -    3s
+
+Cutting planes:
+  Cover: 1
+  Clique: 40
+  MIR: 1
+  Zero half: 1
+
+Explored 0 nodes (7017 simplex iterations) in 3.46 seconds
+Thread count was 4 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:51:02
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.32 seconds
+(null): 71817 rows, 3808 columns, 149758 nonzeros
+Optimize a model with 71817 rows, 3808 columns and 149758 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 67707 rows and 1410 columns
+Presolve time: 1.15s
+Presolved: 4110 rows, 2398 columns, 40617 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 891 iterations, 0.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   87          -    0.00000      -     -    2s
+     0     0 infeasible    0               - infeasible      -     -    2s
+
+Cutting planes:
+  Cover: 1
+  Clique: 15
+  MIR: 2
+  GUB cover: 1
+  Zero half: 5
+
+Explored 0 nodes (5396 simplex iterations) in 2.57 seconds
+Thread count was 4 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:52:07
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.28 seconds
+(null): 65517 rows, 3808 columns, 137158 nonzeros
+Optimize a model with 65517 rows, 3808 columns and 137158 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 61595 rows and 1410 columns
+Presolve time: 0.92s
+Presolved: 3922 rows, 2398 columns, 35739 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 565 iterations, 0.05 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    1s
+
+Explored 0 nodes (2023 simplex iterations) in 1.39 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:52:32
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.27 seconds
+(null): 67497 rows, 3808 columns, 141118 nonzeros
+Optimize a model with 67497 rows, 3808 columns and 141118 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 63445 rows and 1410 columns
+Presolve time: 1.02s
+Presolved: 4052 rows, 2398 columns, 38060 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 1.12 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:53:06
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.27 seconds
+(null): 69117 rows, 3808 columns, 144358 nonzeros
+Optimize a model with 69117 rows, 3808 columns and 144358 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 0
+Presolve removed 65035 rows and 1410 columns
+Presolve time: 1.09s
+Presolved: 4082 rows, 2398 columns, 39135 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Explored 0 nodes (0 simplex iterations) in 1.15 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:53:36
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.30 seconds
+(null): 70377 rows, 3808 columns, 146878 nonzeros
+Optimize a model with 70377 rows, 3808 columns and 146878 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 66331 rows and 1410 columns
+Presolve time: 1.10s
+Presolved: 4046 rows, 2398 columns, 39402 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 801 iterations, 0.10 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   45          -    0.00000      -     -    1s
+H    0     0                       0.0000000    0.00000  0.00%     -    1s
+
+Explored 0 nodes (2810 simplex iterations) in 1.80 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:54:37
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.30 seconds
+(null): 71817 rows, 3808 columns, 149758 nonzeros
+Optimize a model with 71817 rows, 3808 columns and 149758 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 67707 rows and 1410 columns
+Presolve time: 1.15s
+Presolved: 4110 rows, 2398 columns, 40617 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 891 iterations, 0.13 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   87          -    0.00000      -     -    2s
+     0     0 infeasible    0               - infeasible      -     -    2s
+
+Cutting planes:
+  Cover: 1
+  Clique: 15
+  MIR: 2
+  GUB cover: 1
+  Zero half: 5
+
+Explored 0 nodes (5396 simplex iterations) in 2.56 seconds
+Thread count was 4 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:55:09
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+
+ERROR 10003: Unable to open file 'proftafla.lp' for input
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:55:24
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.30 seconds
+(null): 70377 rows, 3808 columns, 146878 nonzeros
+Optimize a model with 70377 rows, 3808 columns and 146878 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 66331 rows and 1410 columns
+Presolve time: 1.14s
+Presolved: 4046 rows, 2398 columns, 39402 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 801 iterations, 0.10 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   45          -    0.00000      -     -    1s
+H    0     0                       0.0000000    0.00000  0.00%     -    1s
+
+Explored 0 nodes (2810 simplex iterations) in 1.82 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:58:45
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.54 seconds
+(null): 114005 rows, 3808 columns, 234134 nonzeros
+Optimize a model with 114005 rows, 3808 columns and 234134 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 110183 rows and 1410 columns
+Presolve time: 2.04s
+Presolved: 3822 rows, 2398 columns, 57714 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 1282 iterations, 0.27 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    2s
+
+Explored 0 nodes (1282 simplex iterations) in 2.52 seconds
+Thread count was 4 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:59:10
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.43 seconds
+(null): 90581 rows, 3808 columns, 187286 nonzeros
+Optimize a model with 90581 rows, 3808 columns and 187286 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 85719 rows and 1410 columns
+Presolve time: 2.03s
+Presolved: 4862 rows, 2398 columns, 56273 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 1075 iterations, 0.26 seconds
+Total elapsed time = 5.23s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  168          -    0.00000      -     -    5s
+     0     0    0.00000    0  250          -    0.00000      -     -    6s
+     0     0    0.00000    0  300          -    0.00000      -     -    6s
+     0     0 infeasible    0               - infeasible      -     -    7s
+
+Cutting planes:
+  Clique: 89
+  Zero half: 1
+
+Explored 0 nodes (13415 simplex iterations) in 7.95 seconds
+Thread count was 4 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 15:59:38
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.37 seconds
+(null): 73623 rows, 3808 columns, 153370 nonzeros
+Optimize a model with 73623 rows, 3808 columns and 153370 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 69055 rows and 1410 columns
+Presolve time: 1.49s
+Presolved: 4568 rows, 2398 columns, 45318 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 689 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   70          -    0.00000      -     -    3s
+     0     0    0.00000    0  169          -    0.00000      -     -    3s
+     0     0    0.00000    0  185          -    0.00000      -     -    3s
+     0     0    0.00000    0  204          -    0.00000      -     -    3s
+     0     0    0.00000    0  187          -    0.00000      -     -    3s
+     0     0    0.00000    0  111          -    0.00000      -     -    6s
+     0     0    0.00000    0  152          -    0.00000      -     -    6s
+     0     0    0.00000    0   96          -    0.00000      -     -    7s
+     0     0    0.00000    0  180          -    0.00000      -     -    8s
+     0     0    0.00000    0   36          -    0.00000      -     -    9s
+     0     0    0.00000    0  249          -    0.00000      -     -   10s
+     0     0    0.00000    0  101          -    0.00000      -     -   11s
+     0     0    0.00000    0  123          -    0.00000      -     -   11s
+     0     0    0.00000    0    2          -    0.00000      -     -   12s
+H    0     0                       0.0000000    0.00000  0.00%     -   12s
+
+Cutting planes:
+  Cover: 2
+  Clique: 60
+  Zero half: 1
+
+Explored 0 nodes (35412 simplex iterations) in 12.80 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 16:00:12
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.38 seconds
+(null): 80821 rows, 3808 columns, 167766 nonzeros
+Optimize a model with 80821 rows, 3808 columns and 167766 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 75951 rows and 1410 columns
+Presolve time: 1.70s
+Presolved: 4870 rows, 2398 columns, 51535 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 782 iterations, 0.18 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  136          -    0.00000      -     -    3s
+     0     0    0.00000    0  269          -    0.00000      -     -    4s
+     0     0    0.00000    0  268          -    0.00000      -     -    4s
+     0     0    0.00000    0  286          -    0.00000      -     -    5s
+     0     0    0.00000    0  306          -    0.00000      -     -    5s
+     0     0    0.00000    0  227          -    0.00000      -     -    8s
+     0     0    0.00000    0  283          -    0.00000      -     -    8s
+     0     0    0.00000    0  152          -    0.00000      -     -   13s
+     0     0    0.00000    0  209          -    0.00000      -     -   13s
+     0     0    0.00000    0  168          -    0.00000      -     -   17s
+     0     0    0.00000    0  272          -    0.00000      -     -   17s
+     0     0    0.00000    0  153          -    0.00000      -     -   19s
+     0     0    0.00000    0  153          -    0.00000      -     -   20s
+     0     2    0.00000    0  153          -    0.00000      -     -   23s
+    18     2    0.00000    5  249          -    0.00000      -   476   25s
+
+Cutting planes:
+  Cover: 2
+  Clique: 102
+  MIR: 2
+  GUB cover: 1
+
+Explored 27 nodes (56663 simplex iterations) in 26.13 seconds
+Thread count was 4 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.0 (win64) logging started 03/24/16 16:01:23
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.36 seconds
+(null): 73623 rows, 3808 columns, 153370 nonzeros
+Optimize a model with 73623 rows, 3808 columns and 153370 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 69055 rows and 1410 columns
+Presolve time: 1.56s
+Presolved: 4568 rows, 2398 columns, 45318 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 0.000000e+00, 689 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   70          -    0.00000      -     -    3s
+     0     0    0.00000    0  169          -    0.00000      -     -    3s
+     0     0    0.00000    0  185          -    0.00000      -     -    3s
+     0     0    0.00000    0  204          -    0.00000      -     -    3s
+     0     0    0.00000    0  187          -    0.00000      -     -    4s
+     0     0    0.00000    0  111          -    0.00000      -     -    6s
+     0     0    0.00000    0  152          -    0.00000      -     -    6s
+     0     0    0.00000    0   96          -    0.00000      -     -    8s
+     0     0    0.00000    0  180          -    0.00000      -     -    8s
+     0     0    0.00000    0   36          -    0.00000      -     -   10s
+     0     0    0.00000    0  249          -    0.00000      -     -   10s
+     0     0    0.00000    0  101          -    0.00000      -     -   11s
+     0     0    0.00000    0  123          -    0.00000      -     -   11s
+     0     0    0.00000    0    2          -    0.00000      -     -   13s
+H    0     0                       0.0000000    0.00000  0.00%     -   13s
+
+Cutting planes:
+  Cover: 2
+  Clique: 60
+  Zero half: 1
+
+Explored 0 nodes (35412 simplex iterations) in 13.25 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+
+Wrote result file 'proftafla.sol'
+
