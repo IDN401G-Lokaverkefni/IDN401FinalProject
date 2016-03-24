@@ -19,7 +19,7 @@ param cidCount{cidExam} default 0; # Amount of students in each course
 param cidCommon{cidExam, cidExam} default 0; # Amount of students that take co-taught courses
 param conjoinedCourses{cidExam, cidExam} default 0; # Vector containing courses that are taught jointly
 
-param studentsTolerance := 4;
+param studentsTolerance := 13;
 
 
 var slot{cidExam, examSlots} binary; # Variable
@@ -55,11 +55,14 @@ subject to noExams{c in cidExam, e in examSlots: e in offSlots}: slot[c,e] = 0;
 #Ensure that a student is not in exam slots side by side
 subject to examSpace{e in examSlots, c1 in cidExam, c2 in cidExam: cidCommon[c1, c2] >= studentsTolerance && e+1 in examSlots}: slot[c1,e]+slot[c2, e+1] <= 1;
 
-#Ensure that a student is not in exam slots side by side
+#Ensure that a student is not in exam slots e and e+2
 subject to examSpace2{e in examSlots, c1 in cidExam, c2 in cidExam: cidCommon[c1, c2] >= studentsTolerance && e+2 in examSlots}: slot[c1,e]+slot[c2, e+2] <= 1;
 
-#Ensure that a student is not in exam slots side by side
-#subject to examSpace3{e in examSlots, c1 in cidExam, c2 in cidExam: cidCommon[c1, c2] >= studentsTolerance && e+3 in examSlots}: slot[c1,e]+slot[c2, e+3] <= 1;
+#Ensure that a student is not in exam slots e and e+3
+subject to examSpace3{e in examSlots, c1 in cidExam, c2 in cidExam: cidCommon[c1, c2] >= studentsTolerance && e+3 in examSlots}: slot[c1,e]+slot[c2, e+3] <= 1;
+
+#Ensure that a student is not in exam slots e and e+4
+subject to examSpace4{e in examSlots, c1 in cidExam, c2 in cidExam: cidCommon[c1, c2] >= studentsTolerance && e+4 in examSlots}: slot[c1,e]+slot[c2, e+4] <= 1;
 
 # Does the exam table for 2016 fulfil the demands for programs:
 check {i in 1..61, c1 in group[i], c2 in group[i]: cidCommon[c1,c2] > 0}
