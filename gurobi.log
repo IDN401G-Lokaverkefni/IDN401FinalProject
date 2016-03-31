@@ -4702,3 +4702,86 @@ Best objective 5.256813528184e+05, best bound 5.256798288231e+05, gap 0.0003%
 
 Wrote result file 'proftaflaOkkarLausn.sol'
 
+
+Gurobi 6.5.0 (win64) logging started 03/31/16 14:50:54
+
+Set parameter TimeLimit to value 3600
+
+Gurobi Optimizer version 6.5.0 build v6.5.0rc1 (win64)
+Copyright (c) 2015, Gurobi Optimization, Inc.
+
+Read LP format model from file proftafla.lp
+Reading time = 0.22 seconds
+(null): 82261 rows, 3808 columns, 170646 nonzeros
+Optimize a model with 82261 rows, 3808 columns and 170646 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [2e-04, 7e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 77151 rows and 1410 columns
+Presolve time: 0.86s
+Presolved: 5110 rows, 2398 columns, 53322 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 1.163609e+03, 5485 iterations, 1.07 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1163.60936    0  568          - 1163.60936      -     -    2s
+     0     0 1276.69061    0  557          - 1276.69061      -     -    4s
+     0     0 1311.94590    0  582          - 1311.94590      -     -    5s
+     0     0 1335.60024    0  574          - 1335.60024      -     -    6s
+     0     0 1347.33703    0  578          - 1347.33703      -     -    7s
+     0     0 1361.45923    0  604          - 1361.45923      -     -    8s
+     0     0 1364.79510    0  612          - 1364.79510      -     -    8s
+     0     0 1376.15478    0  610          - 1376.15478      -     -    9s
+     0     0 1379.90406    0  604          - 1379.90406      -     -    9s
+     0     0 1382.35622    0  595          - 1382.35622      -     -   10s
+     0     0 1383.92665    0  603          - 1383.92665      -     -   11s
+     0     0 1385.20060    0  597          - 1385.20060      -     -   11s
+     0     0 1385.82408    0  576          - 1385.82408      -     -   12s
+     0     0 1386.17403    0  620          - 1386.17403      -     -   12s
+     0     0 1386.28441    0  604          - 1386.28441      -     -   12s
+     0     0 1386.40662    0  618          - 1386.40662      -     -   12s
+     0     0 1386.43490    0  623          - 1386.43490      -     -   13s
+     0     0 1386.46339    0  617          - 1386.46339      -     -   13s
+     0     0 1386.46832    0  626          - 1386.46832      -     -   13s
+     0     0 1386.46990    0  627          - 1386.46990      -     -   14s
+     0     0 1386.47034    0  630          - 1386.47034      -     -   14s
+     0     0 1386.47118    0  633          - 1386.47118      -     -   15s
+     0     0 1386.47118    0  633          - 1386.47118      -     -   15s
+     0     2 1386.47118    0  633          - 1386.47118      -     -   20s
+     6    10 1427.87387    3  484          - 1398.73824      -  1936   25s
+    20    23 1417.50949    5  421          - 1407.43662      -  1607   30s
+    55    47 infeasible   12               - 1416.84039      -  1336   36s
+    75    61 1507.03669    6  419          - 1420.00913      -  1304   40s
+H  196    73                    1488.6307930 1420.00913  4.61%   753   44s
+   291   123     cutoff   13      1488.63079 1421.28705  4.52%   511   45s
+H  299    52                    1454.9960352 1421.28705  2.32%   517   45s
+H  307    41                    1438.1178202 1421.28705  1.17%   510   45s
+H  363    44                    1434.3995820 1422.07128  0.86%   440   46s
+H  499    22                    1433.9835217 1422.27570  0.82%   338   47s
+H  599    93                    1433.9768837 1422.27570  0.82%   292   48s
+H  619    31                    1432.9108037 1428.48896  0.31%   284   48s
+H  890    37                    1432.8290007 1428.48896  0.30%   202   48s
+H  954    33                    1432.7658701 1428.48896  0.30%   189   48s
+H 1219     0                    1432.6451310 1432.50706  0.01%   150   48s
+H 1219     0                    1432.6395264 1432.50706  0.01%   150   48s
+H 1229     0                    1432.6336760 1432.50706  0.01%   149   48s
+
+Cutting planes:
+  Cover: 19
+  Clique: 413
+  MIR: 7
+  Zero half: 12
+
+Explored 1327 nodes (205607 simplex iterations) in 48.70 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.432633675996e+03, best bound 1.432567433747e+03, gap 0.0046%
+
+Wrote result file 'proftaflaOkkarLausn2.sol'
+

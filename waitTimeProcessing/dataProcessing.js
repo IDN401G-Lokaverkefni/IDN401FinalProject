@@ -14,6 +14,7 @@ dataMatrixOptimumRestTwo = dataFile.dataMatrixOptimumRestTwo;
 dataMatrixPartC = dataFile.dataMatrixPartC;
 dataMatrixStudents = dataFile.dataMatrixStudents;
 dataMatrixOurSolution = dataFile.dataMatrixOurSolution;
+dataMatrixOurSolutionTwo = dataFile.dataMatrixOurSolutionTwo;
 groupArray = dataFile.groupArray;
 
 // Function to calculate how many rest days a group receives on average. Takes
@@ -127,3 +128,7 @@ console.log("--------------------------------------------------------------");
 console.log("Data with our optimum solution (part E):");
 processDataMatrix(groupArray, dataMatrixOurSolution, false);
 processDataMatrix(groupArray, dataMatrixOurSolution, true);
+console.log("--------------------------------------------------------------");
+console.log("Data with our optimum solution, version 2 (part E):");
+processDataMatrix(groupArray, dataMatrixOurSolutionTwo, false);
+processDataMatrix(groupArray, dataMatrixOurSolutionTwo, true);
