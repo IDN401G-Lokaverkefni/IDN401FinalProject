@@ -1,0 +1,348 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[12pt]{article}
+
+\usepackage[icelandic]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage{latexsym,amssymb,amsmath}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{lstlang05}
+\usepackage{color}
+
+
+\voffset=-1.0in
+\hoffset=-0.5in
+\textwidth=6in
+\textheight=9.0in
+
+\lstset{ %
+    language=ampl,                     % the language of the code
+    basicstyle=\footnotesize\ttfamily,       % the size of the fonts that are used for the code
+    backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+    showspaces=false,               % show spaces adding particular underscores
+    showstringspaces=false,         % underline spaces within strings
+    showtabs=false,                 % show tabs within strings adding particular underscores
+    frame=single,                   % adds a frame around the code
+    rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+    tabsize=2,                      % sets default tabsize to 2 spaces
+breaklines=true,                % sets automatic line breaking
+    breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+    keywordstyle=\color{blue},      % keyword style
+    commentstyle=\color{black},   % comment style
+    stringstyle=\color{red},      % string literal style
+    escapeinside={\%*}{*)},         % if you want to add a comment within your code
+    morekeywords={*,...}            % if you want to add more keywords to the set
+} 
+
+\begin{document}
+
+\pagestyle{empty}
+
+\newcommand{\br}{\par}
+\newcommand{\substackpar}{}
+\newcommand{\substackbr}{,\,}
+%\usepackage{makeidx}
+\newcommand{\bolddot}{{\mathbf \cdot}}
+\newcommand{\C}{{\mathbb  C}}
+\newcommand{\Cn}{{\mathbb  C\sp n}}
+\newcommand{\crn}{{{\mathbb  C\mathbb  R^n}}}
+\newcommand{\R}{{\mathbb  R}}
+\newcommand{\Rn}{{\mathbb  R\sp n}}
+\newcommand{\Rnn}{{\mathbb  R\sp{n\times n}}}
+\newcommand{\Z}{{\mathbb  Z}}
+\newcommand{\N}{{\mathbb  N}}
+\renewcommand{\P}{{\mathbb  P}}
+\newcommand{\Q}{{\mathbb  Q}}
+\newcommand{\U}{{\mathbb  U}}
+\newcommand{\D}{{\mathbb  D}}
+\newcommand{\T}{{\mathbb  T}}
+\newcommand{\A}{{\cal A}}
+\newcommand{\E}{{\cal E}}
+\newcommand{\F}{{\cal F}}
+\renewcommand{\H}{{\cal H}}
+\renewcommand{\L}{{\cal L}}
+\newcommand{\M}{{\cal M}}
+\renewcommand{\O}{{\cal O}}
+\renewcommand{\S}{{\cal S}}
+\newcommand{\dash}{{\sp{\prime}}}
+\newcommand{\ddash}{{\sp{\prime\prime}}}
+\newcommand{\tdash}{{\sp{\prime\prime\prime}}}
+\newcommand{\set }[1]{{\{#1\}}}
+\newcommand{\scalar}[2]{{\langle#1,#2\rangle}}
+\newcommand{\arccot}{{\operatorname{arccot}}}
+\newcommand{\arccoth}{{\operatorname{arccoth}}}
+\newcommand{\arccosh}{{\operatorname{arccosh}}}
+\newcommand{\arcsinh}{{\operatorname{arcsinh}}}
+\newcommand{\arctanh}{{\operatorname{arctanh}}}
+\newcommand{\Log}{{\operatorname{Log}}}
+\newcommand{\Arg}{{\operatorname{Arg}}}
+\newcommand{\grad}{{\operatorname{grad}}}
+\newcommand{\graf}{{\operatorname{graf}}}
+\renewcommand{\div}{{\operatorname{div}}}
+\newcommand{\rot}{{\operatorname{rot}}}
+\newcommand{\curl}{{\operatorname{curl}}}
+\renewcommand{\Im}{{\operatorname{Im\, }}}
+\renewcommand{\Re}{{\operatorname{Re\, }}}
+\newcommand{\Res}{{\operatorname{Res}}}
+\newcommand{\vp}{{\operatorname{vp}}}
+\newcommand{\mynd}[1]{{{\operatorname{mynd}(#1)}}}
+\newcommand{\dbar}{{{\overline\partial}}}
+\newcommand{\inv}{{\operatorname{inv}}}
+\newcommand{\sign}{{\operatorname{sign}}}
+\newcommand{\trace}{{\operatorname{trace}}}
+\newcommand{\conv}{{\operatorname{conv}}}
+\newcommand{\Span}{{\operatorname{Sp}}}
+\newcommand{\stig}{{\operatorname{stig}}}
+\newcommand{\Exp}{{\operatorname{Exp}}}
+\newcommand{\diag}{{\operatorname{diag}}}
+\newcommand{\adj}{{\operatorname{adj}}}
+\newcommand{\erf}{{\operatorname{erf}}}
+\newcommand{\erfc}{{\operatorname{erfc}}}
+\renewcommand{\ast}{{\operatorname{\text{?st}}}}
+\newcommand{\Lloc}{{L_{\text{loc}}\sp 1}}
+\newcommand{\boldcdot}{{\mathbb \cdot}}
+%\newcommand{\Cinf0}[1]{{C_0\sp{\infty}(#1)}}
+\newcommand{\supp}{{\text{supp}\, }}
+\newcommand{\chsupp}{{\text{ch supp}\, }}
+\newcommand{\singsupp}{{\text{sing supp}\, }}
+\newcommand{\SL}[1]{{\dfrac {1}{\varrho} \bigg(-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1\bigg)}}
+\newcommand{\SLL}[1]{-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1}
+\newcommand{\Laplace}[1]{\dfrac{\partial^2 #1}{\partial x^2}+\dfrac{\partial^2 #1}{\partial y^2}}
+\newcommand{\polh}[1]{{\widehat #1_{\C^n}}}
+\newcommand{\tilv}{{}}
+
+\newcommand{\sz}{\overline{z}}
+\newcommand{\saf}{\overline{f}}
+\newcommand{\sw}{\overline{w}}
+
+\newcommand{\pz}{\partial_z}
+\newcommand{\psz}{\partial_{\overline{z}}}
+%%%
+
+\newcommand{\Nv}{\mbox{${\bf N}$}}
+
+\newcommand{\Bv}{\mbox{${\bf B}$}}
+
+
+\newcommand{\Tv}{\mbox{${\bf T}$}}
+
+
+%%%
+
+	\begin{titlepage}
+        
+        \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+        
+        \center % Center everything on the page
+        
+        %----------------------------------------------------------------------------------------
+        %	HEADING SECTIONS
+        %----------------------------------------------------------------------------------------
+        
+        \textsc{\LARGE Háskóli Íslands}\\[1.5cm] % Name of your university/college
+        \textsc{\Large Aðgerðargreining}\\[0.5cm] % Major heading such as course name
+        \textsc{\large IÐN401G}\\[0.5cm] % Minor heading such as course title
+        
+        %----------------------------------------------------------------------------------------
+        %	TITLE SECTION
+        %----------------------------------------------------------------------------------------
+        
+        \HRule \\[0.4cm]
+        { \huge \bfseries Lokaverkefni - Próftöflubestun}\\[0.4cm] % Title of your document
+        \HRule \\[1.5cm]
+        
+        %----------------------------------------------------------------------------------------
+        %	AUTHOR SECTION
+        %----------------------------------------------------------------------------------------
+        
+        \begin{minipage}{0.4\textwidth}
+            \begin{flushleft} \large
+                \emph{Höfundar:}\\
+                Egill Ian Guðmundsson\\
+                Hildur Ösp Sigurjónsdóttir\\
+                Stefán Carl Peiser\\ % Your name
+				Unnur Sigurjóns
+            \end{flushleft}
+        \end{minipage}
+        ~
+        \begin{minipage}{0.4\textwidth}
+            \begin{flushright} \large
+                \emph{Umsjónarkennari:} \\
+                Tómas Philip Rúnarsson\\
+            \end{flushright}
+        \end{minipage}\\[4cm]
+        
+        % If you don't want a supervisor, uncomment the two lines below and remove the section above
+        %\Large \emph{Author:}\\
+        %John \textsc{Smith}\\[3cm] % Your name
+        
+        %----------------------------------------------------------------------------------------
+        %	DATE SECTION
+        %----------------------------------------------------------------------------------------
+        
+        {\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+        
+        %----------------------------------------------------------------------------------------
+        %	LOGO SECTION
+        %----------------------------------------------------------------------------------------
+        
+       \includegraphics[scale = 0.35]{hi_logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+        
+        %----------------------------------------------------------------------------------------
+        
+        \vfill % Fill the rest of the page with whitespace
+        
+    \end{titlepage}
+
+\newpage
+
+\section{Ágrip}
+Bestun próftöflu hefur verið vandmeðfarið verkefni víða um heim síðastliðna áratugi. Verkefnið snýst um að skipuleggja fjöldan allan af prófum yfir takmarkað tímabil. Þessu tímabili er skipt upp í ákveðið marga prófstokka, oftast tvo stokka á dag og þarf verkefnið auk þess að uppfylla fyrirfram ákveðin skilyrði sem við köllum skorður. Skorðurnar eru mismunandi eftir skólum, en þær skorður sem nauðsynlegt er að uppfylla í öllum tilfellum kallast harðar skorður. Sem dæmi um harðar skorður má nefna að sami nemandi getur ekki þreytt tvö próf á sama tíma (í sama prófstokki) og að takmarkaður fjöldi nemenda getur þreytt próf á sama tíma, enda takmarkaður sætafjöldi í boði fyrir hvern stokk. Ef allar harðar skorður eru uppfylltar við bestun próftöflu er litið svo á að lausnin sé lögleg. Aðrar skorður sem hægt er að setja, en teljast ekki nauðsynlegar til að leysa verkefnið, eru kallaðar lausar skorður. Dæmi um lausar skorður eru t.d. ákjósanlegur hvíldartími nemenda á milli prófa, eða að fjölmenn námskeið séu með próf framarlega á próftímabili.
+\medskip
+
+Viðfangsefni þessarar skýrslu er að athuga hvort hægt sé að útbúa próftöflu, sem uppfyllir tilsett skilyrði, fyrir ákveðna deild innan háskólans. Auk þess skal athuga hvort hægt sé að útbúa próftöfluna þannig að sem flestum óskum stjórnenda skólans, kennara og nemenda séu teknar til greina. Skilyrðin sem verður að uppfylla í öllum tilfellum eru eftirfarandi:
+
+
+\begin{enumerate}
+\item Enginn nemandi getur setið próf samtímis.
+\item Próf samkenndra námskeiða skulu vera á sama tíma.
+\item Fjöldi nemenda sem tekur próf á sama tíma skal ekki vera fleiri en 450.
+\end{enumerate}
+
+Þar að auki könnum við hvort hægt sé að spara fé með því að hámarka sætanýtingu og þar með stytta prófatímabilið, hvort hagkvæmt sé að hafa próf fjölmennustu námskeiðanna sem fyrst á prófatímabilinu og hvort sé hægt að gefa ásættanlegan hvíldartíma á milli prófa fyrir nemendur. Allar lausnir sem fengust, eru bornar saman við auglýsta prófatöflu verk-og náttúruvísindasviðs Háskóla Íslands fyrir vormisseri 2016.
+\newpage
+\section{Inngangur/bakgrunnur}
+Verkefnið sem leyst var af hólmi snerist um að hanna líkan sem bestar próftöflu nemenda við Verk-og náttúruvísindasvið Háskóla Íslands. Hugsanlega má rekja þörf verkefnisins til þess að í dag er einn aðili innan háskólans sem sinnir því verkefni að útbúa próftöflur fyrir alla nemendur skólans, þ.e. prófstjóri. Sér hann til þess að öll skilyrði séu uppfyllt við gerð próftaflnanna eftir bestu getu. Skilyrðin ásamt ákvarðanabreytum má nálgast í minni prófstjórans.
+Stefnt var að því að leysa verkefnið fyrir þau próf er tilheyra Verk-og náttúruvísindasviði Háskóla Íslands. Að sögn kennara ætti líkanið okkar að virka fyrir háskólann í heild sinni, en ekki verður þó farið ítarlegra í það hér.
+Verkefnalýsingin sem hópurinn fékk í hendur innihélt þónokkrar spurningar sem reynt verður að svara eftir bestu getu. 
+Upp voru gefnar þrjár harðar skorður:
+
+\begin{enumerate}
+\item Enginn nemandi getur setið próf samtímis þ.e.a.s. í sama prófstokki.
+\item Próf samkenndra námskeiða skulu vera á sama tíma.
+\item Fjöldi úthlutaðra sæta getur ekki verið meiri en þau sem eru til staðar, u.þ.b. 450 sæti.
+\end{enumerate}
+
+Einnig verður skoðað hvort hægt sé að koma í veg fyrir að einhverjir hópar innan deildarinnar taki mörg próf á stuttum tíma og þá hvernig væri hægt að leysa það. Óskir kennara gagnvart lausninni var að fjölmenn námskeið tækju prófin snemma á próftímabilinu en stjórnendur skólans vildu sjá lausn sem gæti lágmarkað kostnað vegna húsnæðis auk yfirsetu- og aðstoðarfólks yfir prófatímabilið sem þýðir styttingu próftímabilsins eins og hægt er.
+
+\section{Niðurstöður, niðurlag og tillögur}
+Líkanið var þróað í nokkrum skrefum. Í öllum tilfellum, nema þess sé sérstaklega getið, var gert ráð fyrir því að nemandi gæti ekki setið tvö próf á sama tíma og að próf samkenndra áfanga séu á sama tíma. Einnig er gert ráð fyrir því að hámarks úthlutunarsæti fyrir hvern prófstokk séu 450 sæti.
+Byrjað var á því að kanna hver lágmarksfjöldi prófstokka er sem þarf til að búa til próftöflu með öllum hörðum skorðum sem settar voru hér að undan [graf 1] og einnig hve margir prófstokkarnir yrðu ef fjöldi sæta væri ótakmarkaður [graf 2]. 
+
+\bigskip
+
+\textbf{Mynd 1}
+Graf 1. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Fjöldi tiltækra sæta í hvern prófstokk var takmarkaður við 450.
+
+
+\bigskip
+
+\textbf{Mynd 2}
+Graf 2. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Fjöldi tiltækra sæta í hverjum prófstokki var ótakmarkaður.
+
+\bigskip
+Í báðum tilvikum reyndist besta lausnin notast við 13 prófstokka, þ.e. engu skipti hvort sætin sem voru tiltæk töldu 450 eða að fjöldi sæta var óendanlegur og því styttist próftímabilið ekkert þrátt fyrir að sætaskorðan var fjarlægð. Hámarksfjöldi sæta sem þyrfti í seinna tilvikinu væri þó 1171 sæti. Dreifing nemenda er jafnari ef fjöldi prófsæta er takmarkaður heldur en þegar fjöldi prófsæta er ótakmarkaður. 
+Því næst var fundinn heppilegur mælikvarði á hvíld milli prófa fyrir hópanna 61. Það var gert með því að finna meðalhvíldartíma milli prófa fyrir alla hópa. Fyrir auglýsta próftöflu háskólans fyrir vorið 2016 fengust eftirfarandi gögn: 
+
+\bigskip
+
+\begin{table}[h]
+	\centering
+	\label{my-label}
+	\begin{tabular}{l|c|c|}
+		\cline{2-3}
+		& \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 6,63                                             & 8,48                                            \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 2,90                                             & 3,72                                            \\ \hline
+	\end{tabular}
+	\caption{Sýnir meðalhvíldartíma hópa miðað við auglýsta próftöflu háskólans}
+\end{table}
+
+Fundin var betri lausn með því að byrja á að tryggja að sem fæstir nemendur væru í tveimur prófum sama dag og því næst var lögð áhersla á að sem fæstir nemendur væru í prófum tvo daga í röð. Þegar það líkan var keyrt fengust niðurstöður sem sýndar eru á grafi 3.
+
+\bigskip
+
+\textbf{Mynd 3}
+Graf 3. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki þegar leitað var að lausn betri en auglýst próftafla frá háskólanum gaf.
+
+\bigskip
+
+
+Þessi lausn gefur að meðalhvíldartími frá byrjun próftímabils til síðasta prófs er lengri og jafnframt er meðalhvíldartími nemenda frá fyrsta og síðasta prófi fyrir hvern hóp lengri [tafla 2]. Tekið skal fram að stokkar 11-14 og 25-28 eru laugardagur og sunnudagur og stokkar 21-22 er uppstigningardagur, fjöldi prófstokka er því 22 en tímabilið í heild sinni telur 32 stokka.
+Meðalfjöldi nemenda er rokkandi allt frá 22 nemendum og upp í 449 nemendur. Þessi lausn væri hentug nemendum sem kjósa góðan hvíldartíma á milli prófa en væri síður kostur fyrir stjórnendur skólans.
+
+\bigskip
+
+\begin{table}[h]
+	\centering
+	\label{my-label}
+	\begin{tabular}{l|c|c|}
+		\cline{2-3}
+		& \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 7,82                                             & 9,25                                            \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 3,48                                             & 4,08                                            \\ \hline
+	\end{tabular}
+	\caption{Taflan sýnir meðalhvíldartíma hópa við bættan hvíldartíma milli prófa.}
+\end{table}
+
+Til þess að lágmarka fjölda prófstokka var líkanið hannað þannig að prófunum var raðað í fremstu prófstokkana og þar með tryggði það einnig að nemendur klára prófin á sem stystum tíma. 
+
+
+\bigskip
+
+\textbf{Mynd 4}
+Graf 4. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki þegar fengin var lausn við lágmörkun prófstokka.
+
+Á grafinu [4] sést að fyrstu sex prófstokkarnir hafa flesta nemendur eða 450 talsins og eru því fullnýttir. Einungis próf sem þreytt eru í síðustu tveimur stokkunum er fjöldi nemenda færri en 400 en í stokk 16 teljast 370 nemendur og í síðasta stokknum er fjöldi nemenda 279.
+Hvíldartíminn á milli prófa styttist en meðalhvíldartími frá byrjun próftímabils til síðasta prófs er 0,87 dagar og meðalhvíldartími frá fyrsta prófi til síðasta prófs fyrir hvern hóp er 0,94 dagar. Þar með sést að meðalhvíldartíminn frá byrjun til enda próftímabils styttist um 2,61 daga og meðalhvíldartími frá fyrsta prófi til síðasta prófs styttist um 3,14 daga. 
+
+
+\begin{table}[h]
+	\centering
+	\label{my-label}
+	\begin{tabular}{l|c|c|}
+		\cline{2-3}
+		& \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 2,25                                             & 2,47                                            \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 0,87                                             & 0,94                                            \\ \hline
+	\end{tabular}
+	\caption{Taflan sýnir meðalhvíldartíma hópa þegar fjöldi  prófstokka var lágmarkaður.}
+\end{table}
+
+Kennarar vildu sjá próf fjölmennari námskeiða fyrr á tímabilinu og var líkaninu breytt til þess að koma á móts við óskir þeirra. Graf sex sýnir breytingu á dreifingu nemenda í prófstokka.
+
+\bigskip
+
+\textbf{Mynd 6}
+Graf 6. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Hér er fjölmennustu námskeiðunum raðað fremst í prófstokkana.
+
+\bigskip
+
+Við það að raða prófum fjölmennustu námskeiða fremst á tímabilið eykst meðalhvíldartími hópa miðað við þá niðurstöðu er fékkst þegar fjölda prófstokka var lágmarkaður [tafla 3] en er þó töluvert minni en meðalhvíldartími auglýstrar próftöflu fyrir deildina vorið 2016 [tafla 1]. Niðurstöður meðalhvíldartíma hópa við þessa lausn má sjá í töflu 4.
+Dreifing nemenda yfir tímabilið er ekki ósvipuð og þegar fjöldi prófstokka var lágmarkaður, en heildarfjöldi nýttra prófstokka, þegar prófum fjölmennustu námskeiðunum er raðað fremst í próftöfluna, er 19. Síðustu þrír prófstokkarnir telja færri en 150 nemendur en aðrir nýttir prófstokkar fleiri en 400 nemendur.
+
+\begin{table}[h]
+	\centering
+	\label{my-label}
+	\begin{tabular}{l|c|c|}
+		\cline{2-3}
+		& \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 3,27                                             & 3,35                                            \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 1,41                                             & 1,42                                            \\ \hline
+	\end{tabular}
+	\caption{Taflan sýnir meðalhvíldartíma hópa þegar fjöldi  prófstokka var lágmarkaður.}
+\end{table}
+
+\bigskip 
+Að lokum var stillt upp líkani sem talið er gefa bestu lausn fyrir nemendur, kennara og stjórnendur skólans.  Við líkangerðina var í fyrsta lagi haft í huga að fjölmenn námskeið væru eins framarlega á próftímabili og unnt væri. Í öðru lagi var reynt eftir fremsta megni að tryggja að nemendur væru ekki í tveimur prófum sama dag og að þeir hefðu að minnsta kosti einn prófstokk í hvíld á milli prófa helst þó heilan dag í hvíld. Í þriðja lagi voru próf með háa fallprósentu sett eins framarlega og próftímabil og unnt var. 
+
+
+\end{document}
+
+
+
+%%%
