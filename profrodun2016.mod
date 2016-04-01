@@ -11,7 +11,7 @@ param n := 16; # Number of days in the exam period
 set examSlots := 1..(2*n); # Exam-slots (profstokkar)
 set offSlots; #Set of slots that belong to off Days
 
-param sumCount := 5574; # Total numnber of exams taken during this exam period
+param sumCount := 2274; # Total numnber of exams taken during this exam period
 param cidExamslot2016{cidExam}; # Solution of the University of Iceland, for comparison
 param ourBasicSolution{cidExam}; # Calculated solution with 3 basic constraint
 param solutionWithoutSeats{cidExam}; # Calculated solution without seat constraint
@@ -45,7 +45,8 @@ var slot{cidExam, examSlots} binary; # Variable
 #minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(cidCount[c]*(e^2))^4;
 
 # Our best solution: Difficult exams early
-minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(((cidCount[c]^2*(cidDifficulty[c]))/ sumCount)+1)*(e^3);
+minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*((cidCount[c]*((cidDifficulty[c] + 1)^4))/ sumCount)*(e^0.25);
+# minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*((200*cidDifficulty[c]+cidCount[c]^2)*(e^2))^2;
 
 # Ensure that no students have exams in two different courses at the same time
  subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
