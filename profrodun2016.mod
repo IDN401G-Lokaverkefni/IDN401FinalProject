@@ -46,7 +46,6 @@ var slot{cidExam, examSlots} binary; # Variable
 
 # Our best solution: Difficult exams early
 minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*((cidCount[c]*((cidDifficulty[c] + 1)^4))/ sumCount)*(e^0.25);
-# minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*((200*cidDifficulty[c]+cidCount[c]^2)*(e^2))^2;
 
 # Ensure that no students have exams in two different courses at the same time
  subject to examClashes{c1 in cidExam, c2 in cidExam, e in examSlots: cidCommon[c1, c2] > 0}: slot[c1,e]+slot[c2,e] <= 1;
