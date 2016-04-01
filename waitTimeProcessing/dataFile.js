@@ -29,6 +29,8 @@ var dataMatrixOurSolution = new Array(2);
 var dataMatrixOurSolutionTwo = new Array(2);
 // Array with our best solution so far
 var dataMatrixOurSolutionThree = new Array(2);
+// Array with our best solution so far
+var dataMatrixOurSolutionFour = new Array(2);
 
 // First lines in arrays. Contain courses in exam-table
 dataMatrixWithConstraints[1] = ["VEL601G","HBV401G","STA202G",
@@ -252,6 +254,23 @@ dataMatrixOurSolutionThree[1] = ["VEL601G","HBV401G","STA202G","EFN205G",
 "STA411G","EDL205G","EFN408G","UMV201G","BYG201M","VEL201G","TOL203M","VEL215F",
 "EFN612M","VEL405G","EDL203G"];
 
+dataMatrixOurSolutionFour[1] = ["VEL601G","HBV401G","STA202G","EFN205G","LEF406G",
+"EFN214G","JAR418G","FER603M","RAF403G","BYG603G","TOL203F","IDN209F","JAR253F",
+"LIF412M","LEF617M","UMV213F","LAN203G","STA405G","STA209G","TOL203G","UAU214M",
+"VEL202G","LIF401G","LAN604M","EDL403G","BYG201G","TOL401G","JAR211G","JAR417G",
+"RAF401G","RAF616M","STA403M","EFN410G","IDN403G","REI202M","LIF201G","REI201G",
+"STA207G","STA401G","HBV601G","LIF633G","FER409G","LIF227F","FER210F","STA205G",
+"IDN603G","JED201G","LIF635G","EDL402G","EFN406G","BYG401G","TOV602M","STA203G",
+"MAS201F","VEL218F","JAR617G","LIF410G","UAU206M","LAN205G","LIF243F","RAF601G",
+"EDL204G","EFN404G","BYG601G","IDN401G","LIF214G","EDL612M","VEL402G","HBV201G",
+"JAR202G","LIF615M","RAF201G","LEF616M","UMV203G","TOL202M","LAN219G","LAN410G",
+"LAN209F","RAF402G","EDL401G","EFN202G","TOL403G","JAR415G","JAR212G","LIF403G",
+"FER208G","UMV203M","HBV203F","STA418M","EDL201G","EFN207G","EDL402M","EDL206G",
+"BYG202M","BYG203M","VEL401G","IDN402G","JAR619G","LIF215G","TOV201G","EFN208G",
+"HBV402G","JAR611G","LIF614M","LAN401G","FER609G","FER211F","RAF404G","STA411G",
+"EDL205G","EFN408G","UMV201G","BYG201M","VEL201G","TOL203M","VEL215F","EFN612M",
+"VEL405G","EDL203G"];
+
 // Exam slots for each course
 dataMatrixWithConstraints[2] = [4,6,3,5,2,5,2,6,7,3,4,4,8,7,5,2,9,9,9,13,1,8,5,
 5,3,3,4,1,6,2,5,5,4,5,2,11,1,2,5,11,2,3,2,3,11,12,4,1,3,1,6,5,10,10,2,5,2,2,10,
@@ -323,7 +342,12 @@ dataMatrixOurSolutionTwo[2] = [31,17,8,3,20,3,3,2,10,6,5,3,5,9,7,3,2,4,2,6,5,24,
 dataMatrixOurSolutionThree[2] = [8,17,8,4,8,4,3,7,10,1,1,3,3,9,3,3,2,32,2,6,5,7,
 1,4,7,2,4,15,7,7,2,1,1,5,2,16,10,3,18,15,3,4,3,4,15,23,9,5,5,15,5,2,24,24,5,3,3,
 3,7,3,2,2,6,8,10,4,2,10,20,5,1,10,6,6,19,2,5,5,1,1,10,29,6,1,6,3,6,3,7,20,8,2,
-20,3,3,1,29,2,8,1,5,2,1,4,6,2,2,4,5,4,4,2,5,3,8,2,4,3,3,];
+20,3,3,1,29,2,8,1,5,2,1,4,6,2,2,4,5,4,4,2,5,3,8,2,4,3,3];
+
+dataMatrixOurSolutionFour[2] = [8,17,9,4,9,4,5,3,10,2,6,5,4,8,8,4,3,29,3,6,5,7,
+4,5,5,8,4,16,8,4,3,3,4,5,2,15,10,1,18,15,9,5,9,5,15,23,6,6,5,1,5,5,24,24,5,2,2,
+3,6,2,1,4,8,9,10,7,3,10,20,2,4,10,6,4,19,7,4,4,7,7,7,32,9,10,19,2,7,4,5,20,5,8,
+20,4,4,1,31,2,2,1,1,2,4,2,2,7,7,1,8,2,16,2,7,3,8,2,2,5,3];
 
 // Array containing names of courses for groups
 var groupArray = new Array(61);
@@ -402,4 +426,5 @@ exports.dataMatrixStudents = dataMatrixStudents;
 exports.dataMatrixOurSolution = dataMatrixOurSolution;
 exports.dataMatrixOurSolutionTwo = dataMatrixOurSolutionTwo;
 exports.dataMatrixOurSolutionThree = dataMatrixOurSolutionThree;
+exports.dataMatrixOurSolutionFour = dataMatrixOurSolutionFour;
 exports.groupArray = groupArray;
