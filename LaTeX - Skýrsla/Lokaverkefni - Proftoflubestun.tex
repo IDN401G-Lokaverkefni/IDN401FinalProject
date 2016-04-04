@@ -241,7 +241,8 @@ breaklines=true,                % sets automatic line breaking
     \end{titlepage}
 
 \newpage
-
+\tableofcontents
+\newpage
 \section{Ágrip}
 Bestun próftöflu hefur verið vandmeðfarið verkefni víða um heim síðastliðna áratugi. Verkefnið snýst um að skipuleggja fjöldan allan af prófum yfir takmarkað tímabil. Þessu tímabili er skipt upp í ákveðið marga prófstokka, oftast tvo stokka á dag og þarf verkefnið auk þess að uppfylla fyrirfram ákveðin skilyrði sem kallast skorður.
 Skorðurnar eru mismunandi eftir skólum. Þær skorður sem nauðsynlegt er að uppfylla í öllum tilfellum kallast harðar skorður. Sem dæmi um harðar skorður má nefna að sami nemandi getur ekki þreytt tvö próf á sama tíma (í sama prófstokki) og að takmarkaður fjöldi nemenda getur þreytt próf á sama tíma, enda takmarkaður sætafjöldi í boði fyrir hvern stokk. Ef allar harðar skorður eru uppfylltar við bestun próftöflu er litið svo á að lausnin sé lögleg.
@@ -284,140 +285,218 @@ Stilla má líkanið til að lágmarka fjölda stokka, hámarka hvíldartíma, h
 
 \section{Niðurstöður, niðurlag og tillögur}
 
-\begin{table}[h]
-	\centering
-	\label{my-label}
-	\begin{tabular}{l|c|c|}
-		\cline{2-3}
-		& \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
-		\multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 6,63                                             & 8,48                                            \\ \hline
-		\multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 2,90                                             & 3,72                                            \\ \hline
-	\end{tabular}
-	\caption{Sýnir meðalhvíldartíma hópa miðað við auglýsta próftöflu háskólans}
-\end{table}
+
 
 Líkanið var þróað í nokkrum skrefum. Í öllum tilfellum, nema þess sé sérstaklega getið, var gert ráð fyrir því að nemandi gæti ekki setið tvö próf á sama tíma og að próf samkenndra áfanga séu á sama tíma. Einnig er gert ráð fyrir því að hámarks úthlutunarsæti fyrir hvern prófstokk séu 450 sæti.
 Byrjað var á því að kanna hver lágmarksfjöldi prófstokka er sem þarf til að búa til próftöflu með öllum hörðum skorðum sem settar voru hér að undan [graf 1] og einnig hve margir prófstokkarnir yrðu ef fjöldi sæta væri ótakmarkaður [graf 2]. 
 
-Graf 1. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Fjöldi tiltækra sæta í hvern prófstokk var takmarkaður við 450.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 152mm]{./myndir/graf1}
+\caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Fjöldi tiltækra sæta í hvern prófstokk var takmarkaður við 450.}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 152mm]{./myndir/graf2}
+    \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Fjöldi tiltækra sæta í hverjum prófstokki var ótakmarkaður.}
+\end{figure}
 
 
-Graf 2. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Fjöldi tiltækra sæta í hverjum prófstokki var ótakmarkaður.
+
+
 
 Í báðum tilvikum reyndist besta lausnin nota 13 prófstokka, þ.e. engu skipti hvort sætin sem voru tiltæk voru 450 eða að fjöldi sæta væri ótakmarkaður og því styttist próftímabilið ekkert þrátt fyrir að sætaskorðan væri fjarlægð. Hámarksfjöldi sæta sem þyrfti í seinna tilvikinu væri þó 1171 sæti. Dreifing nemenda er jafnari ef fjöldi prófsæta er takmarkaður heldur en þegar fjöldi prófsæta er ótakmarkaður. 
 Því næst var fundinn heppilegur mælikvarði á hvíld milli prófa fyrir hópanna 61. Það var gert með því að finna meðalhvíldartíma milli prófa fyrir alla hópa. Fyrir auglýsta próftöflu háskólans fyrir vorið 2016 fengust neðangreind gögn  [graf 3][tafla 1].
 
-Graf 3. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki fyrir auglýsta próftöflu Verkfræði- og náttúruvísindasviðs Háskóla Íslands fyrir vormisseri 2016.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 175mm]{./myndir/graf3}
+    \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki fyrir auglýsta próftöflu Verkfræði- og náttúruvísindasviðs Háskóla Íslands fyrir vormisseri 2016.}
+\end{figure}
 
-Tafla 1. Taflan sýnir meðalhvíldartíma hópa miðað við auglýsta próftöflu háskólans.
-
-
-Allt prófatímabilið
-Prófatímabil hópa
-Fjöldi stokka
-6,63
-8,48
-Fjöldi daga
-2,90
-3,72
-
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l|c|c|}
+        \cline{2-3}
+        & \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 6,63                                             & 8,48                                            \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 2,90                                             & 3,72                                            \\ \hline
+    \end{tabular}
+    \caption{Taflan sýnir meðalhvíldartíma hópa miðað við auglýsta próftöflu háskólans}
+\end{table}
 
 Fundin var betri lausn með því að byrja á að tryggja að sem fæstir nemendur væru í tveimur prófum sama dag og því næst var lögð áhersla á að sem fæstir nemendur væru í prófum tvo daga í röð. Þegar það líkan var keyrt fengust niðurstöður sem sýndar eru á grafi 4.
 
-Graf 4. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki þegar leitað var að lausn betri en auglýst próftafla frá háskólanum gaf.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 185mm]{./myndir/graf4}
+    \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki þegar leitað var að lausn betri en auglýst próftafla frá háskólanum gaf.}
+\end{figure}
+
+\newpage
 
 Þessi lausn gefur að meðalhvíldartími frá byrjun próftímabils til síðasta prófs er lengri og jafnframt er meðalhvíldartími nemenda frá fyrsta og síðasta prófi fyrir hvern hóp lengri [tafla 2]. 
 Fjöldi nemenda er rokkandi, allt frá 22 nemendum og upp í 449 nemendur. Þessi lausn væri hentug nemendum sem kjósa góðan hvíldartíma á milli prófa en væri síður kostur fyrir stjórnendur skólans.
 
 
-
-
-
-Tafla 2. Taflan sýnir meðalhvíldartíma hópa við bættan hvíldartíma milli prófa.
-
-
-Allt prófatímabilið
-Prófatímabil hópa
-Fjöldi stokka
-7,82
-9,25
-Fjöldi daga
-3,48
-4,08
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l|c|c|}
+        \cline{2-3}
+        & \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 7,82                                             & 9,25                                            \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 3,48                                             & 4,08                                            \\ \hline
+    \end{tabular}
+    \caption{Taflan sýnir meðalhvíldartíma hópa við bættan hvíldartíma milli prófa.}
+\end{table}
 
 
 Til þess að lágmarka fjölda prófstokka var líkanið hannað þannig að prófunum var raðað í fremstu prófstokkana og þar með tryggði það einnig að nemendur klára prófin á sem styðstum tíma. 
 
-Graf 5. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki þegar fengin var lausn við lágmörkun prófstokka.
+\newpage
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 175mm]{./myndir/graf5}
+    \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki þegar fengin var lausn við lágmörkun prófstokka.}
+\end{figure}
 
 Á grafinu [5] sést að fyrstu sex prófstokkarnir hafa flesta nemendur eða 450 talsins og eru því fullnýttir. Einungis í prófum sem þreytt eru í síðustu tveimur stokkunum er fjöldi nemenda færri en 400 en í stokki 16 eru 370 nemendur og í síðasta stokknum er fjöldi nemenda 279.
 Hvíldartíminn á milli prófa styttist en meðalhvíldartími frá byrjun próftímabils til síðasta prófs er 0,87 dagar og meðalhvíldartími frá fyrsta prófi til síðasta prófs fyrir hvern hóp er 0,94 dagar. Þar með sést að meðalhvíldartíminn frá byrjun til enda próftímabils styttist um 2,61 daga og meðalhvíldartími frá fyrsta prófi til síðasta prófs styttist um 3,14 daga. 
 
-Tafla 3. Taflan sýnir meðalhvíldartíma hópa þegar fjöldi  prófstokka var lágmarkaður.
 
-
-Allt prófatímabilið
-Prófatímabil hópa
-Fjöldi stokka
-2,25
-2,47
-Fjöldi daga
-0,87
-0,94
-
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l|c|c|}
+        \cline{2-3}
+        & \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 2,25                                             & 2,47                                            \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 0,87                                             & 0,94                                            \\ \hline
+    \end{tabular}
+    \caption{Taflan sýnir meðalhvíldartíma hópa þegar fjöldi  prófstokka var lágmarkaður.}
+\end{table}
 
 Kennarar vildu sjá próf fjölmennari námskeiða fyrr á tímabilinu og var líkaninu breytt til þess að koma á móts við óskir þeirra. Graf sex sýnir breytingu á dreifingu nemenda í prófstokka.
 
 
-Graf 6. Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Hér er fjölmennustu námskeiðunum raðað fremst í prófstokkana.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 140mm]{./myndir/graf6}
+    \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Hér er fjölmennustu námskeiðunum raðað fremst í prófstokkana.}
+\end{figure}
+
+\newpage
 
 Við það að raða prófum fjölmennustu námskeiða fremst á tímabilið eykst meðalhvíldartími hópa miðað við þá niðurstöðu er fékkst þegar fjölda prófstokka var lágmarkaður [tafla 3] en er þó töluvert minni en meðalhvíldartími auglýstrar próftöflu fyrir deildina vorið 2016 [tafla 1]. Niðurstöður meðalhvíldartíma hópa við þessa lausn má sjá í töflu 4.
 Dreifing nemenda yfir tímabilið er ekki ósvipuð og þegar fjöldi prófstokka var lágmarkaður, en heildarfjöldi nýttra prófstokka, þegar prófum fjölmennustu námskeiðunum er raðað fremst í próftöfluna, er 19. Síðustu þrír prófstokkarnir telja færri en 150 nemendur en aðrir nýttir prófstokkar fleiri en 400 nemendur.
 
-Tafla 4. Taflan sýnir meðalhvíldartíma hópa þegar fjölmennustu námskeiðunum er raðað fremst í prófstokka.
 
-
-Allt prófatímabilið
-Prófatímabil hópa
-Fjöldi stokka
-3,27
-3,35
-Fjöldi daga
-1,41
-1,42
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l|c|c|}
+        \cline{2-3}
+        & \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 3,27                                             & 3,35                                            \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 1,41                                             & 1,42                                            \\ \hline
+    \end{tabular}
+    \caption{Taflan sýnir meðalhvíldartíma hópa þegar fjölmennustu námskeiðunum er raðað fremst í prófstokka.}
+\end{table}
 
 Að lokum var stillt upp líkani sem talið er gefa bestu lausn fyrir nemendur, kennara og stjórnendur skólans.  Við líkangerðina var í fyrsta lagi haft í huga að fjölmenn námskeið væru eins framarlega á próftímabili og unnt væri. Í öðru lagi var reynt eftir fremsta megni að tryggja að nemendur væru ekki í tveimur prófum sama dag og að þeir hefðu að minnsta kosti einn prófstokk í hvíld á milli prófa helst þó heilan dag. Í þriðja lagi voru próf með háa fallprósentu sett eins framarlega á próftímabil og unnt var. Að lokum var einnig haft í huga að stjórnendur skólans vilja spara kostnað og þar með var reynt að minnka fjölda nýttra stokka. 
 
-Graf 7. Grafið sýnir hagkvæmnustu lausn sem fengin var samkvæmt þeim skorðum sem settar voru.
 
-Tafla 5. Taflan sýnir meðalhvíldartíma hópa miðað við hagkvæmustu lausn. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 150mm]{./myndir/graf7}
+    \caption{Grafið sýnir hagkvæmnustu lausn sem fengin var samkvæmt þeim skorðum sem settar voru.}
+\end{figure}
 
-
-Allt prófatímabilið
-Prófatímabil hópa
-Fjöldi stokka
-5,98
-7,13
-Fjöldi daga
-2,56
-3,05
+\newpage
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l|c|c|}
+        \cline{2-3}
+        & \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 5,98                                             & 7,13                                            \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 2,56                                             & 3,05                                            \\ \hline
+    \end{tabular}
+    \caption{Taflan sýnir meðalhvíldartíma hópa miðað við hagkvæmustu lausn. }
+\end{table}
 
 Líkanið er betra en lausn Háskóla Íslands að því leyti að það notar einum færri prófstokk og þar með minnkar kostnaður við prófhald, sem um nemur yfirsetufólki og kennslustofum. Hvíldartími er ögn minni, u.þ.b. hálfur dagur, heldur en auglýsta lausnin en er þó ásættanlegur fyrir nemendur. 
 Líkanið var hannað þannig að ef fjöldi nemenda sem taka próf í tveimur mismunandi fögum var nægur átti lausnin að hafa ákveðinn fjölda stokka á milli. Eftir nokkrar prófanir kom í ljós að hentugast var, til þess að tryggja sem mestan heildarhvíldartíma, að hafa a.m.k. einn stokk á milli prófa ef fjöldi nemenda í báðum fögum var meiri en eða jafn tveimur,  tvo stokka ef fjöldi nemenda var meiri en eða jafn níu og þrjá stokka hið minnsta ef fjöldi nemenda var meiri en eða jafn 15. Þar með tókst að tryggja að sem flestir nemendur fái að minnsta kosti þriggja stokka frí, þ.e.a.s. einn og hálfan dag, á milli prófa. 
 Þar að auki voru “fjölmenn” námskeið færð framar á próftímabilið en það var gert að ósk kennara því það hentar þeim betur til yfirferðar. Hægt var að hafa allra stærstu námskeiðin fremst í uppröðuninni en það reyndist óhagstætt þar sem önnur fjölmenn námskeið lentu í mun verri stöðu. Því var ákveðið að nota lausn sem tekur tillit til heildarinnar en ekki einungis stærstu námskeiðanna.
+
+\medskip
 Einnig hefur verið tryggt að próf með hærri fallprósentu, þ.e.a.s. strembin próf, eru framarlega í uppröðuninni sem nemendum hefur þótt ákjósanlegt. 
 Að endingu var líkanið fyrir bestu lausn keyrt fyrir mismunandi fjölda prófstokka. Ekki fékkst lögleg lausn þegar prófstokkum var fækkað. Hinsvegar, þegar þeim var fjölgað fengust mismunandi lausnir sem gáfu eftirfarandi hvíldartíma.
 
+\newpage
+
+Að lokum var prófað hvernig lausn myndi breytast ef fjöldi prófstokka yrði breyttur, en það kom í ljós að 32 prófstokkar er algjört lágmark en hinsvegar væri hægt að bæta við prófstokka, það kom í ljós að 38 stokkar væri hámarksfjöldi stokka sem gæfi nýja lausn í próftöflubestuninni.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 180mm]{./myndir/graf8}
+    \caption{Grafið sýnir hagkvæmnustu lausn fyrir 34 prófstokka.}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l|c|c|}
+        \cline{2-3}
+        & \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 6,25                                             & 5,08                                            \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 2,62                                             & 2,13                                            \\ \hline
+    \end{tabular}
+    \caption{Taflan sýnir meðalhvíldartíma hópa miðað við 34 prófstokka.}
+\end{table}
 
 
-Vantar graf
-Hér sést að ef prófstokkunum er fjölgað eykst meðalhvíldartími en á móti kemur að jafnframt því eykst kostnaður einnig. Greiða þarf yfirsetufólki, nýta þarf stofur yfir lengra tímabil ásamt því að kennarar þurfa að fara á milli stofa í stað þess að geta nýtt tímann til prófyfirferðar. 
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 180mm]{./myndir/graf9}
+    \caption{Grafið sýnir hagkvæmnustu lausn fyrir 36 prófstokka.}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l|c|c|}
+        \cline{2-3}
+        & \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 5,87                                             & 4,85                                            \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 2,49                                             & 2,06                                            \\ \hline
+    \end{tabular}
+    \caption{Taflan sýnir meðalhvíldartíma hópa miðað við 36 prófstokka.}
+\end{table}
+
+\newpage
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 180mm]{./myndir/graf10}
+    \caption{Grafið sýnir hagkvæmnustu lausn fyrir 38 prófstokka.}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l|c|c|}
+        \cline{2-3}
+        & \multicolumn{1}{l|}{\textbf{Allt prófatímabili}} & \multicolumn{1}{l|}{\textbf{Prófatímabil hópa}} \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi stokka}} & 6,07                                             & 4,96                                            \\ \hline
+        \multicolumn{1}{|l|}{\textbf{Fjöldi daga}}   & 2,62                                             & 2,13                                            \\ \hline
+    \end{tabular}
+    \caption{Taflan sýnir meðalhvíldartíma hópa miðað við 38 prófstokka.}
+\end{table}
 
 
-
-
-
+Hér sést að ef prófstokkunum er fjölgað í annaðhvort 34 eða 38 þá eykst meðalhvíldartími yfir allt prófatímabilið (fyrir 36 stokka þá verður nýtingin það léleg að hvíldartíminn mínnkar allstaðar), en hinsvegar bitnar það verulega á ákveðnum hópum þar sem meðalhvíldartíminn fyrir próftímabil hópa mínnkar allstaðar, auk þess þarf að hafa í huga að eftir því sem prófstokkum er fjölgað þá jafnframt því eykst kostnaður, þar sem það þarf að nýta stofur yfir lengra tímabil ásamt því að greiða þarf yfirsetufólk og kennarar þurfa að fara á milli stofa í stað þess að geta nýtt tímann til prófyfirferðar.
 \newpage
 
 \section{Aðferðir}
