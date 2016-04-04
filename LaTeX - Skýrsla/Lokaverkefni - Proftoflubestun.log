@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.9)  4 APR 2016 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.9)  4 APR 2016 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -527,17 +527,17 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count116
-LaTeX Font Info:    Try loading font information for U+lasy on input line 212.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 211.
 
 (c:/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 212.
+LaTeX Font Info:    Try loading font information for U+msa on input line 211.
 
 (c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 212.
+LaTeX Font Info:    Try loading font information for U+msb on input line 211.
 
 (c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -545,7 +545,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <hi_logo.jpg, id=1, 361.35pt x 353.76164pt>
 File: hi_logo.jpg Graphic file (type jpg)
  <use hi_logo.jpg>
-Package pdftex.def Info: hi_logo.jpg used on input line 235.
+Package pdftex.def Info: hi_logo.jpg used on input line 234.
 (pdftex.def)             Requested size: 108.40584pt x 106.1293pt.
  [1
 
@@ -555,37 +555,58 @@ Package pdftex.def Info: hi_logo.jpg used on input line 235.
 \tf@toc=\write3
 \openout3 = `"Lokaverkefni - Proftoflubestun.toc"'.
 
- [1] [2] [3]
-<./myndir/graf1.png, id=25, 475.7775pt x 215.30438pt>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1]
+
+Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
+ Make it at least 14.61858pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] [3] <./myndir/graf1.png, id=26, 475.7775pt x 215.30438pt>
 File: ./myndir/graf1.png Graphic file (type png)
- <use ./myndir/graf1.png>
-Package pdftex.def Info: ./myndir/graf1.png used on input line 296.
+
+<use ./myndir/graf1.png>
+Package pdftex.def Info: ./myndir/graf1.png used on input line 295.
 (pdftex.def)             Requested size: 432.48189pt x 195.7203pt.
 
-<./myndir/graf2.png, id=27, 494.59781pt x 216.05719pt>
+<./myndir/graf2.png, id=28, 494.59781pt x 216.05719pt>
 File: ./myndir/graf2.png Graphic file (type png)
 
 <use ./myndir/graf2.png>
-Package pdftex.def Info: ./myndir/graf2.png used on input line 302.
+Package pdftex.def Info: ./myndir/graf2.png used on input line 301.
 (pdftex.def)             Requested size: 432.48189pt x 188.92097pt.
- [4 <./myndir/graf1.png> <./myndir/graf2.png>]
-<./myndir/graf3.png, id=33, 727.21687pt x 288.3272pt>
+
+
+Package Fancyhdr Warning: \headheight is too small (14.61858pt): 
+ Make it at least 15.04742pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <./myndir/graf1.png> <./myndir/graf2.png>]
+<./myndir/graf3.png, id=34, 727.21687pt x 288.3272pt>
 File: ./myndir/graf3.png Graphic file (type png)
  <use ./myndir/graf3.png>
-Package pdftex.def Info: ./myndir/graf3.png used on input line 316.
+Package pdftex.def Info: ./myndir/graf3.png used on input line 315.
 (pdftex.def)             Requested size: 497.92322pt x 197.42374pt.
 
-Overfull \hbox (64.30322pt too wide) in paragraph at lines 316--317
+Overfull \hbox (64.30322pt too wide) in paragraph at lines 315--316
  [][] 
  []
 
-<./myndir/graf4.png, id=34, 728.7225pt x 286.06876pt>
+<./myndir/graf4.png, id=35, 728.7225pt x 286.06876pt>
 File: ./myndir/graf4.png Graphic file (type png)
  <use ./myndir/graf4.png>
-Package pdftex.def Info: ./myndir/graf4.png used on input line 336.
+Package pdftex.def Info: ./myndir/graf4.png used on input line 335.
 (pdftex.def)             Requested size: 526.37598pt x 206.64156pt.
 
-Overfull \hbox (92.75598pt too wide) in paragraph at lines 336--337
+Overfull \hbox (92.75598pt too wide) in paragraph at lines 335--336
  [][] 
  []
 
@@ -593,84 +614,84 @@ Overfull \hbox (92.75598pt too wide) in paragraph at lines 336--337
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./myndir/graf3.png>] [6 <./myndir/graf4.png>]
-<./myndir/graf5.png, id=44, 564.60938pt x 240.9pt>
+<./myndir/graf5.png, id=45, 564.60938pt x 240.9pt>
 File: ./myndir/graf5.png Graphic file (type png)
  <use ./myndir/graf5.png>
-Package pdftex.def Info: ./myndir/graf5.png used on input line 364.
+Package pdftex.def Info: ./myndir/graf5.png used on input line 363.
 (pdftex.def)             Requested size: 497.92322pt x 212.45212pt.
 
-Overfull \hbox (64.30322pt too wide) in paragraph at lines 364--365
+Overfull \hbox (64.30322pt too wide) in paragraph at lines 363--364
  [][] 
  []
 
-<./myndir/graf6.png, id=45, 591.71063pt x 252.945pt>
+<./myndir/graf6.png, id=46, 591.71063pt x 252.945pt>
 File: ./myndir/graf6.png Graphic file (type png)
  <use ./myndir/graf6.png>
-Package pdftex.def Info: ./myndir/graf6.png used on input line 388.
+Package pdftex.def Info: ./myndir/graf6.png used on input line 387.
 (pdftex.def)             Requested size: 398.33858pt x 170.28665pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./myndir/graf5.png>] <./myndir/graf7.png, id=50, 729.47531pt x 289.08pt>
+[7 <./myndir/graf5.png>] <./myndir/graf7.png, id=51, 729.47531pt x 289.08pt>
 File: ./myndir/graf7.png Graphic file (type png)
 
 <use ./myndir/graf7.png>
-Package pdftex.def Info: ./myndir/graf7.png used on input line 414.
+Package pdftex.def Info: ./myndir/graf7.png used on input line 413.
 (pdftex.def)             Requested size: 426.79134pt x 169.13097pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8 <./myndir/graf6.png>] [9 <./myndir/graf7.png>]
-<./myndir/graf8.png, id=59, 1026.83624pt x 526.21594pt>
+<./myndir/graf8.png, id=60, 1026.83624pt x 526.21594pt>
 File: ./myndir/graf8.png Graphic file (type png)
 
 <use ./myndir/graf8.png>
-Package pdftex.def Info: ./myndir/graf8.png used on input line 444.
+Package pdftex.def Info: ./myndir/graf8.png used on input line 443.
 (pdftex.def)             Requested size: 512.1496pt x 262.45694pt.
 
-Overfull \hbox (78.5296pt too wide) in paragraph at lines 444--445
+Overfull \hbox (78.5296pt too wide) in paragraph at lines 443--444
  [][] 
  []
 
 [10 <./myndir/graf8.png>]
-<./myndir/graf9.png, id=64, 962.84718pt x 528.47438pt>
+<./myndir/graf9.png, id=65, 962.84718pt x 528.47438pt>
 File: ./myndir/graf9.png Graphic file (type png)
 
 <use ./myndir/graf9.png>
-Package pdftex.def Info: ./myndir/graf9.png used on input line 464.
+Package pdftex.def Info: ./myndir/graf9.png used on input line 463.
 (pdftex.def)             Requested size: 512.1496pt x 281.10612pt.
 
-Overfull \hbox (78.5296pt too wide) in paragraph at lines 464--465
+Overfull \hbox (78.5296pt too wide) in paragraph at lines 463--464
  [][] 
  []
 
 [11 <./myndir/graf9.png>]
-<./myndir/graf10.png, id=69, 961.34157pt x 526.21594pt>
+<./myndir/graf10.png, id=70, 961.34157pt x 526.21594pt>
 File: ./myndir/graf10.png Graphic file (type png)
 
 <use ./myndir/graf10.png>
-Package pdftex.def Info: ./myndir/graf10.png used on input line 483.
+Package pdftex.def Info: ./myndir/graf10.png used on input line 482.
 (pdftex.def)             Requested size: 512.1496pt x 280.34644pt.
 
-Overfull \hbox (78.5296pt too wide) in paragraph at lines 483--484
+Overfull \hbox (78.5296pt too wide) in paragraph at lines 482--483
  [][] 
  []
 
 [12 <./myndir/graf10.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 504.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 503.
 
  (c:/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [13]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 540.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 539.
 
  (c:/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 540.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 539.
  [14]
 (../profrodun2016Latex.mod [15] [16]) (../waitTimeProcessing/dataProcessing.js
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
@@ -678,13 +699,13 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 
 [17] [18] [19]) [20] (./Lokaverkefni - Proftoflubestun.aux) ) 
 Here is how much of TeX's memory you used:
- 5803 strings out of 493054
- 74882 string characters out of 6138327
- 434187 words of memory out of 5000000
- 9185 multiletter control sequences out of 15000+600000
- 19555 words of font info for 51 fonts, out of 8000000 for 9000
+ 5806 strings out of 493054
+ 74911 string characters out of 6138327
+ 435405 words of memory out of 5000000
+ 9187 multiletter control sequences out of 15000+600000
+ 20376 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,43p,1177b,1753s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,43p,1177b,1905s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2015/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/typ
@@ -697,13 +718,14 @@ exmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb><c:/texlive/2015/texmf-dist/
 fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2015/texmf-dist/fonts/type
 1/public/cm-super/sfrm1200.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/c
 m-super/sfrm1440.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sf
-ti1440.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb
-><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on "Lokaverkefni - Proftoflubestun.pdf" (21 pages, 841490 bytes)
+sl1200.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb
+><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texli
+ve/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on "Lokaverkefni - Proftoflubestun.pdf" (21 pages, 854246 bytes)
 .
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 155 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
