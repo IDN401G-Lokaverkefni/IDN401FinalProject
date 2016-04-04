@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.3.2)  31 MAR 2016 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.3.2)  4 APR 2016 12:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -628,38 +628,62 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: hi_logo.jpg Graphic file (type jpg)
  <use hi_logo.jpg>
 Package pdftex.def Info: hi_logo.jpg used on input line 193.
-(pdftex.def)             Requested size: 126.4744pt x 123.81842pt.
+(pdftex.def)             Requested size: 108.40584pt x 106.1293pt.
  [1
 
 {c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./hi_logo.jpg>]
  [1] [2]
-[3] [4] (./Lokaverkefni - Proftoflubestun.aux)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] [5]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 358.
+
+ (c:/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [6]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 394.
+
+
+(c:/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 394.
+ [7]
+(./Lokaverkefni - Proftoflubestun.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5358 strings out of 493033
- 69314 string characters out of 6137755
- 141441 words of memory out of 5000000
- 8787 multiletter control sequences out of 15000+600000
- 17391 words of font info for 47 fonts, out of 8000000 for 9000
+ 5397 strings out of 493033
+ 70238 string characters out of 6137755
+ 142441 words of memory out of 5000000
+ 8819 multiletter control sequences out of 15000+600000
+ 17704 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,43p,1212b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,43p,1177b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
-ive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2015/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2015/texmf-dist/
-fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2015/texmf-dist/fonts/type
-1/public/cm-super/sfcc1440.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/c
-m-super/sfcc1728.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sf
-cc2074.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
-><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texli
-ve/2015/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on "Lokaverkefni - Proftoflubestun.pdf" (5 pages, 392154 bytes).
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/
+texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2015/texmf-dist
+/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2015/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx2488.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
+cm-super/sfcc1440.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/s
+fcc1728.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pf
+b><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texl
+ive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2015/t
+exmf-dist/fonts/type1/public/cm-super/sfti1440.pfb><c:/texlive/2015/texmf-dist/
+fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on "Lokaverkefni - Proftoflubestun.pdf" (8 pages, 440887 bytes).
 
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
