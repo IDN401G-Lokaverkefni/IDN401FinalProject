@@ -2,9 +2,9 @@
 \contentsline {section}{\numberline {1}\IeC {\'A}grip}{2}
 \contentsline {section}{\numberline {2}Inngangur/bakgrunnur}{3}
 \contentsline {section}{\numberline {3}Ni\IeC {\dh }urst\IeC {\"o}\IeC {\dh }ur, ni\IeC {\dh }urlag og till\IeC {\"o}gur}{4}
-\contentsline {section}{\numberline {4}A\IeC {\dh }fer\IeC {\dh }ir}{13}
-\contentsline {section}{\numberline {5}Almenn umfj\IeC {\"o}llun}{15}
-\contentsline {section}{\numberline {6}Heimildir}{15}
-\contentsline {section}{\numberline {7}Vi\IeC {\dh }auki}{16}
-\contentsline {subsection}{\numberline {7.1}AMPL k\IeC {\'o}\IeC {\dh }i}{16}
-\contentsline {subsection}{\numberline {7.2}Javascript k\IeC {\'o}\IeC {\dh }i}{18}
+\contentsline {section}{\numberline {4}A\IeC {\dh }fer\IeC {\dh }ir}{14}
+\contentsline {section}{\numberline {5}Almenn umfj\IeC {\"o}llun}{16}
+\contentsline {section}{\numberline {6}Heimildir}{16}
+\contentsline {section}{\numberline {7}Vi\IeC {\dh }auki}{17}
+\contentsline {subsection}{\numberline {7.1}AMPL k\IeC {\'o}\IeC {\dh }i}{17}
+\contentsline {subsection}{\numberline {7.2}Javascript k\IeC {\'o}\IeC {\dh }i}{19}
