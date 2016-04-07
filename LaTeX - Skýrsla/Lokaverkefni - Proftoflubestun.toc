@@ -8,6 +8,8 @@
 \contentsline {subsection}{\numberline {3.4}F\IeC {\ae }rsla fj\IeC {\"o}lmennra n\IeC {\'a}mskei\IeC {\dh }a}{7}
 \contentsline {subsection}{\numberline {3.5}Hagkv\IeC {\ae }masta lausn}{9}
 \contentsline {section}{\numberline {4}A\IeC {\dh }fer\IeC {\dh }ir}{15}
+\contentsline {subsection}{\numberline {4.1}St\IeC {\ae }r\IeC {\dh }fr\IeC {\ae }\IeC {\dh }ileg uppsetning \IeC {\'a} l\IeC {\'\i }kani}{15}
+\contentsline {subsection}{\numberline {4.2}AMPL og JavaScript forritun}{17}
 \contentsline {section}{\numberline {5}Almenn umfj\IeC {\"o}llun}{18}
 \contentsline {section}{\numberline {6}Heimildir}{18}
 \contentsline {section}{\numberline {7}Vi\IeC {\dh }auki}{19}

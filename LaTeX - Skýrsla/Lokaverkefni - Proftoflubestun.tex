@@ -534,50 +534,65 @@ Hér sést að ef prófstokkunum er fjölgað í annaðhvort 34 eða 38 þá eyk
 
 Áður en hægt var að setja líkanið upp í AMPL þurfti að færa skorðurnar og markföll á stærfræðilegt form. 
 
+\subsection{Stærðfræðileg uppsetning á líkani}
 
 \medskip
-Í eftirfarandi uppsetningu er ítrað í gegnum tveimur mengjum, $ E $ og $ C $, þar sem $ E $ er mengi prófstokka og $ C $ er mengi prófnámskeiða. $ x $ er ákvörðunarbreytan sem táknar stokk fyrir próf $ j $ í prófstokki $ i $. Fyrir fyrsta markfallið \texttt{earlyExams} er eftirfarandi nóg til þess að reyna setja prófin eins framarlega og hægt er í öllum stokkum:
+Í eftirfarandi uppsetningu er ítrað í gegnum tvö mengi, $ E $ og $ C $, þar sem $ E $ er mengi prófstokka og $ C $ er mengi prófnámskeiða. $ x $ er ákvörðunarbreytan sem táknar stokk fyrir próf $ j $ í prófstokki $ i $. Fyrir fyrsta markfallið \texttt{earlyExams} er eftirfarandi nóg til þess að reyna setja prófin eins framarlega og hægt er í öllum stokkum:
+
 $$\min \sum_{i \in E,j \in C } x_{ij} \cdot i^8$$
 
-Næst var reynt að besta töfluna með markfallinu \texttt{bigExamEarly} þannig að stærstu prófin væru fremst í prófröðuninni, til þess að það væri mögulegt var þörf á því að bæta við stuðul $b_{j}$ sem táknar fjöldi nemenda $ b $ í námskeiði $ j $.
+Næst var reynt að besta töfluna með markfallinu \texttt{bigExamEarly} þannig að stærstu prófin væru fremst í prófröðuninni. Til þess að það væri mögulegt var þörf á því að bæta við stuðul $b_{j}$ sem táknar fjöldi nemenda $ b $ í námskeiði $ j $.
 
 $$\min \sum_{i \in E, j \in C} x_{ij} \cdot b^{4}_j \cdot i^8$$
 
 Markfallið er haft þannig að það er óhagstætt að hafa stór námskeið aftarlega í röðinni.
 
 \medskip
-Næst var prófað markfallið \texttt{totalSlots} sem gefur (að okkar mati) bestu lausnina, en þá er búið að bæta inn stuðullinn $ d_{j} $ þar sem $ d $ er fallprósenta námskeiðs $ j $.
+Næst var markfallið \texttt{totalSlots} prófað sem gefur (m.t.t. gefinna skilyrða) bestu lausnina, en þá er búið að bæta inn stuðullinn $ d_{j} $ þar sem $ d $ er fallprósenta námskeiðs $ j $.
 
 
 
-$$\min \sum_{i \in E, j \in C} x_{ij} \left(b_j \cdot \dfrac{(d_j + 1)^4}{s} \right) \cdot \left( \sqrt[4]{i} \right)$$
+$$\min \sum_{i \in E, j \in C} x_{ij} \left(b_j \cdot \sqrt[4]{i} \cdot \dfrac{(d_j + 1)^4}{s} \right)$$
 
-Notast var við brotið til að ákveða hlutfallslegt vægi námskeiðs. Eftir því sem það er fjölmennara og erfiðara er það sett í fremri prófstokka. Síðan er það margfaldað með fjórðu rót af númeri prófstokks til að færa námskeið framar í próftöflu. Valið var fjórða veldi á erfiðleikastiginu til að koma til móts við nemendafjölda. Með þessu helst ákveðið jafnvægi að minni námskeiðin lenda ekki allt of aftarlega. Einnig var fjórða rótin valin til þess að raða prófunum framarlega en ef það var haft hærra var fjölmennustu prófunum raðað í fyrstu stokkana á kostnað allra annarra prófa.
+Notast var við brotið að ofan til að ákveða hlutfallslegt vægi námskeiðs. Eftir því sem það er fjölmennara og erfiðara er það sett í fremri prófstokka. Síðan er það margfaldað með fjórðu rót af númeri prófstokks til að færa námskeið framar í próftöflu. Valið var fjórða veldi á erfiðleikastiginu til að vega upp á móti nemendafjölda. Þá helst ákveðið jafnvægi og minni námskeiðin lenda ekki allt of aftarlega. Einnig var fjórða rótin valin til þess að raða prófunum framarlega en ef veldið var hærra var fjölmennustu prófunum raðað í fyrstu stokkana á kostnað allra annarra prófa.
 
 \medskip
 
-Til þess að besta próftöfluna að okkar mati var þörf á að búa til 8 skorður sem eru eftirfarandi:
+Til þess að besta próftöfluna var þörf á að búa til 8 skorður sem eru eftirfarandi:
 
 \texttt{examClashes}: Hér er ítrað yfir $ C $ með $ j $ og $ k $. Stærð $ y_{jk} $ lýsir því hversu margir nemendur eru skráðir í báðum námskeiðum $ j $ og $ k $:
 
 $$\sum_{i \in E, ~(j,k)\in C: ~y_{jk} \neq 0} (x_{ij} + x_{ik}) <= 1$$
 
-\texttt{hasExam}: Hér er ítrað yfir $ C $ og lagt saman yfir $ E $ þar sem $ e $ er stærð mengis $ E $:
+\texttt{hasExam}: Hér er ítrað yfir $ C $ og lagt saman yfir $ E $:
 
-% Er í alvörunni verið að summa yfir stökin í E, setti þess vegna efri og neðri mörk á seinni summuna
-$$\sum_{j \in C} \left( \sum_{i = 1}^{e} x_{ij} = 1 \right)$$
+$$\sum_{ i \in E ~ j \in C} x_{ij} = 1 $$
 
-\texttt{maxInSlots}: Ítrað er yfir $ E $ og lagt saman yfir $ C $ þar sem $ c $ er stærð mengis $ C $ og $ j $ vísar á j-ta stak $ C $ og aftur lýsir stuðull $b_{j}$ sem táknar fjöldi nemenda $ b $ í námskeiði $ j $:
+\texttt{maxInSlots}: Ítrað er yfir $ E $ og lagt saman yfir $ C $ og aftur lýsir stuðull $b_{j}$ fjölda nemenda $ b $ í námskeiði $ j $:
 
-$$\sum_{i \in E} \left( \sum_{j = 1}^{c} x_{ij} \cdot b_{j} <= 450 \right)$$
+$$\sum_{i \in E, ~ j \in C} x_{ij} \cdot b_{j} \leq 450 $$
 
 \texttt{jointlyTaught}: Aftur er ítrað yfir stök úr $ E $ og $ C $ og við notum stærð $ z_{jk} $ til að lýsa því hvort námskeið $ j $ og $ k $ eru samkennd:
 
 $$\sum_{i \in E , ~ (j,k) \in C ~ : ~ z_{jk} \neq 0 } x_{ij} - x_{ik} = 0$$
 
-\texttt{noExams}: Ítrum aftur yfir $ E $ og $ C $ og notum einnig stærð $ g_{} $
+\texttt{noExams}: Ítrum aftur yfir $ C $ og lát $ G \subset E $ þar sem $ G $ er mengi þeirra prófstokka sem ekki nota (frídagar/helgar):
+
+$$\sum_{i \in G, ~ j \in C} x_{ij} = 0$$
+
+\texttt{examSpace}: Þessar þrjár skorður eru keimlíkar. Ítrað er yfir $ C $ og $ E $ aftur. Skorðan notar breytu $ t $ sem passar að núverandi próf hafi a.m.k. $ t $ stokka í hvíld til næsta prófs. Þar að auki er notuð breyta $ h $ til að segja til um hversu margir nemendur þurfa að vera í báðum námskeiðum til þess að skorðan sé virkjuð:
+
+$$\sum_{i \in E, ~(j,k)\in C: ~y_{jk}  \geq  h ~ \wedge ~ (i+t) \in E} (x_{ij} + x_{(i+t)k}) \leq 1$$
+
+Þetta gildir um allar \texttt{examSpace} skorðurnar. 
+
+\medskip
+
+Um allar breytur gildir að þær eru stærri en eða jafnar 0. Eina undantekningin er ákvörðunarbreytan $ x_{ij} $ sem er tvíundarbreyta.
 
 \newpage
+
+\subsection{AMPL og JavaScript forritun}
 
 Notast var við bæði \texttt{AMPL} og \texttt{JavaScript} forritun til að búa til líkan og vinna úr upplýsingum sem úr því fengust. Mælt er með að nota \texttt{GLPK} forritasafnið til að þýða líkanið yfir á \texttt{.lp} skráartegund, \texttt{Gurobi} til að keyra \texttt{.lp} líkanið og fá lausn ásamt því að nota \texttt{Node.js} til að keyra \texttt{JavaScript} forritið sem fylgir.
 
