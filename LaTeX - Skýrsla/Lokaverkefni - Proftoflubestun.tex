@@ -531,8 +531,8 @@ Notast var við brotið til að ákveða hlutfallslegt vægi námskeiðs. Eftir 
 
 Til þess að besta próftöfluna að okkar mati var þörf á að búa til 8 skorður sem eru eftirfarandi:
 
-\texttt{examClashes}, hér merkir $ k $ sameiginlegt námskeið, þ.e. ef $ (j,k) \neq 0 $ þá þýðir að það eru til nemendur sem taka námskeið $ j $ og $ k $:
-$$\sum_{(i \in E, (j,k)\in C ~| ~(j,k) \neq 0)} x_{ij} - x_{ik} = 0$$
+\texttt{examClashes}, Hér er ítrað yfir $ C $ þannig að ef $ (j,k) \neq 0 $ þá þýðir að það eru til nemendur sem taka námskeið $ j $ og $ k $:
+$$\sum_{i \in E, ~(j,k)\in C: ~(j,k) \neq 0} (x_{ij} - x_{ik}) = 0$$
 
 næst er það \texttt{hasExam}
 
