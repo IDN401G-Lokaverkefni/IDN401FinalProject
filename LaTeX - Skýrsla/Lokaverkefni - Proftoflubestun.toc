@@ -5,7 +5,7 @@
 \contentsline {subsection}{\numberline {3.1}S\IeC {\ae }tatakmarkanir}{4}
 \contentsline {subsection}{\numberline {3.2}Hv\IeC {\'\i }ldart\IeC {\'\i }mi}{6}
 \contentsline {subsection}{\numberline {3.3}Pr\IeC {\'o}fstokkafj\IeC {\"o}ldi}{7}
-\contentsline {subsection}{\numberline {3.4}F\IeC {\ae }rsla st\IeC {\ae }rri n\IeC {\'a}mskei\IeC {\dh }a}{8}
+\contentsline {subsection}{\numberline {3.4}Fj\IeC {\"o}lmenn n\IeC {\'a}mskei\IeC {\dh }}{8}
 \contentsline {subsection}{\numberline {3.5}Hagkv\IeC {\ae }masta lausn}{9}
 \contentsline {section}{\numberline {4}A\IeC {\dh }fer\IeC {\dh }ir}{14}
 \contentsline {subsection}{\numberline {4.1}St\IeC {\ae }r\IeC {\dh }fr\IeC {\ae }\IeC {\dh }ileg uppsetning \IeC {\'a} l\IeC {\'\i }kani}{14}
