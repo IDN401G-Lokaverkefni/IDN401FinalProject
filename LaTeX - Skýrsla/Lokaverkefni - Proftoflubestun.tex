@@ -280,6 +280,7 @@ Reynt var að hafa sem mesta hvíld milli prófa án þess að lengja próftíma
 
 Stilla má líkanið til að lágmarka fjölda stokka, hámarka hvíldartíma, hafa fjölmenn námskeið sem fyrst eða taka mið af þessu öllu. Hvíldartíminn er hafður sem nokkrar skorður sem taka mið af því hversu margir þurfa að vera í árekstri á prófum til þess að líkanið hliðri prófum og auka hvíldartíma. Hvernig skal stilla þessar skorður er fjallað um nánar í seinni köflum. Leggja má enn meiri áherslu á hvíldartíma með því að sleppa markfalli en hægt er að leggja áherslu á lágmörkun prófstokka eða að færa fjölmenn námskeið framar með því að nota tilsett markföll.
 
+
 \newpage	
 
 \section{Niðurstöður, niðurlag og tillögur}
@@ -503,6 +504,33 @@ Hér sést að ef prófstokkunum er fjölgað í annaðhvort 34 eða 38 þá eyk
 \newpage
 
 \section{Aðferðir}
+
+Áður en hægt var að setja líkanið upp í AMPL þurfti að færa skorðurnar og markföll á stærfræðilegt form. Í eftirfarandi uppsetningu er notast við það táknmál að e er mengi staka úr vigrinum \verb|examSlots| og c er mengi staka úr vigrinum \verb|cidExam|. Einnig samanstendur \verb|slot| fylkið af  ákvörðunarbreytunum verkefnisins (köllum það x héðan í frá) og n er stærð hvers vigurs um sig. Notað er k  til að tákna mengi staka úr \verb|cidCount| þar sem hvert stak er fjöldi nemenda í námskeiði k, l táknar mengi staka úr \verb|cidDifficulty| sem inniheldur fallprósentu námskeiðs l og s er fjöldi nemenda á Verk- og Náttúrufræðisviði Háskóla Íslands.  Markfallið \verb|earlyExams| má setja fram sem:
+
+$$\min \sum_{j \in c, i \in e} x_{ji} \cdot i^8$$
+
+Þar sem reynt er að lágmarka fjölda námskeiða sem lendir aftarlega í prófröðun. Eftir því sem stokkurinn er aftar (og þá i stærra) verður mun óhagkvæmara að setja prófið þar. Skoðum næst markfallið \verb|bigExamEarly| og uppsetningu þess:
+
+$$\min \sum_{j \in c, i \in e} x_{ji} \cdot \left( k_j \cdot i^2 \right)^4$$
+
+Hérna er nemendafjöldinn margfaldaður við prófstokksnúmer í öðru veldi og það síðan hafið upp í fjórða veldi. Seinasta markfallið, \verb|totalSlots|, er það sem er notað til að finna hagkvæmustu lausn:
+
+$$\min \sum_{j \in c, i \in e} x_{ji} \left( b_j \cdot \dfrac{(d_j + 1)^4}{s} \right) \cdot \left( \sqrt[4]{i} \right)$$
+
+Notast var við brotið til að ákveða hlutfallslegt vægi námskeiðs. Eftir því sem það er fjölmennara og erfiðara er það sett í fremri prófstokka. Síðan er það margfaldað með fjórðu rót af númeri prófstokks til að færa námskeið framar í próftöflu. Valið var fjórða veldi á erfiðleikastiginu til að koma til móts við nemendafjölda. Með þessu helst ákveðið jafnvægi að minni námskeiðin lenda ekki allt of aftarlega. Einnig var fjórða rótin valin til þess að raða prófunum framarlega en ef það var haft hærra var fjölmennustu prófunum raðað í fyrstu stokkana á kostnað allra annarra prófa.
+
+\medskip
+
+Skorðurnar eru fleiri að tölu og sú fyrsta er \verb|examClashes|:
+
+$$\sum_{min}^{max}$$
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 20cm]{tmp.png}
+\end{figure}
+
+\medskip
 
 Notast var við bæði \texttt{AMPL} og \texttt{JavaScript} forritun til að búa til líkan og vinna úr upplýsingum sem úr því fengust. Mælt er með að nota \texttt{GLPK} forritasafnið til að þýða líkanið yfir á \texttt{.lp} skráartegund, \texttt{Gurobi} til að keyra \texttt{.lp} líkanið og fá lausn ásamt því að nota \texttt{Node.js} til að keyra \texttt{JavaScript} forritið sem fylgir.
 

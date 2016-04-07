@@ -3,8 +3,8 @@
 \contentsline {section}{\numberline {2}Inngangur/bakgrunnur}{3}
 \contentsline {section}{\numberline {3}Ni\IeC {\dh }urst\IeC {\"o}\IeC {\dh }ur, ni\IeC {\dh }urlag og till\IeC {\"o}gur}{4}
 \contentsline {section}{\numberline {4}A\IeC {\dh }fer\IeC {\dh }ir}{13}
-\contentsline {section}{\numberline {5}Almenn umfj\IeC {\"o}llun}{14}
-\contentsline {section}{\numberline {6}Heimildir}{14}
-\contentsline {section}{\numberline {7}Vi\IeC {\dh }auki}{15}
-\contentsline {subsection}{\numberline {7.1}AMPL k\IeC {\'o}\IeC {\dh }i}{15}
-\contentsline {subsection}{\numberline {7.2}Javascript k\IeC {\'o}\IeC {\dh }i}{17}
+\contentsline {section}{\numberline {5}Almenn umfj\IeC {\"o}llun}{16}
+\contentsline {section}{\numberline {6}Heimildir}{16}
+\contentsline {section}{\numberline {7}Vi\IeC {\dh }auki}{17}
+\contentsline {subsection}{\numberline {7.1}AMPL k\IeC {\'o}\IeC {\dh }i}{17}
+\contentsline {subsection}{\numberline {7.2}Javascript k\IeC {\'o}\IeC {\dh }i}{19}
