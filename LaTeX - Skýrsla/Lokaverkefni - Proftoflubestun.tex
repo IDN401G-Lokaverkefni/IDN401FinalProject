@@ -505,7 +505,7 @@ Hér sést að ef prófstokkunum er fjölgað í annaðhvort 34 eða 38 þá eyk
 
 \section{Aðferðir}
 
-Áður en hægt var að setja líkanið upp í AMPL þurfti að færa skorðurnar og markföll á stærfræðilegt form. Í eftirfarandi uppsetningu er notast við það táknmál að e er mengi staka úr vigrinum \verb|examSlots| og c er mengi staka úr vigrinum \verb|cidExam|. Einnig samanstendur \verb|slot| fylkið af  ákvörðunarbreytunum verkefnisins (köllum það x héðan í frá) og n er stærð hvers vigurs um sig. Notað er k  til að tákna mengi staka úr \verb|cidCount| þar sem hvert stak er fjöldi nemenda í námskeiði k, l táknar mengi staka úr \verb|cidDifficulty| sem inniheldur fallprósentu námskeiðs l og s er fjöldi nemenda á Verk- og Náttúrufræðisviði Háskóla Íslands.  Markfallið \verb|earlyExams| má setja fram sem:
+Áður en hægt var að setja líkanið upp í AMPL þurfti að færa skorðurnar og markföll á stærfræðilegt form. Í eftirfarandi uppsetningu er notast við það táknmál að e er mengi staka úr vigrinum \verb|examSlots| og c er mengi staka úr vigrinum \verb|cidExam|. Einnig samanstendur \verb|slot| fylkið af  ákvörðunarbreytunum verkefnisins (köllum það x héðan í frá) og n er stærð hvers vigurs um sig. Notað er k  til að tákna mengi staka úr \verb|cidCount| þar sem hvert stak er fjöldi nemenda í námskeiði k, l táknar mengi staka úr \verb|cidDifficulty| sem inniheldur fallprósentu námskeiðs l, m er mengi staka úr \verb|cidCommon| og s er fjöldi nemenda á Verk- og Náttúrufræðisviði Háskóla Íslands.  Markfallið \verb|earlyExams| má setja fram sem:
 
 $$\min \sum_{j \in c, i \in e} x_{ji} \cdot i^8$$
 
@@ -521,9 +521,11 @@ Notast var við brotið til að ákveða hlutfallslegt vægi námskeiðs. Eftir 
 
 \medskip
 
-Skorðurnar eru fleiri að tölu og sú fyrsta er \verb|examClashes|:
+Skorðurnar eru fleiri að tölu og sú fyrsta er \verb|examClashes| sem sér til þess að engir nemendur eru í prófi á sama tíma:
 
-$$\sum_{min}^{max}$$
+$$\sum_{ i \in e \, h,j \in c: m_{hj} > 0} x_{hi} + x_{ji} <= 1$$
+
+\verb|hasExam| skorðan
 
 \begin{figure}[h]
 	\centering
