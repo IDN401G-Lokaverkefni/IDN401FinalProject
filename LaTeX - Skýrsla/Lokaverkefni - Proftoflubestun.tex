@@ -12,12 +12,13 @@
 \usepackage{listings}
 \usepackage{lstlang05}
 \usepackage{color}
-
+\usepackage{amssymb, 
+    amstext, amsmath, epstopdf, booktabs, verbatim, gensymb, geometry, appendix, natbib, lmodern}
 \definecolor{lightgray}{rgb}{.9,.9,.9}
 \definecolor{darkgray}{rgb}{.4,.4,.4}
 \definecolor{purple}{rgb}{0.65, 0.12, 0.82}
 
-\lstdefinelanguage{JavaScript}{
+\lstdefinelanguage{JavaScript}{	
     keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
     keywordstyle=\color{blue}\bfseries,
     ndkeywords={class, export, boolean, throw, implements, import, this},
@@ -48,11 +49,28 @@
     captionpos=b
 }
 
+\newcommand*\Title{Próftöflubestun}
+\newcommand*\cpiType{IÐN401G - Aðgerðargreining}
+\newcommand*\Date{Vormisseri 2016}
+\newcommand*\Author{\textbf{Höfundar}:
+    Egill Ian Guðmundsson\\
+    Hildur Sigurjónsdóttir\\
+    Stefán Carl Peiser\\
+    Unnur Sigurjóns}
+\title{Próftöflubestun}
+\author{\underline{\textbf{Höfundar:}}\\	
+    Egill Ian Guðmundsson\\
+    Hildur Sigurjónsdóttir\\
+    Stefán Carl Peiser\\
+    Unnur Sigurjóns}
+\date{\today}
+\usepackage{cpistuff/cpi} % This is what makes your document look like a cpi document.
+
 
 
 \voffset=-1.0in
 \hoffset=-0.5in
-\textwidth=6in
+\textwidth=6in 
 \textheight=9.0in
 
 \lstset{ %
@@ -75,169 +93,13 @@ breaklines=true,                % sets automatic line breaking
 } 
 
 
-
-
-
-
-
 \begin{document}
 \pagestyle{fancy}
 
-\newcommand{\br}{\par}
-\newcommand{\substackpar}{}
-\newcommand{\substackbr}{,\,}
-%\usepackage{makeidx}
-\newcommand{\bolddot}{{\mathbf \cdot}}
-\newcommand{\C}{{\mathbb  C}}
-\newcommand{\Cn}{{\mathbb  C\sp n}}
-\newcommand{\crn}{{{\mathbb  C\mathbb  R^n}}}
-\newcommand{\R}{{\mathbb  R}}
-\newcommand{\Rn}{{\mathbb  R\sp n}}
-\newcommand{\Rnn}{{\mathbb  R\sp{n\times n}}}
-\newcommand{\Z}{{\mathbb  Z}}
-\newcommand{\N}{{\mathbb  N}}
-\renewcommand{\P}{{\mathbb  P}}
-\newcommand{\Q}{{\mathbb  Q}}
-\newcommand{\U}{{\mathbb  U}}
-\newcommand{\D}{{\mathbb  D}}
-\newcommand{\T}{{\mathbb  T}}
-\newcommand{\A}{{\cal A}}
-\newcommand{\E}{{\cal E}}
-\newcommand{\F}{{\cal F}}
-\renewcommand{\H}{{\cal H}}
-\renewcommand{\L}{{\cal L}}
-\newcommand{\M}{{\cal M}}
-\renewcommand{\O}{{\cal O}}
-\renewcommand{\S}{{\cal S}}
-\newcommand{\dash}{{\sp{\prime}}}
-\newcommand{\ddash}{{\sp{\prime\prime}}}
-\newcommand{\tdash}{{\sp{\prime\prime\prime}}}
-\newcommand{\set }[1]{{\{#1\}}}
-\newcommand{\scalar}[2]{{\langle#1,#2\rangle}}
-\newcommand{\arccot}{{\operatorname{arccot}}}
-\newcommand{\arccoth}{{\operatorname{arccoth}}}
-\newcommand{\arccosh}{{\operatorname{arccosh}}}
-\newcommand{\arcsinh}{{\operatorname{arcsinh}}}
-\newcommand{\arctanh}{{\operatorname{arctanh}}}
-\newcommand{\Log}{{\operatorname{Log}}}
-\newcommand{\Arg}{{\operatorname{Arg}}}
-\newcommand{\grad}{{\operatorname{grad}}}
-\newcommand{\graf}{{\operatorname{graf}}}
-\renewcommand{\div}{{\operatorname{div}}}
-\newcommand{\rot}{{\operatorname{rot}}}
-\newcommand{\curl}{{\operatorname{curl}}}
-\renewcommand{\Im}{{\operatorname{Im\, }}}
-\renewcommand{\Re}{{\operatorname{Re\, }}}
-\newcommand{\Res}{{\operatorname{Res}}}
-\newcommand{\vp}{{\operatorname{vp}}}
-\newcommand{\mynd}[1]{{{\operatorname{mynd}(#1)}}}
-\newcommand{\dbar}{{{\overline\partial}}}
-\newcommand{\inv}{{\operatorname{inv}}}
-\newcommand{\sign}{{\operatorname{sign}}}
-\newcommand{\trace}{{\operatorname{trace}}}
-\newcommand{\conv}{{\operatorname{conv}}}
-\newcommand{\Span}{{\operatorname{Sp}}}
-\newcommand{\stig}{{\operatorname{stig}}}
-\newcommand{\Exp}{{\operatorname{Exp}}}
-\newcommand{\diag}{{\operatorname{diag}}}
-\newcommand{\adj}{{\operatorname{adj}}}
-\newcommand{\erf}{{\operatorname{erf}}}
-\newcommand{\erfc}{{\operatorname{erfc}}}
-\renewcommand{\ast}{{\operatorname{\text{?st}}}}
-\newcommand{\Lloc}{{L_{\text{loc}}\sp 1}}
-\newcommand{\boldcdot}{{\mathbb \cdot}}
-%\newcommand{\Cinf0}[1]{{C_0\sp{\infty}(#1)}}
-\newcommand{\supp}{{\text{supp}\, }}
-\newcommand{\chsupp}{{\text{ch supp}\, }}
-\newcommand{\singsupp}{{\text{sing supp}\, }}
-\newcommand{\SL}[1]{{\dfrac {1}{\varrho} \bigg(-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1\bigg)}}
-\newcommand{\SLL}[1]{-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1}
-\newcommand{\Laplace}[1]{\dfrac{\partial^2 #1}{\partial x^2}+\dfrac{\partial^2 #1}{\partial y^2}}
-\newcommand{\polh}[1]{{\widehat #1_{\C^n}}}
-\newcommand{\tilv}{{}}
-
-\newcommand{\sz}{\overline{z}}
-\newcommand{\saf}{\overline{f}}
-\newcommand{\sw}{\overline{w}}
-
-\newcommand{\pz}{\partial_z}
-\newcommand{\psz}{\partial_{\overline{z}}}
 %%%
-
-\newcommand{\Nv}{\mbox{${\bf N}$}}
-
-\newcommand{\Bv}{\mbox{${\bf B}$}}
-
-
-\newcommand{\Tv}{\mbox{${\bf T}$}}
-
-
-%%%
-
-	\begin{titlepage}
-        
-        \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
-        
-        \center % Center everything on the page
-        
-        %----------------------------------------------------------------------------------------
-        %	HEADING SECTIONS
-        %----------------------------------------------------------------------------------------
-        
-        \textsc{\LARGE Háskóli Íslands}\\[1.5cm] % Name of your university/college
-        \textsc{\Large Aðgerðargreining}\\[0.5cm] % Major heading such as course name
-        \textsc{\large IÐN401G}\\[0.5cm] % Minor heading such as course title
-        
-        %----------------------------------------------------------------------------------------
-        %	TITLE SECTION
-        %----------------------------------------------------------------------------------------
-        
-        \HRule \\[0.4cm]
-        { \huge \bfseries Lokaverkefni - Próftöflubestun}\\[0.4cm] % Title of your document
-        \HRule \\[1.5cm]
-        
-        %----------------------------------------------------------------------------------------
-        %	AUTHOR SECTION
-        %----------------------------------------------------------------------------------------
-        
-        \begin{minipage}{0.4\textwidth}
-            \begin{flushleft} \large
-                \emph{Höfundar:}\\
-                Egill Ian Guðmundsson\\
-                Hildur Sigurjónsdóttir\\
-                Stefán Carl Peiser\\ % Your name
-				Unnur Sigurjóns
-            \end{flushleft}
-        \end{minipage}
-        ~
-        \begin{minipage}{0.4\textwidth}
-            \begin{flushright} \large
-                \emph{Umsjónarkennari:} \\
-                Tómas Philip Rúnarsson\\
-            \end{flushright}
-        \end{minipage}\\[4cm]
-        
-        % If you don't want a supervisor, uncomment the two lines below and remove the section above
-        %\Large \emph{Author:}\\
-        %John \textsc{Smith}\\[3cm] % Your name
-        
-        %----------------------------------------------------------------------------------------
-        %	DATE SECTION
-        %----------------------------------------------------------------------------------------
-        
-        {\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
-        
-        %----------------------------------------------------------------------------------------
-        %	LOGO SECTION
-        %----------------------------------------------------------------------------------------
-        
-       \includegraphics[scale = 0.3]{hi_logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
-        
-        %----------------------------------------------------------------------------------------
-        
-        \vfill % Fill the rest of the page with whitespace
-        
-    \end{titlepage}
+\begin{titlepage}
+            \maketitle
+\end{titlepage}
 
 \newpage
 \tableofcontents
@@ -291,7 +153,7 @@ Líkanið var þróað í nokkrum skrefum. Í öllum tilfellum, nema þess sé s
 
 \subsection{Sætatakmarkanir}
 
-Byrjað var á því að kanna hver lágmarksfjöldi prófstokka er sem þarf til að búa til próftöflu með öllum hörðum skorðum sem settar voru hér að undan [graf 1] og einnig hve margir prófstokkarnir yrðu ef fjöldi sæta væri ótakmarkaður [graf 2]. 
+Byrjað var á því að kanna hver lágmarksfjöldi prófstokka er sem þarf til að búa til próftöflu með öllum hörðum skorðum sem settar voru hér að undan [mynd 1] og einnig hve margir prófstokkarnir yrðu ef fjöldi sæta væri ótakmarkaður [mynd 2]. 
 
 
 \begin{figure}[h]
@@ -300,6 +162,8 @@ Byrjað var á því að kanna hver lágmarksfjöldi prófstokka er sem þarf ti
 \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Fjöldi tiltækra sæta í hvern prófstokk var takmarkaður við 450.}
 \end{figure}
 
+\newpage
+
 \begin{figure}[h]
     \centering
     \includegraphics[width = 152mm]{./myndir/graf2}
@@ -307,19 +171,17 @@ Byrjað var á því að kanna hver lágmarksfjöldi prófstokka er sem þarf ti
 \end{figure}
 
 
-
-
-
 Í báðum tilvikum reyndist besta lausnin nota 13 prófstokka, þ.e. engu skipti hvort sætin sem voru tiltæk voru 450 eða að fjöldi sæta væri ótakmarkaður og því styttist próftímabilið ekkert þrátt fyrir að sætaskorðan væri fjarlægð. Hámarksfjöldi sæta sem þyrfti í seinna tilvikinu væri þó 1171 sæti. Dreifing nemenda er jafnari ef fjöldi prófsæta er takmarkaður heldur en þegar fjöldi prófsæta er ótakmarkaður. 
-Því næst var fundinn heppilegur mælikvarði á hvíld milli prófa fyrir hópanna 61. Það var gert með því að finna meðalhvíldartíma milli prófa fyrir alla hópa. Fyrir auglýsta próftöflu háskólans fyrir vorið 2016 fengust neðangreind gögn  [graf 3][tafla 1].
+Því næst var fundinn heppilegur mælikvarði á hvíld milli prófa fyrir hópanna 61. Það var gert með því að finna meðalhvíldartíma milli prófa fyrir alla hópa. Fyrir auglýsta próftöflu háskólans fyrir vorið 2016 fengust neðangreind gögn  [mynd 3][tafla 1].
 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 175mm]{./myndir/graf3}
+    \includegraphics[width = 170mm]{./myndir/graf3}
     \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki fyrir auglýsta próftöflu Verkfræði- og náttúruvísindasviðs Háskóla Íslands fyrir vormisseri 2016.}
 \end{figure}
 
+\bigskip
 \begin{table}[h]
     \centering
     \begin{tabular}{l|c|c|}
@@ -331,8 +193,8 @@ Byrjað var á því að kanna hver lágmarksfjöldi prófstokka er sem þarf ti
     \caption{Taflan sýnir meðalhvíldartíma hópa miðað við auglýsta próftöflu háskólans}
 \end{table}
 
-\newpage
 
+\newpage
 \subsection{Hvíldartími}
 
 Fundin var betri lausn með því að byrja á að tryggja að sem fæstir nemendur væru í tveimur prófum sama dag og því næst var lögð áhersla á að sem fæstir nemendur væru í prófum tvo daga í röð. Þegar það líkan var keyrt fengust niðurstöður sem sýndar eru á grafi 4.
@@ -340,7 +202,7 @@ Fundin var betri lausn með því að byrja á að tryggja að sem fæstir nemen
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 185mm]{./myndir/graf4}
+    \includegraphics[width = 170mm]{./myndir/graf4}
     \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki þegar leitað var að lausn betri en auglýst próftafla frá háskólanum gaf.}
 \end{figure}
 
@@ -365,15 +227,15 @@ Fjöldi nemenda er rokkandi, allt frá 22 nemendum og upp í 449 nemendur. Þess
 
 Til þess að lágmarka fjölda prófstokka var líkanið hannað þannig að prófunum var raðað í fremstu prófstokkana og þar með tryggði það einnig að nemendur klára prófin á sem stystum tíma. 
 
-\newpage
-
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 175mm]{./myndir/graf5}
+    \includegraphics[width = 170mm]{./myndir/graf5}
     \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki þegar fengin var lausn við lágmörkun prófstokka.}
 \end{figure}
 
-Á grafinu [5] sést að fyrstu sex prófstokkarnir hafa flesta nemendur eða 450 talsins og eru því fullnýttir. Einungis í prófum sem þreytt eru í síðustu tveimur stokkunum er fjöldi nemenda færri en 400 en í stokki 16 eru 370 nemendur og í síðasta stokknum er fjöldi nemenda 279.
+\newpage
+
+Á grafinu [mynd 5] sést að fyrstu sex prófstokkarnir hafa flesta nemendur eða 450 talsins og eru því fullnýttir. Einungis í prófum sem þreytt eru í síðustu tveimur stokkunum er fjöldi nemenda færri en 400 en í stokki 16 eru 370 nemendur og í síðasta stokknum er fjöldi nemenda 279.
 Hvíldartíminn á milli prófa styttist en meðalhvíldartími frá byrjun próftímabils til síðasta prófs er 0,87 dagar og meðalhvíldartími frá fyrsta prófi til síðasta prófs fyrir hvern hóp er 0,94 dagar. Þar með sést að meðalhvíldartíminn frá byrjun til enda próftímabils styttist um 2,61 daga og meðalhvíldartími frá fyrsta prófi til síðasta prófs styttist um 3,14 daga. 
 
 
@@ -388,14 +250,14 @@ Hvíldartíminn á milli prófa styttist en meðalhvíldartími frá byrjun pró
     \caption{Taflan sýnir meðalhvíldartíma hópa þegar fjöldi  prófstokka var lágmarkaður.}
 \end{table}
 
-\subsection{Færsla fjölmennra námskeiða}
+\subsection{Færsla stærri námskeiða}
 
 Kennarar vildu sjá próf fjölmennari námskeiða fyrr á tímabilinu og var líkaninu breytt til þess að koma á móts við óskir þeirra. Graf sex sýnir breytingu á dreifingu nemenda í prófstokka.
 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 140mm]{./myndir/graf6}
+    \includegraphics[width = 170mm]{./myndir/graf6}
     \caption{Grafið sýnir fjölda nemenda og prófa í hverjum prófstokki. Hér er fjölmennustu námskeiðunum raðað fremst í prófstokkana.}
 \end{figure}
 
@@ -415,7 +277,6 @@ Dreifing nemenda yfir tímabilið er ekki ósvipuð og þegar fjöldi prófstokk
     \end{tabular}
     \caption{Taflan sýnir meðalhvíldartíma hópa þegar fjölmennustu námskeiðunum er raðað fremst í prófstokka.}
 \end{table}
-\newpage
 
 \subsection{Hagkvæmasta lausn}
 
@@ -424,7 +285,7 @@ Að lokum var stillt upp líkani sem talið er gefa bestu lausn fyrir nemendur, 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 150mm]{./myndir/graf7}
+    \includegraphics[width = 165mm]{./myndir/graf7}
     \caption{Grafið sýnir hagkvæmnustu lausn sem fengin var samkvæmt þeim skorðum sem settar voru.}
 \end{figure}
 
@@ -445,7 +306,6 @@ Líkanið var hannað þannig að ef fjöldi nemenda sem taka próf í tveimur m
 
 Þar að auki voru fjölmenn námskeið færð framar á próftímabilið en það var gert
 að ósk kennara því það hentar þeim betur til yfirferðar. Hægt var að hafa allra stærstu námskeiðin fremst í uppröðuninni en það reyndist þó óhagstætt þar sem önnur fjölmenn námskeið lentu í mun verri stöðu. Því var ákveðið að nota lausn sem tekur tillit til heildarinnar en ekki einungis stærstu námskeiðanna.
-\newpage
 
 Einnig hefur verið tryggt að próf með hærri fallprósentu, þ.e.a.s. strembin próf, eru framarlega í uppröðuninni. Það hefur nemendum þótt ákjósanlegt svo þeir geti lokið þeim af sem fyrst og þar með minnkað álag fyrir þau próf sem á eftir koma. 
 \medskip
@@ -465,14 +325,11 @@ Hvíldartími er ögn minni heldur en í auglýstu lausninni en er þó ásætta
 
 Þar með hefur tekist að færa fjölmenn og erfið próf framar, spara prófstokk og fá góðan hvíldartíma milli prófa ásamt því að sjá til þess að fleiri nemendur eru búnir fyrr í prófum. Vegna þessa er líkanið talið gefa bestu lausn á próftöflunni fyrir nemendur, kennara og stjórnendur skólans. 
 
-
-\newpage
-
 Að lokum var prófað hvernig hvíldartíminn breyttist þegar prófstokkum var fjölgað eða fækkað. Í ljós kom að 32 prófstokkar var algjört lágmark en aftur á móti var hægt að bæta við prófstokkum. Þegar bætt var við prófstokkum fannst að hámarksfjöldi stokka sem gæfi nýja lausn í próftöflubestuninni væri 38 stokkar. 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 180mm]{./myndir/graf8}
+    \includegraphics[width = 170mm]{./myndir/graf8}
     \caption{Grafið sýnir hagkvæmnustu lausn fyrir 34 prófstokka.}
 \end{figure}
 
@@ -492,7 +349,7 @@ Að lokum var prófað hvernig hvíldartíminn breyttist þegar prófstokkum var
 \newpage
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 180mm]{./myndir/graf9}
+    \includegraphics[width = 170mm]{./myndir/graf9}
     \caption{Grafið sýnir hagkvæmnustu lausn fyrir 36 prófstokka.}
 \end{figure}
 
@@ -511,7 +368,7 @@ Að lokum var prófað hvernig hvíldartíminn breyttist þegar prófstokkum var
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 180mm]{./myndir/graf10}
+    \includegraphics[width = 170mm]{./myndir/graf10}
     \caption{Grafið sýnir hagkvæmnustu lausn fyrir 38 prófstokka.}
 \end{figure}
 
@@ -609,11 +466,9 @@ Til þess að keyra líkanið er byrjað á að velja þær skorður sem eiga a�
 
 \texttt{JavaScript} reiknirit (\texttt{dataProcessing.js}) var notað til þess að reikna meðalhvíldartíma milli prófa, í stokkum og dögum,  annars vegar frá upphafi prófatímabils og hins vegar frá fyrsta prófi hóps til síðasta prófs. Gögnin sem reikna á úr þarf að setja upp í gagnaskrá (\texttt{dataFile.js}). Undir hverja próftöfluröðun þarf eitt fylki með tveimur línum. Fyrri línan er strengjafylki með heiti námskeiða og seinni línan er heiltöluvigur með viðeigandi prófstokksnúmer fyrir hvert fag. Einnig þarf að setja inn strengjafylki fyrir hvern hóp með viðeigandi námskeiðsheitum. Mælt er með því að nota \texttt{Excel }eða ritil með virkni fyrir reglulegar segðir, eins og \texttt{Atom}, til að vinna úr gögnum úr líkaninu eða mögulega að skrifa nýtt fall til þess. Passa þarf að flytja gögnin yfir í gagnavinnsluskrána með \texttt{export} skipun.
 
-\medskip
+\newpage
 Innan í gagnavinnsluskránni (\texttt{dataProcessing.js}) þarf að taka á móti gögnunum með \texttt{require }skipun. Þegar það er komið má notfæra sér \texttt{processDataMatrix()} fallið til að reikna út meðalbiðtíma fyrir alla hópana með gefinni lausn. Frekari lýsing á fallinu og virkni þess má finna í gagnavinnsluskránni.
 Reikniritin má finna í viðauka skýrslunnar. Búið er að gefa lýsingar á öllum föllum í gagnavinnsluskránum og sjá má útskýringar á öllum skorðum og ákvörðunum sem hafa verið teknar varðandi hvernig besta eigi próftöfluna.
-
-\newpage
 
 \section{Almenn umfjöllun}
 
