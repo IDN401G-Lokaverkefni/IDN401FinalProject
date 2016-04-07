@@ -539,7 +539,7 @@ Hér sést að ef prófstokkunum er fjölgað í annaðhvort 34 eða 38 þá eyk
 Í eftirfarandi uppsetningu er ítrað í gegnum tveimur mengjum, $ E $ og $ C $, þar sem $ E $ er mengi prófstokka og $ C $ er mengi prófnámskeiða. $ x $ er ákvörðunarbreytan sem táknar stokk fyrir próf $ j $ í prófstokki $ i $. Fyrir fyrsta markfallið \texttt{earlyExams} er eftirfarandi nóg til þess að reyna setja prófin eins framarlega og hægt er í öllum stokkum:
 $$\min \sum_{i \in E,j \in C } x_{ij} \cdot i^8$$
 
-Næst var reynt að besta töfluna með markfallinu \texttt{bigExamEarly} þannig að stærstu prófin væru fremst í prófröðuninni, til þess að það væri mögulegt var þörf á því að bæta við stuðul $b_{j}$ sem táknar fjöldi nemeneda $ b $ í námskeiði $ j $.
+Næst var reynt að besta töfluna með markfallinu \texttt{bigExamEarly} þannig að stærstu prófin væru fremst í prófröðuninni, til þess að það væri mögulegt var þörf á því að bæta við stuðul $b_{j}$ sem táknar fjöldi nemenda $ b $ í námskeiði $ j $.
 
 $$\min \sum_{i \in E, j \in C} x_{ij} \cdot b^{4}_j \cdot i^8$$
 
@@ -558,10 +558,24 @@ Notast var við brotið til að ákveða hlutfallslegt vægi námskeiðs. Eftir 
 
 Til þess að besta próftöfluna að okkar mati var þörf á að búa til 8 skorður sem eru eftirfarandi:
 
-\texttt{examClashes}, Hér er ítrað yfir $ C $ þannig að ef $ (j,k) \neq 0 $ þá þýðir að það eru til nemendur sem taka námskeið $ j $ og $ k $:
-$$\sum_{i \in E, ~(j,k)\in C: ~(j,k) \neq 0} (x_{ij} - x_{ik}) = 0$$
+\texttt{examClashes}: Hér er ítrað yfir $ C $ með $ j $ og $ k $. Stærð $ y_{jk} $ lýsir því hversu margir nemendur eru skráðir í báðum námskeiðum $ j $ og $ k $:
 
-næst er það \texttt{hasExam}
+$$\sum_{i \in E, ~(j,k)\in C: ~y_{jk} \neq 0} (x_{ij} + x_{ik}) <= 1$$
+
+\texttt{hasExam}: Hér er ítrað yfir $ C $ og lagt saman yfir $ E $ þar sem $ e $ er stærð mengis $ E $:
+
+% Er í alvörunni verið að summa yfir stökin í E, setti þess vegna efri og neðri mörk á seinni summuna
+$$\sum_{j \in C} \left( \sum_{i = 1}^{e} x_{ij} = 1 \right)$$
+
+\texttt{maxInSlots}: Ítrað er yfir $ E $ og lagt saman yfir $ C $ þar sem $ c $ er stærð mengis $ C $ og $ j $ vísar á j-ta stak $ C $ og aftur lýsir stuðull $b_{j}$ sem táknar fjöldi nemenda $ b $ í námskeiði $ j $:
+
+$$\sum_{i \in E} \left( \sum_{j = 1}^{c} x_{ij} \cdot b_{j} <= 450 \right)$$
+
+\texttt{jointlyTaught}: Aftur er ítrað yfir stök úr $ E $ og $ C $ og við notum stærð $ z_{jk} $ til að lýsa því hvort námskeið $ j $ og $ k $ eru samkennd:
+
+$$\sum_{i \in E , ~ (j,k) \in C ~ : ~ z_{jk} \neq 0 } x_{ij} - x_{ik} = 0$$
+
+\texttt{noExams}: Ítrum aftur yfir $ E $ og $ C $ og notum einnig stærð $ g_{} $
 
 \newpage
 

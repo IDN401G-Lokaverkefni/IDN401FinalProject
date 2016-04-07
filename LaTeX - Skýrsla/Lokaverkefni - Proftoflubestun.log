@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.2)  7 APR 2016 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.2)  7 APR 2016 19:44
 entering extended mode
 **"./Lokaverkefni - Proftoflubestun.tex"
 ("Lokaverkefni - Proftoflubestun.tex"
@@ -652,20 +652,20 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 539.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [15] [16]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 604.
+[17]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 618.
 
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 604.
- [17]
-(../profrodun2016Latex.mod [18] [19]) (../waitTimeProcessing/dataProcessing.js
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 618.
+ [18]
+(../profrodun2016Latex.mod [19] [20]) (../waitTimeProcessing/dataProcessing.js
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3.
 
-[20] [21] [22]) [23] ("Lokaverkefni - Proftoflubestun.aux") ) 
+[21] [22] [23]) [24] ("Lokaverkefni - Proftoflubestun.aux") ) 
 Here is how much of TeX's memory you used:
  5509 strings out of 493634
  70332 string characters out of 3141315
@@ -693,16 +693,17 @@ r\jknappen\ec\dpi600\eccc1728.pk> <C:\Users\egill\AppData\Local\MiKTeX\2.9\font
 s\pk\ljfour\jknappen\ec\dpi600\eccc2074.pk><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb>
-Output written on "Lokaverkefni - Proftoflubestun.pdf" (24 pages, 853529 bytes)
+/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb>
+Output written on "Lokaverkefni - Proftoflubestun.pdf" (25 pages, 875337 bytes)
 .
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
+ 695 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
