@@ -505,17 +505,25 @@ Hér sést að ef prófstokkunum er fjölgað í annaðhvort 34 eða 38 þá eyk
 
 \section{Aðferðir}
 
-Áður en hægt var að setja líkanið upp í AMPL þurfti að færa skorðurnar og markföll á stærfræðilegt form. Í eftirfarandi uppsetningu er notast við það táknmál að e er mengi staka úr vigrinum \verb|examSlots| og c er mengi staka úr vigrinum \verb|cidExam|. Einnig samanstendur \verb|slot| fylkið af  ákvörðunarbreytunum verkefnisins (köllum það x héðan í frá) og n er stærð hvers vigurs um sig. Notað er k  til að tákna mengi staka úr \verb|cidCount| þar sem hvert stak er fjöldi nemenda í námskeiði k, l táknar mengi staka úr \verb|cidDifficulty| sem inniheldur fallprósentu námskeiðs l, m er mengi staka úr \verb|cidCommon| og s er fjöldi nemenda á Verk- og Náttúrufræðisviði Háskóla Íslands.  Markfallið \verb|earlyExams| má setja fram sem:
+Áður en hægt var að setja líkanið upp í AMPL þurfti að færa skorðurnar og markföll á stærfræðilegt form. 
 
-$$\min \sum_{j \in c, i \in e} x_{ji} \cdot i^8$$
 
-Þar sem reynt er að lágmarka fjölda námskeiða sem lendir aftarlega í prófröðun. Eftir því sem stokkurinn er aftar (og þá i stærra) verður mun óhagkvæmara að setja prófið þar. Skoðum næst markfallið \verb|bigExamEarly| og uppsetningu þess:
+\medskip
+Í eftirfarandi uppsetningu er ítrað í gegnum tveimur mengjum, $ E $ og $ C $, þar sem $ E $ er mengi prófstokka og $ C $ er mengi prófnámskeiða. $ x $ er ákvörðunarbreytan sem táknar stokk fyrir próf $ j $ í prófstokki $ i $. Fyrir fyrsta markfallið \texttt{earlyExams} er eftirfarandi nóg til þess að reyna setja prófin eins framarlega og hægt er í öllum stokkum:
+$$\min \sum_{i \in E,j \in C } x_{ij} \cdot i^8$$
 
-$$\min \sum_{j \in c, i \in e} x_{ji} \cdot \left( k_j \cdot i^2 \right)^4$$
+Næst var reynt að besta töfluna með markfallinu \texttt{bigExamEarly} þannig að stærstu prófin væru fremst í prófröðuninni, til þess að það væri mögulegt var þörf á því að bæta við stuðul $b_{j}$ sem táknar fjöldi nemeneda $ b $ í námskeiði $ j $.
 
-Hérna er nemendafjöldinn margfaldaður við prófstokksnúmer í öðru veldi og það síðan hafið upp í fjórða veldi. Seinasta markfallið, \verb|totalSlots|, er það sem er notað til að finna hagkvæmustu lausn:
+$$\min \sum_{i \in E, j \in C} x_{ij} \cdot b^{4}_j \cdot i^8$$
 
-$$\min \sum_{j \in c, i \in e} x_{ji} \left( b_j \cdot \dfrac{(d_j + 1)^4}{s} \right) \cdot \left( \sqrt[4]{i} \right)$$
+Markfallið er haft þannig að það er óhagstætt að hafa stór námskeið aftarlega í röðinni.
+
+\medskip
+Næst var prófað markfallið \texttt{totalSlots} sem gefur (að okkar mati) bestu lausnina, en þá er búið að bæta inn stuðullinn $ d_{j} $ þar sem $ d $ er fallprósenta námskeiðs $ j $.
+
+
+
+$$\min \sum_{i \in E, j \in C} x_{ij} \left(b_j \cdot \dfrac{(d_j + 1)^4}{s} \right) \cdot \left( \sqrt[4]{i} \right)$$
 
 Notast var við brotið til að ákveða hlutfallslegt vægi námskeiðs. Eftir því sem það er fjölmennara og erfiðara er það sett í fremri prófstokka. Síðan er það margfaldað með fjórðu rót af númeri prófstokks til að færa námskeið framar í próftöflu. Valið var fjórða veldi á erfiðleikastiginu til að koma til móts við nemendafjölda. Með þessu helst ákveðið jafnvægi að minni námskeiðin lenda ekki allt of aftarlega. Einnig var fjórða rótin valin til þess að raða prófunum framarlega en ef það var haft hærra var fjölmennustu prófunum raðað í fyrstu stokkana á kostnað allra annarra prófa.
 
