@@ -529,18 +529,14 @@ Notast var við brotið til að ákveða hlutfallslegt vægi námskeiðs. Eftir 
 
 \medskip
 
-Skorðurnar eru fleiri að tölu og sú fyrsta er \verb|examClashes| sem sér til þess að engir nemendur eru í prófi á sama tíma:
+Til þess að besta próftöfluna að okkar mati var þörf á að búa til 8 skorður sem eru eftirfarandi:
 
-$$\sum_{ i \in e \, h,j \in c: m_{hj} > 0} x_{hi} + x_{ji} <= 1$$
+\texttt{examClashes}, hér merkir $ k $ sameiginlegt námskeið, þ.e. ef $ (j,k) \neq 0 $ þá þýðir að það eru til nemendur sem taka námskeið $ j $ og $ k $:
+$$\sum_{(i \in E, (j,k)\in C ~| ~(j,k) \neq 0)} x_{ij} - x_{ik} = 0$$
 
-\verb|hasExam| skorðan
+næst er það \texttt{hasExam}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = 20cm]{tmp.png}
-\end{figure}
-
-\medskip
+\newpage
 
 Notast var við bæði \texttt{AMPL} og \texttt{JavaScript} forritun til að búa til líkan og vinna úr upplýsingum sem úr því fengust. Mælt er með að nota \texttt{GLPK} forritasafnið til að þýða líkanið yfir á \texttt{.lp} skráartegund, \texttt{Gurobi} til að keyra \texttt{.lp} líkanið og fá lausn ásamt því að nota \texttt{Node.js} til að keyra \texttt{JavaScript} forritið sem fylgir.
 
