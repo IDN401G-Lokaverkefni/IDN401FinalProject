@@ -11,7 +11,7 @@ param n := 16; # Number of days in the exam period
 set examSlots := 1..(2*n); # Exam-slots (profstokkar)
 set offSlots; #Set of slots that belong to off Days
 
-param sumCount := 2274; # Total numnber of exams taken during this exam period
+param sumCount := 2274; # Total number of students in Engineering and Natural Science Department of the University this exam period
 param cidExamslot2016{cidExam}; # Solution of the University of Iceland, for comparison
 param ourBasicSolution{cidExam}; # Calculated solution with 3 basic constraint
 param solutionWithoutSeats{cidExam}; # Calculated solution without seat constraint
@@ -39,10 +39,10 @@ var slot{cidExam, examSlots} binary; # Variable
 #  solutionWithoutSeats[c] == e}: slot[c,e] = 1;
 
 # Objective function to place all exams as early as possible in exam-table
-#minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
+#minimize earlyExams: sum{c in cidExam, e in examSlots} slot[c,e]*(e^8);
 
 # Courses with the most students have exams in the beginning of exam period
-#minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*(cidCount[c]*(e^2))^4;
+#minimize bigExamEarly: sum{c in cidExam, e in examSlots} slot[c,e]*(cidCount[c]*(e^2))^4;
 
 # Our best solution: Difficult exams early
 minimize totalSlots: sum{c in cidExam, e in examSlots} slot[c,e]*((cidCount[c]*((cidDifficulty[c] + 1)^4))/ sumCount)*(e^0.25);
