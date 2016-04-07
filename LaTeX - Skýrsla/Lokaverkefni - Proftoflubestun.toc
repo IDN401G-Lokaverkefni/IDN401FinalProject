@@ -2,9 +2,14 @@
 \contentsline {section}{\numberline {1}\IeC {\'A}grip}{2}
 \contentsline {section}{\numberline {2}Inngangur/bakgrunnur}{3}
 \contentsline {section}{\numberline {3}Ni\IeC {\dh }urst\IeC {\"o}\IeC {\dh }ur, ni\IeC {\dh }urlag og till\IeC {\"o}gur}{4}
-\contentsline {section}{\numberline {4}A\IeC {\dh }fer\IeC {\dh }ir}{14}
-\contentsline {section}{\numberline {5}Almenn umfj\IeC {\"o}llun}{16}
-\contentsline {section}{\numberline {6}Heimildir}{16}
-\contentsline {section}{\numberline {7}Vi\IeC {\dh }auki}{17}
-\contentsline {subsection}{\numberline {7.1}AMPL k\IeC {\'o}\IeC {\dh }i}{17}
-\contentsline {subsection}{\numberline {7.2}Javascript k\IeC {\'o}\IeC {\dh }i}{19}
+\contentsline {subsection}{\numberline {3.1}S\IeC {\ae }tatakmarkanir}{4}
+\contentsline {subsection}{\numberline {3.2}Hv\IeC {\'\i }ldart\IeC {\'\i }mi}{5}
+\contentsline {subsection}{\numberline {3.3}Pr\IeC {\'o}fstokkafj\IeC {\"o}ldi}{6}
+\contentsline {subsection}{\numberline {3.4}F\IeC {\ae }rsla fj\IeC {\"o}lmennra n\IeC {\'a}mskei\IeC {\dh }a}{7}
+\contentsline {subsection}{\numberline {3.5}Hagkv\IeC {\ae }masta lausn}{9}
+\contentsline {section}{\numberline {4}A\IeC {\dh }fer\IeC {\dh }ir}{15}
+\contentsline {section}{\numberline {5}Almenn umfj\IeC {\"o}llun}{17}
+\contentsline {section}{\numberline {6}Heimildir}{17}
+\contentsline {section}{\numberline {7}Vi\IeC {\dh }auki}{18}
+\contentsline {subsection}{\numberline {7.1}AMPL k\IeC {\'o}\IeC {\dh }i}{18}
+\contentsline {subsection}{\numberline {7.2}Javascript k\IeC {\'o}\IeC {\dh }i}{20}
